@@ -1,0 +1,1413 @@
+<!-- loio44bff8d8094e480d819c968cf527a491 -->
+
+# Authenticationand UI Settings
+
+Read and edit the Cloud Connector's authenticationand UI settings via API.
+
+
+
+<a name="loio44bff8d8094e480d819c968cf527a491__section_rcp_l1b_vcb"/>
+
+## Get Authentication Settings
+
+
+<table>
+<tr>
+<td valign="top">
+
+URI
+
+</td>
+<td valign="top">
+
+`/api/v1/configuration/connector/authentication` 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Method
+
+</td>
+<td valign="top">
+
+*GET* 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Request
+
+</td>
+<td valign="top">
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Response
+
+</td>
+<td valign="top">
+
+```
+{type,  configuration}
+```
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Errors
+
+</td>
+<td valign="top">
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Roles
+
+</td>
+<td valign="top">
+
+Administrator, Display, Support
+
+</td>
+</tr>
+</table>
+
+**Response Properties:**
+
+-   `type`: The authentication type, which is one of the following strings: *basic* or *ldap*.
+-   `configuration`: The configuration of the active LDAP authentication. This property is only available if `type` is ldap. Its value is an object with properties that provide details on LDAP configuration.
+
+
+
+## Example
+
+```
+curl -i -k -H 'Accept:application/json' 
+-u Administrator:<password> -X GET https://<scchost>:8443/api/v1/configuration/connector/authentication
+```
+
+
+
+<a name="loio44bff8d8094e480d819c968cf527a491__section_lys_l1b_vcb"/>
+
+## Change Basic Authentication User
+
+
+<table>
+<tr>
+<td valign="top">
+
+URI
+
+</td>
+<td valign="top">
+
+`/api/v1/configuration/connector/authentication/basic` 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Method
+
+</td>
+<td valign="top">
+
+*PUT* 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Request
+
+</td>
+<td valign="top">
+
+```
+{password, user}
+```
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Response
+
+</td>
+<td valign="top">
+
+204 on success
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Errors
+
+</td>
+<td valign="top">
+
+INVALID\_REQUEST
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Roles
+
+</td>
+<td valign="top">
+
+Administrator
+
+</td>
+</tr>
+</table>
+
+**Request Properties:**
+
+-   `password`: The current password \(a string\)
+-   `user`: The new user name \(a string\), overwriting the current user name.
+
+**Errors:**
+
+-   `INVALID_REQUEST` \(400\): Current password is wrong.
+
+
+
+<a name="loio44bff8d8094e480d819c968cf527a491__section_sg3_pwf_d4b"/>
+
+## Change Basic Authentication Password
+
+
+<table>
+<tr>
+<td valign="top">
+
+URI
+
+</td>
+<td valign="top">
+
+`/api/v1/configuration/connector/authentication/basic` 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Method
+
+</td>
+<td valign="top">
+
+*PUT* 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Request
+
+</td>
+<td valign="top">
+
+```
+{oldPassword, newPassword}
+```
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Response
+
+</td>
+<td valign="top">
+
+204 on success
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Errors
+
+</td>
+<td valign="top">
+
+INVALID\_REQUEST
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Roles
+
+</td>
+<td valign="top">
+
+Administrator
+
+</td>
+</tr>
+</table>
+
+**Request Properties:**
+
+-   `oldPassword`: The current password, about to be changed \(a string\)
+-   `newPassword`: The new password \(a string\)
+
+**Errors:**
+
+-   `INVALID_REQUEST` \(400\): Passwords are the same or current password is wrong.
+
+
+
+## Example
+
+```
+curl -i -k -H 'Content-Type:application/json' -d '{"oldPassword"="manage", "newPassword"="test"}' 
+-u Administrator:manage -X PUT https://localhost:8443/api/v1/configuration/connector/authentication/basic
+```
+
+
+
+<a name="loio44bff8d8094e480d819c968cf527a491__section_hj2_51b_vcb"/>
+
+## Change LDAP Authentication
+
+> ### Caution:  
+> The Cloud Connector will restart if the request was successful. There is no test that confirms login will work afterwards. If you run into problems you can revert to basic authentication by executing the script `useFileUserStore` located in the root directory of your Cloud Connector installation.
+
+
+<table>
+<tr>
+<td valign="top">
+
+URI
+
+</td>
+<td valign="top">
+
+`/api/v1/configuration/connector/authentication/ldap` 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Method
+
+</td>
+<td valign="top">
+
+*PUT* 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Request
+
+</td>
+<td valign="top">
+
+```
+{enable, configuration} 
+```
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Response
+
+</td>
+<td valign="top">
+
+204 on success
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Errors
+
+</td>
+<td valign="top">
+
+INVALID\_REQUEST, INVALID\_CONFIGURATION
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Roles
+
+</td>
+<td valign="top">
+
+Administrator
+
+</td>
+</tr>
+</table>
+
+**Request Properties:**
+
+-   `enable`: Boolean flag that indicates whether or not to employ LDAP authentication.
+-   `configuration`: The LDAP configuration, a JSON object with the properties `{config, hosts, user, password, customAdminRole , customDisplayRole, customMonitoringRole , customSupportRole}`.
+    -   Property `hosts` is an array. Each element of the array defines a host, again specified through a JSON object, with the properties `{host, port, isSecure}`, accepting string, string \(or number\), and Boolean values, respectively.
+    -   All properties of the top-level object except `hosts` accept string values.
+    -   Properties `config` and `hosts` are mandatory. The array of hosts needs to have at least one element.
+    -   All other properties are optional.
+
+
+**Errors:**
+
+-   `INVALID_REQUEST` \(400\): Configuration is invalid.
+-   `INVALID_CONFIGURATION` \(409\): LDAP server is not accessible \(does not respond\).
+
+> ### Note:  
+> In both error cases nothing is stored, and LDAP authentication is disabled.
+
+
+
+## Example
+
+```
+curl -i -k -H 'Content-Type: application/json' -u Administrator:<password> -X PUT https://localhost:8443/api/v1/configuration/connector/authentication/ldap -d '{"enable":true, "configuration":{"hosts":[{"host":"ldaphost", "port":"10389", "isSecure":false}], "config":"roleBase=\"ou=groups,dc=scc\" roleName=\"cn\" roleSearch=\"(uniqueMember={0})\" userBase=\"ou=users,dc=scc\" userSearch=\"(uid={0})\"", "user":"ldapadmin", "password":"<ldapadminpassword>"}}'  
+
+```
+
+
+
+<a name="loio44bff8d8094e480d819c968cf527a491__section_wjr_q41_lmb"/>
+
+## Get Description for UI Certificate
+
+This API returns a textual description for the system certificate.
+
+> ### Note:  
+> Available as of version 2.13.0.
+
+
+<table>
+<tr>
+<td valign="top">
+
+URI
+
+</td>
+<td valign="top">
+
+`/api/v1/configuration/connector/ui/uiCertificate` 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Method
+
+</td>
+<td valign="top">
+
+*GET* 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Response
+
+</td>
+<td valign="top">
+
+```
+{subjectDN, issuer, notBeforeTimeStamp, notAfterTimeStamp, subjectAltNames}
+
+```
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Errors
+
+</td>
+<td valign="top">
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Roles
+
+</td>
+<td valign="top">
+
+Administrator, Display, Support
+
+</td>
+</tr>
+</table>
+
+**Response Properties:**
+
+-   `subjectDN`: The subject distinguished name \(a string\)
+-   `issuer`: The issuer \(a string\)
+-   `notBeforeTimeStamp`: Timestamp of the beginning of the validity period \(a UTC long number\)
+-   `notAfterTimeStamp`: Timestamp of the end of the validity period \(a UTC long number\)
+-   `subjectAltNames`: Subject alternative names, as an array of objects with properties `type` and `value`. The value of property `type` is one of the following strings: IP, DNS, URI, or RFC822. The value of property `value` is the associated value \(a string\).
+
+> ### Note:  
+> `subjectAltNames` is not present if there are no subject alternative names.
+
+
+
+## Example
+
+```
+curl -i -k -H "Accept: application/json" -u <user>:<password> -X GET https://<host>:<port>/api/v1/configuration/connector/ui/uiCertificate
+
+```
+
+
+
+## Create a Self-Signed UI Certificate
+
+> ### Note:  
+> Available as of version 2.13.0.
+
+
+<table>
+<tr>
+<td valign="top">
+
+URI
+
+</td>
+<td valign="top">
+
+`/api/v1/configuration/connector/ui/uiCertificate` 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Method
+
+</td>
+<td valign="top">
+
+*POST* 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Request
+
+</td>
+<td valign="top">
+
+```
+{type, keySize, subjectDN, subjectAltNames}
+
+```
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Response
+
+</td>
+<td valign="top">
+
+201 on success
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Errors
+
+</td>
+<td valign="top">
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Roles
+
+</td>
+<td valign="top">
+
+Administrator
+
+</td>
+</tr>
+</table>
+
+**Request Properties:**
+
+-   `type`: The string *selfsigned*
+-   `keySize`: Key size, which must be either 2048 or 4096 bits. Optional property. Default value is 4096.
+
+    > ### Note:  
+    > This property is available as of version 2.15.0.
+
+-   `subjectDN`: The subject distinguished name \(a string\)
+-   `subjectAltNames`: Subject alternative names, as an array of objects with properties `type` and `value`. The value of property `type` is one of the following strings: IP, DNS, URI, or RFC822. The value of property `value` is the associated value \(a string\). This property is optional.
+
+The UI certificate created this way has a validity of 1 year.
+
+
+
+## Example
+
+```
+curl -k -u Administrator:<password> -X POST -H  "Content-Type: application/json" --data  '{"type":"selfsigned", "subjectDN":"CN=me"}' 
+https: //<host>:<port>/api/v1/configuration/connector/ui/uiCertificate
+```
+
+
+
+<a name="loio44bff8d8094e480d819c968cf527a491__section_n2h_s41_lmb"/>
+
+## Create a Certificate Signing Request for a UI Certificate
+
+> ### Note:  
+> Available as of version 2.13.0.
+
+
+<table>
+<tr>
+<td valign="top">
+
+URI
+
+</td>
+<td valign="top">
+
+`/api/v1/configuration/connector/ui/uiCertificate` 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Method
+
+</td>
+<td valign="top">
+
+*POST* 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Request
+
+</td>
+<td valign="top">
+
+```
+{type, keySizesubjectDN, subjectAltNames}
+
+```
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Response
+
+</td>
+<td valign="top">
+
+PEM-encoded certificate request
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Errors
+
+</td>
+<td valign="top">
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Roles
+
+</td>
+<td valign="top">
+
+Administrator
+
+</td>
+</tr>
+</table>
+
+**Request Properties:**
+
+-   `type`: The string *csr*
+-   `keySize`: Key size, which must be either 2048 or 4096 bits. Optional property. Default value is 4096.
+
+    > ### Note:  
+    > This property is available as of version 2.15.0.
+
+-   `subjectDN`: The subject distinguished name \(a string\)
+-   `subjectAltNames`: Subject alternative names, as an array of objects with properties `type` and `value`. The value of property `type` is one of the following strings: IP, DNS, URI, or RFC822. The value of property `value` is the associated value \(a string\). This property is optional.
+
+
+
+## Example
+
+```
+curl -k -u Administrator:<password> -X POST -H  "Content-Type: application/json" --data  '{"type":"csr", "subjectDN":"CN=me"}' 
+https: //<host>:<port>/api/v1/configuration/connector/ui/uiCertificate  -o csr.pem
+```
+
+
+
+<a name="loio44bff8d8094e480d819c968cf527a491__section_x12_t41_lmb"/>
+
+## Upload a Signed Certificate Chain as UI Certificate
+
+> ### Note:  
+> Available as of version 2.13.0.
+
+
+<table>
+<tr>
+<td valign="top">
+
+URI
+
+</td>
+<td valign="top">
+
+`/api/v1/configuration/connector/ui/uiCertificate` 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Method
+
+</td>
+<td valign="top">
+
+*PATCH* 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Request
+
+</td>
+<td valign="top">
+
+multipart/form-data with the following form parameter: `signedCertificate` 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Response
+
+</td>
+<td valign="top">
+
+201 on success
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Errors
+
+</td>
+<td valign="top">
+
+INVALID\_REQUEST
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Roles
+
+</td>
+<td valign="top">
+
+Administrator
+
+</td>
+</tr>
+</table>
+
+**Request Parameters:**
+
+-   `signedCertificate`: The signed certificate and CA certificate chain \(PEM-encoded\)
+
+**Errors:**
+
+-   `INVALID_REQUEST` \(400\): The certificate chain provided does not match the most recent certificate request, or it is not a certificate chain in the proper format \(PEM-encoded\).
+
+
+
+## Example
+
+```
+curl -i -k -u <user>:<password> -X PATCH -F signedCertificate=@<signedchain.pem> https://<host>:<port>/api/v1/configuration/connector/ui/uiCertificate
+
+```
+
+
+
+## Example
+
+For test purposes, you can sign the certificate signing request with keytool.
+
+```
+keytool -genkeypair -keyalg RSA -keysize  1024 -alias mykey -dname  "cn=very trusted, c=test" -validity  365 -keystore ca.ks -keypass testit -storepass testit
+keytool -gencert -rfc -infile csr.pem -outfile signedcsr.pem -alias mykey -keystore ca.ks -keypass testit -storepass testit
+keytool -exportcert -rfc -file ca.pem -alias mykey -keystore ca.ks -keypass testit -storepass testit
+cat signedcsr.pem ca.pem > signedchain.pem
+```
+
+
+
+<a name="loio44bff8d8094e480d819c968cf527a491__section_ydb_541_lmb"/>
+
+## Upload a PKCS\#12 Certificate as UI Certificate
+
+> ### Note:  
+> Available as of version 2.13.0.
+
+
+<table>
+<tr>
+<td valign="top">
+
+URI
+
+</td>
+<td valign="top">
+
+`/api/v1/configuration/connector/ui/uiCertificat` 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Method
+
+</td>
+<td valign="top">
+
+*PUT* 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Request
+
+</td>
+<td valign="top">
+
+multipart/form-data with the following form parameters:
+
+`pkcs12` 
+
+`password` 
+
+`keyPassword` 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Response
+
+</td>
+<td valign="top">
+
+204 on success
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Errors
+
+</td>
+<td valign="top">
+
+INVALID\_REQUEST
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Roles
+
+</td>
+<td valign="top">
+
+Administrator
+
+</td>
+</tr>
+</table>
+
+**Request Parameters:**
+
+-   `pkcs12`: Contents of PKCS\#12 file
+-   `password`: Password for decrypting the PKCS\#12 file
+-   `keyPassword`: Optional password for the private key
+
+**Errors:**
+
+-   `INVALID_REQUEST` \(400\): Contents of PKCS\#12 or password are invalid
+
+> ### Note:  
+> `keyPassword` is optional. If missing, `password` is used to decrypt the pkcs\#12 file and the private key.
+
+
+
+## Example
+
+```
+curl -i -k -u <user>:<password> https://<host>:<port>/api/v1/configuration/connector/ui/uiCertificate -X PUT -F 'password=<p12Password>' -F pkcs12=@<p12file>
+
+```
+
+
+
+## Example
+
+For test purposes, you can create an own self-signed pkcs\#12 certificate with keytool.
+
+```
+keytool -genkeypair -alias key -keyalg RSA -keysize 2048 -validity 365 -keypass test20 -keystore test.p12 -storepass test20 -storetype PKCS12 -dname 'CN=test'
+
+```
+
+
+
+<a name="loio44bff8d8094e480d819c968cf527a491__section_mw2_xv2_q5b"/>
+
+## Get List of Available Cipher Suites for UI
+
+> ### Note:  
+> Available as of version 2.15.0.
+
+Returns a list of available cipher suites \(as per JVM\).
+
+
+<table>
+<tr>
+<td valign="top">
+
+URI
+
+</td>
+<td valign="top">
+
+`/api/v1/configuration/availableCipherSuites` 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Method
+
+</td>
+<td valign="top">
+
+*GET* 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Request
+
+</td>
+<td valign="top">
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Response
+
+</td>
+<td valign="top">
+
+```
+[name, ...]
+```
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Errors
+
+</td>
+<td valign="top">
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Roles
+
+</td>
+<td valign="top">
+
+Administrator, Subaccount Administrator, Display, Support
+
+</td>
+</tr>
+</table>
+
+**Response Properties:**
+
+List of:
+
+-   `name`: Name of a cipher suite \(a string\).
+
+    > ### Note:  
+    > `name` is case-sensitive.
+
+
+
+
+## Example
+
+```
+curl -i -k -H "Accept: application/json" -u <user>:<password> -X GET https://<host>:<port>/api/v1/configuration/availableCipherSuites
+
+```
+
+
+
+<a name="loio44bff8d8094e480d819c968cf527a491__section_zdr_jxv_psb"/>
+
+## Get List of Enabled Cipher Suites for UI
+
+> ### Note:  
+> Available as of version 2.15.0.
+
+Returns a list of enabled cipher suites.
+
+
+<table>
+<tr>
+<td valign="top">
+
+URI
+
+</td>
+<td valign="top">
+
+`/api/v1/configuration/connector/ui/cipherSuites` 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Method
+
+</td>
+<td valign="top">
+
+*GET* 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Request
+
+</td>
+<td valign="top">
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Response
+
+</td>
+<td valign="top">
+
+```
+[name, ...]
+```
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Errors
+
+</td>
+<td valign="top">
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Roles
+
+</td>
+<td valign="top">
+
+Administrator, Subaccount Administrator, Display, Support
+
+</td>
+</tr>
+</table>
+
+**Response Properties:**
+
+List of:
+
+-   `name`: Name of a cipher suite \(a string\).
+
+    > ### Note:  
+    > `name` is case-sensitive.
+
+
+
+
+## Example
+
+```
+curl -i -k -H "Accept: application/json" -u <user>:<password> -X GET https://<host>:<port>/api/v1/configuration/connector/ui/uiCipherSuites
+
+```
+
+
+
+<a name="loio44bff8d8094e480d819c968cf527a491__section_zdr_pxv_psb"/>
+
+## Set List of Enabled Cipher Suites for UI
+
+> ### Note:  
+> Available as of version 2.15.0.
+
+
+<table>
+<tr>
+<td valign="top">
+
+URI
+
+</td>
+<td valign="top">
+
+`/api/v1/configuration/connector/ui/cipherSuites` 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Method
+
+</td>
+<td valign="top">
+
+*POST* 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Request
+
+</td>
+<td valign="top">
+
+```
+[name, ...]
+
+```
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Response
+
+</td>
+<td valign="top">
+
+204 on success
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Errors
+
+</td>
+<td valign="top">
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Roles
+
+</td>
+<td valign="top">
+
+Administrator
+
+</td>
+</tr>
+</table>
+
+**Request Properties:**
+
+List of:
+
+-   `name`: Name of a cipher suite \(a string\).
+
+    > ### Note:  
+    > `name` is case-sensitive.
+
+
+
+
+## Example
+
+```
+curl -i -k -H "Content-Type: application/json" -u <user>:<password> --data "['TLS_AES_128_GCM_SHA256', 'TLS_AES_256_GCM_SHA384']" -X POST https://<host>:<port>/api/v1/configuration/connector/ui/cipherSuites
+
+```
+
+
+
+<a name="loio44bff8d8094e480d819c968cf527a491__section_tvw_pxv_psb"/>
+
+## Enable default Cipher Suites for UI
+
+> ### Note:  
+> Available as of version 2.15.0.
+
+Revert changes and enable the default list of cipher suites.
+
+
+<table>
+<tr>
+<td valign="top">
+
+URI
+
+</td>
+<td valign="top">
+
+`/api/v1/configuration/connector/ui/cipherSuites` 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Method
+
+</td>
+<td valign="top">
+
+*DELETE* 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Request
+
+</td>
+<td valign="top">
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Response
+
+</td>
+<td valign="top">
+
+204 on success
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Errors
+
+</td>
+<td valign="top">
+
+INVALID\_REQUEST
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Roles
+
+</td>
+<td valign="top">
+
+Administrator
+
+</td>
+</tr>
+</table>
+
+**Response Properties:**
+
+-   `name`: Name of cipher suite \(a string\).
+
+    > ### Note:  
+    > `name` is case-sensitive.
+
+
+
+
+## Example
+
+```
+curl -i -k -u <user>:<password> -X DELETE https://<host>:<port>/api/v1/configuration/connector/ui/cipherSuites
+
+```
+

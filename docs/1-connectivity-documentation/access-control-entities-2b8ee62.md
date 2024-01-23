@@ -1,0 +1,1109 @@
+<!-- loio2b8ee62d19db43649365f82f78b185a0 -->
+
+# Access Control Entities
+
+Manage RFC-specific access control entities for the Cloud Connector via API.
+
+[Get List Of Allowed Clients](access-control-entities-2b8ee62.md#loio2b8ee62d19db43649365f82f78b185a0__get_allowed)
+
+[Get List Of Blocked Client/User Pair](access-control-entities-2b8ee62.md#loio2b8ee62d19db43649365f82f78b185a0__get_blocked)
+
+[Create Allowed Clients \(Master Only\)](access-control-entities-2b8ee62.md#loio2b8ee62d19db43649365f82f78b185a0__create_allowed)
+
+[Extend Allowed Clients \(Master Only\)](access-control-entities-2b8ee62.md#loio2b8ee62d19db43649365f82f78b185a0__extend_allowed)
+
+[Create a Blocked Client/User Pair \(Master Only\)](access-control-entities-2b8ee62.md#loio2b8ee62d19db43649365f82f78b185a0__create_blocked)
+
+[Extend a Blocked Client/User Pair \(Master Only\)](access-control-entities-2b8ee62.md#loio2b8ee62d19db43649365f82f78b185a0__extend_blocked)
+
+[Delete All Allowed Clients \(Master Only\)](access-control-entities-2b8ee62.md#loio2b8ee62d19db43649365f82f78b185a0__delete_clients)
+
+[Delete All Blocked Client/User Pairs \(Master Only\)](access-control-entities-2b8ee62.md#loio2b8ee62d19db43649365f82f78b185a0__delete_blocked)
+
+[Remove an Item from the List of Allowed Clients \(Master Only\)](access-control-entities-2b8ee62.md#loio2b8ee62d19db43649365f82f78b185a0__remove_allowed)
+
+[Remove Items on the List of Blocked Client/User Pairs for a Given User \(Master Only\)](access-control-entities-2b8ee62.md#loio2b8ee62d19db43649365f82f78b185a0__remove_user)
+
+[Remove Items on the List of Blocked Client/User Pairs for a Given Client \(Master Only\)](access-control-entities-2b8ee62.md#loio2b8ee62d19db43649365f82f78b185a0__remove_client)
+
+[Remove an Item on the List of Blocked Client/User Pairs \(Master Only\)](access-control-entities-2b8ee62.md#loio2b8ee62d19db43649365f82f78b185a0__remove_pair)
+
+
+
+<a name="loio2b8ee62d19db43649365f82f78b185a0__get_allowed"/>
+
+## Get List Of Allowed Clients
+
+
+<table>
+<tr>
+<td valign="top">
+
+URI
+
+</td>
+<td valign="top">
+
+`/api/v1/configuration/subaccounts/<regionHost>/<subaccount>/systemMapping/<virtualHost>:<virtualPort>/allowedClients` 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Method
+
+</td>
+<td valign="top">
+
+*GET* 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Request
+
+</td>
+<td valign="top">
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Response
+
+</td>
+<td valign="top">
+
+```
+[{client}]
+
+```
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Errors
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Roles
+
+</td>
+<td valign="top">
+
+Administrator,Subaccount Administrator, Display, Support
+
+</td>
+</tr>
+</table>
+
+**Response**:
+
+List of objects, each representing an allowed client:
+
+-   `client`: client name
+
+
+Back to [Top](access-control-entities-2b8ee62.md#loio2b8ee62d19db43649365f82f78b185a0__top)
+
+
+
+<a name="loio2b8ee62d19db43649365f82f78b185a0__get_blocked"/>
+
+## Get List Of Blocked Client/User Pair
+
+
+<table>
+<tr>
+<td valign="top">
+
+URI
+
+</td>
+<td valign="top">
+
+`/api/v1/configuration/subaccounts/<regionHost>/<subaccount>/systemMapping/<virtualHost>:<virtualPort>/blockedClientUsers` 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Method
+
+</td>
+<td valign="top">
+
+*GET* 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Request
+
+</td>
+<td valign="top">
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Response
+
+</td>
+<td valign="top">
+
+```
+[{client, user}]
+
+```
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Errors
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Roles
+
+</td>
+<td valign="top">
+
+Administrator,Subaccount Administrator, Display, Support
+
+</td>
+</tr>
+</table>
+
+**Response**:
+
+List of objects, each representing a blocked client and user:
+
+-   `client`: client name
+
+    `user`: user name
+
+
+Back to [Top](access-control-entities-2b8ee62.md#loio2b8ee62d19db43649365f82f78b185a0__top)
+
+
+
+<a name="loio2b8ee62d19db43649365f82f78b185a0__create_allowed"/>
+
+## Create Allowed Clients \(Master Only\)
+
+
+<table>
+<tr>
+<td valign="top">
+
+URI
+
+</td>
+<td valign="top">
+
+`/api/v1/configuration/subaccounts/<regionHost>/<subaccount>/systemMapping/<virtualHost>:<virtualPort>/allowedClients` 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Method
+
+</td>
+<td valign="top">
+
+*POST* 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Request
+
+</td>
+<td valign="top">
+
+```
+[client]
+
+```
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Response
+
+</td>
+<td valign="top">
+
+201 on success
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Errors
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Roles
+
+</td>
+<td valign="top">
+
+Administrator,Subaccount Administrator
+
+</td>
+</tr>
+</table>
+
+**Request**:
+
+List of strings, each representing an allowed client.
+
+Back to [Top](access-control-entities-2b8ee62.md#loio2b8ee62d19db43649365f82f78b185a0__top)
+
+
+
+<a name="loio2b8ee62d19db43649365f82f78b185a0__extend_allowed"/>
+
+## Extend Allowed Clients \(Master Only\)
+
+
+<table>
+<tr>
+<td valign="top">
+
+URI
+
+</td>
+<td valign="top">
+
+`/api/v1/configuration/subaccounts/<regionHost>/<subaccount>/systemMapping/<virtualHost>:<virtualPort>/allowedClients` 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Method
+
+</td>
+<td valign="top">
+
+*PATCH* 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Request
+
+</td>
+<td valign="top">
+
+```
+[client]
+
+```
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Response
+
+</td>
+<td valign="top">
+
+204 on success
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Errors
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Roles
+
+</td>
+<td valign="top">
+
+Administrator,Subaccount Administrator
+
+</td>
+</tr>
+</table>
+
+**Request**:
+
+List of strings, each representing an allowed client.
+
+Back to [Top](access-control-entities-2b8ee62.md#loio2b8ee62d19db43649365f82f78b185a0__top)
+
+
+
+<a name="loio2b8ee62d19db43649365f82f78b185a0__create_blocked"/>
+
+## Create a Blocked Client/User Pair \(Master Only\)
+
+
+<table>
+<tr>
+<td valign="top">
+
+URI
+
+</td>
+<td valign="top">
+
+`/api/v1/configuration/subaccounts/<regionHost>/<subaccount>/systemMapping/<virtualHost>:<virtualPort>/blockedClientUsers` 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Method
+
+</td>
+<td valign="top">
+
+*POST* 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Request
+
+</td>
+<td valign="top">
+
+```
+[{client, user}]
+
+```
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Response
+
+</td>
+<td valign="top">
+
+201 on success
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Errors
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Roles
+
+</td>
+<td valign="top">
+
+Administrator,Subaccount Administrator
+
+</td>
+</tr>
+</table>
+
+**Request**:
+
+List of objects, each representing a blocked client and user:
+
+-   `client`: ABAP client
+
+-   `user`: ABAP user
+
+
+Back to [Top](access-control-entities-2b8ee62.md#loio2b8ee62d19db43649365f82f78b185a0__top)
+
+
+
+<a name="loio2b8ee62d19db43649365f82f78b185a0__extend_blocked"/>
+
+## Extend a Blocked Client/User Pair \(Master Only\)
+
+
+<table>
+<tr>
+<td valign="top">
+
+URI
+
+</td>
+<td valign="top">
+
+`/api/v1/configuration/subaccounts/<regionHost>/<subaccount>/systemMapping/<virtualHost>:<virtualPort>/blockedClientUsers` 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Method
+
+</td>
+<td valign="top">
+
+*PATCH* 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Request
+
+</td>
+<td valign="top">
+
+```
+[{client, user}]
+```
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Response
+
+</td>
+<td valign="top">
+
+204 on success
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Errors
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Roles
+
+</td>
+<td valign="top">
+
+Administrator,Subaccount Administrator
+
+</td>
+</tr>
+</table>
+
+**Request**:
+
+List of objects, each representing a blocked client and user:
+
+-   `client`: ABAP client
+
+-   `user`: ABAP user
+
+
+Back to [Top](access-control-entities-2b8ee62.md#loio2b8ee62d19db43649365f82f78b185a0__top)
+
+
+
+<a name="loio2b8ee62d19db43649365f82f78b185a0__delete_clients"/>
+
+## Delete All Allowed Clients \(Master Only\)
+
+
+<table>
+<tr>
+<td valign="top">
+
+URI
+
+</td>
+<td valign="top">
+
+`/api/v1/configuration/subaccounts/<regionHost>/<subaccount>/systemMapping/<virtualHost>:<virtualPort>/allowedClients` 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Method
+
+</td>
+<td valign="top">
+
+*DELETE* 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Request
+
+</td>
+<td valign="top">
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Response
+
+</td>
+<td valign="top">
+
+204 on success
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Errors
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Roles
+
+</td>
+<td valign="top">
+
+Administrator,Subaccount Administrator
+
+</td>
+</tr>
+</table>
+
+Back to [Top](access-control-entities-2b8ee62.md#loio2b8ee62d19db43649365f82f78b185a0__top)
+
+
+
+<a name="loio2b8ee62d19db43649365f82f78b185a0__delete_blocked"/>
+
+## Delete All Blocked Client/User Pairs \(Master Only\)
+
+
+<table>
+<tr>
+<td valign="top">
+
+URI
+
+</td>
+<td valign="top">
+
+`/api/v1/configuration/subaccounts/<regionHost>/<subaccount>/systemMapping/<virtualHost>:<virtualPort>/blockedClientUsers` 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Method
+
+</td>
+<td valign="top">
+
+*DELETE* 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Request
+
+</td>
+<td valign="top">
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Response
+
+</td>
+<td valign="top">
+
+204 on success
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Errors
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Roles
+
+</td>
+<td valign="top">
+
+Administrator,Subaccount Administrator
+
+</td>
+</tr>
+</table>
+
+Back to [Top](access-control-entities-2b8ee62.md#loio2b8ee62d19db43649365f82f78b185a0__top)
+
+
+
+<a name="loio2b8ee62d19db43649365f82f78b185a0__remove_allowed"/>
+
+## Remove an Item from the List of Allowed Clients \(Master Only\)
+
+
+<table>
+<tr>
+<td valign="top">
+
+URI
+
+</td>
+<td valign="top">
+
+`/api/v1/configuration/subaccounts/<regionHost>/<subaccount>/systemMapping/<virtualHost>:<virtualPort>/allowedClients/<client>` 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Method
+
+</td>
+<td valign="top">
+
+*DELETE* 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Request
+
+</td>
+<td valign="top">
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Response
+
+</td>
+<td valign="top">
+
+204 on success
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Errors
+
+</td>
+<td valign="top">
+
+NOT\_FOUND
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Roles
+
+</td>
+<td valign="top">
+
+Administrator,Subaccount Administrator 
+
+</td>
+</tr>
+</table>
+
+Back to [Top](access-control-entities-2b8ee62.md#loio2b8ee62d19db43649365f82f78b185a0__top)
+
+
+
+<a name="loio2b8ee62d19db43649365f82f78b185a0__remove_user"/>
+
+## Remove Items on the List of Blocked Client/User Pairs for a Given User \(Master Only\)
+
+
+<table>
+<tr>
+<td valign="top">
+
+URI
+
+</td>
+<td valign="top">
+
+`/api/v1/configuration/subaccounts/<regionHost>/<subaccount>/systemMapping/<virtualHost>:<virtualPort>/blockedClientUsers/user/<user>` 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Method
+
+</td>
+<td valign="top">
+
+*DELETE* 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Request
+
+</td>
+<td valign="top">
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Response
+
+</td>
+<td valign="top">
+
+204 on success
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Errors
+
+</td>
+<td valign="top">
+
+NOT\_FOUND
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Roles
+
+</td>
+<td valign="top">
+
+Administrator,Subaccount Administrator 
+
+</td>
+</tr>
+</table>
+
+Back to [Top](access-control-entities-2b8ee62.md#loio2b8ee62d19db43649365f82f78b185a0__top)
+
+
+
+<a name="loio2b8ee62d19db43649365f82f78b185a0__remove_client"/>
+
+## Remove Items on the List of Blocked Client/User Pairs for a Given Client \(Master Only\)
+
+
+<table>
+<tr>
+<td valign="top">
+
+URI
+
+</td>
+<td valign="top">
+
+`/api/v1/configuration/subaccounts/<regionHost>/<subaccount>/systemMapping/<virtualHost>:<virtualPort>/blockedClientUsers/client/<client>` 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Method
+
+</td>
+<td valign="top">
+
+*DELETE* 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Request
+
+</td>
+<td valign="top">
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Response
+
+</td>
+<td valign="top">
+
+204 on success
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Errors
+
+</td>
+<td valign="top">
+
+NOT\_FOUND
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Roles
+
+</td>
+<td valign="top">
+
+Administrator,Subaccount Administrator 
+
+</td>
+</tr>
+</table>
+
+Back to [Top](access-control-entities-2b8ee62.md#loio2b8ee62d19db43649365f82f78b185a0__top)
+
+
+
+<a name="loio2b8ee62d19db43649365f82f78b185a0__remove_pair"/>
+
+## Remove an Item on the List of Blocked Client/User Pairs \(Master Only\)
+
+
+<table>
+<tr>
+<td valign="top">
+
+URI
+
+</td>
+<td valign="top">
+
+`/api/v1/configuration/subaccounts/<regionHost>/<subaccount>/systemMapping/<virtualHost>:<virtualPort>/blockedClientUsers/client/<client>:<user>` 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Method
+
+</td>
+<td valign="top">
+
+*DELETE* 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Request
+
+</td>
+<td valign="top">
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Response
+
+</td>
+<td valign="top">
+
+204 on success
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Errors
+
+</td>
+<td valign="top">
+
+NOT\_FOUND
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Roles
+
+</td>
+<td valign="top">
+
+Administrator,Subaccount Administrator 
+
+</td>
+</tr>
+</table>
+
+Back to [Top](access-control-entities-2b8ee62.md#loio2b8ee62d19db43649365f82f78b185a0__top)
+
