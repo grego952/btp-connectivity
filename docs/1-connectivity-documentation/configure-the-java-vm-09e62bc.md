@@ -26,3 +26,8 @@ To change the parameter values, do the following:
 2.  In the *Edit JVM Settings* dialog, change the parameter values as required.
 3.  Choose *Save*.
 
+**Related Information**  
+
+
+[Sizing for the Master Instance](sizing-for-the-master-instance-89e5122.md "Learn more about the basic criteria for the sizing of your Cloud Connector master instance.")
+

@@ -6,7 +6,7 @@ Add additional information to the login screen and configure its appearance.
 
 To configure the login screen information, proceed as follows:
 
-1.  Go to *Configuration* \> *User Interface* and press the *Edit* button in section *Login Screen Information* \(at the bottom of the screen\).
+1.  Go to *Configuration* \> *User Interface* \(Shadow instance: *Shadow Configuration* \> *User Interface*\) and press the *Edit* button in section *Login Screen Information* \(at the bottom of the screen\).
 
     ![](images/SCC_Login_Screen_Config_1_9dd458b.png)
 
@@ -14,7 +14,7 @@ To configure the login screen information, proceed as follows:
 
     ![](images/SCC_Login_Screen_Config_2_557f443.png)
 
-2.  In section *Display Policy*, select a display policy for the login screen information.
+2.  In section *Display Policy*, select a display policy for the login screen information. The display policy decides whether the information is shown if the instance is assuming the role mentioned in the policy.
 3.  In section *Display Properties*, specify your preferred display properties \(appearance and position\):
     -   The login information is displayed in a box with rounded corners. You can specify its width and height in pixels \(unit `px`\) or as a percentage \(unit `%`\).
 
