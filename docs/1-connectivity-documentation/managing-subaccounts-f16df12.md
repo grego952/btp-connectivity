@@ -207,3 +207,5 @@ If you want to connect an additional subaccount with your on-premise landscape, 
 
 [Configure Custom Regions](configure-custom-regions-a994a75.md "Configure regions that are not available in the standard selection.")
 
+[Use a Custom IDP for Subaccount Configuration](use-a-custom-idp-for-subaccount-configuration-2022612.md "Enable custom identity provider (IDP) authentication to configure a Cloud Foundry subaccount in the Cloud Connector by using a one-time passcode.")
+

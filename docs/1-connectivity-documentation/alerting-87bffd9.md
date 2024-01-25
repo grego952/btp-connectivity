@@ -28,7 +28,7 @@ You must specify the receivers of the alert e-mails \(*E-mail Configuration*\) a
 ![](images/SCC_Alerting_-_Email_0c3698f.png)
 
 > ### Note:  
-> Connections to an SMTP server over SSL/TLS can cause SSL errors if the SMTP server uses an "untrusted" certificate. If you cannot use a trusted certificate, you must import the public part of the issuer certificate to the JDK's trust storage.
+> Connections to an SMTP server over TLS can cause TLS errors if the SMTP server uses an "untrusted" certificate. If you cannot use a trusted certificate, you must import the public part of the issuer certificate to the JDK's trust storage.
 > 
 > Usually, the trust storage is done in the file *cacerts* in the Java directory \(`jre/lib/security/cacerts`\). For import, you can use the *keytool* utility:
 > 

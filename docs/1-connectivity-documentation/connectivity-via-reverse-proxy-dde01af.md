@@ -2,7 +2,9 @@
 
 # Connectivity via Reverse Proxy
 
-An alternative approach compared to the SSL VPN solution that is provided by the Cloud Connector is to expose on-premise services and applications via a reverse proxy to the Internet. This method typically uses a reverse proxy setup in a customer's "demilitarized zone" \(DMZ\) subnetwork. The reverse proxy setup does the following:
+The text discusses the use of a reverse proxy as an alternative approach to connect on-premise services to SAP BTP. While it allows for reuse of existing network infrastructure, it exposes services to potential attacks and requires significant involvement from your IT department. The Cloud Connector is recommended as a more secure and efficient solution, providing TLS tunneling and fine-grained access control.
+
+An alternative approach compared to the TLS tunnel solution that is provided by the Cloud Connector is to expose on-premise services and applications via a reverse proxy to the Internet. This method typically uses a reverse proxy setup in a customer's "demilitarized zone" \(DMZ\) subnetwork. The reverse proxy setup does the following:
 
 -   Acts as a mediator between SAP BTP and the on-premise services
 -   Provides the services of an Application Delivery Controller \(ADC\) to, for example, encrypt, filter, route, or check inbound traffic
@@ -45,5 +47,5 @@ Depending on your scenario, you may benefit from the reverse proxy:
 
 
 > ### Note:  
-> Using the Cloud Connector mitigates all of these issues. As it establishes the SSL VPN tunnel to SAP BTP using a reverse invoke approach, there is no need to configure the DMZ or external firewall of a customer network for inbound traffic. Attacks from the Internet are not possible. With its simple setup and fine-grained access control of exposed systems and resources, the Cloud Connector allows a high level of security and fast productive implementation of hybrid applications. It also supports multiple application protocols, such as HTTP and RFC.
+> Using the Cloud Connector mitigates all of these issues. As it establishes the TLS tunnel to SAP BTP using a reverse invoke approach, there is no need to configure the DMZ or external firewall of a customer network for inbound traffic. Attacks from the Internet are not possible. With its simple setup and fine-grained access control of exposed systems and resources, the Cloud Connector allows a high level of security and fast productive implementation of hybrid applications. It also supports multiple application protocols, such as HTTP and RFC.
 

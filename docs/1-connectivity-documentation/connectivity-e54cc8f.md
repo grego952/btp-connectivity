@@ -366,7 +366,7 @@ Back to [Content](connectivity-e54cc8f.md#loioe54cc8fbbb571014beb5caaf6aa31280__
 
 [Cloud Connector](cloud-connector-e6c7616.md "Learn more about the Cloud Connector: features, scenarios and setup.")
 
-[Connectivity via Reverse Proxy](connectivity-via-reverse-proxy-dde01af.md "")
+[Connectivity via Reverse Proxy](connectivity-via-reverse-proxy-dde01af.md "The text discusses the use of a reverse proxy as an alternative approach to connect on-premise services to SAP BTP. While it allows for reuse of existing network infrastructure, it exposes services to potential attacks and requires significant involvement from your IT department. The Cloud Connector is recommended as a more secure and efficient solution, providing TLS tunneling and fine-grained access control.")
 
 [Connectivity Support](connectivity-support-e5580c5.md "Support information for SAP BTP Connectivity and the Cloud Connector.")
 

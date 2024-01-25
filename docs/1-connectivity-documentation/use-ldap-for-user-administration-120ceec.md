@@ -145,7 +145,7 @@ Group membership is checked by the Cloud Connector.
     > If you are using LDAP together with a high availability setup, you cannot use the configuration option `userPattern`. Instead, use a combination of `userSearch`, `userSubtree` and `userBase`.
 
     > ### Caution:  
-    > An LDAP connection over SSL/TLS can cause SSL errors if the LDAP server uses a certificate that is not signed by a trusted CA. If you cannot use a certificate signed by a trusted CA, you must set up the trust relationship manually, that is, import the public part of the issuer certificate to the JDK's trust storage.
+    > An LDAP connection over TLS can cause TLS errors if the LDAP server uses a certificate that is not signed by a trusted CA. If you cannot use a certificate signed by a trusted CA, you must set up the trust relationship manually, that is, import the public part of the issuer certificate to the JDK's trust storage.
     > 
     > Usually, the *cacerts* file inside the java directory \(`jre/lib/security/cacerts`\) is used for trust storage. To import the certificate, you can use *keytool*:
     > 

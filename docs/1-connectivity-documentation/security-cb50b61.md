@@ -109,5 +109,5 @@ The content of this section concerns:
 
 [Security Guidelines](security-guidelines-8db6945.md "Find a checklist of recommended security measures for the Cloud Connector.")
 
- <?sap-ot O2O class="- topic/link " href="531f33def8074ccdb6f1f784a34dafcb.xml" text="" desc="" xtrc="link:2" xtrf="file:/home/builder/src/dita-all/jjq1673438782153/loiob2927cc326be495da9f4fea0b6bda2b3_en-US/src/content/localization/en-us/cb50b6191615478aa11d2050dada467d.xml" ?> 
+ <?sap-ot O2O class="- topic/link " href="531f33def8074ccdb6f1f784a34dafcb.xml" text="" desc="" xtrc="link:2" xtrf="file:/home/builder/src/dita-all/jjq1673438782153/loiob2927cc326be495da9f4fea0b6bda2b3_en-US/src/content/localization/en-us/cb50b6191615478aa11d2050dada467d.xml" output-class="" current-file="file:/home/builder/tp.net.sf.dita-ot/2.3/plugins/com.elovirta.dita.markdown_1.3.0/xsl/dita2markdownImpl.xsl" ?> 
 

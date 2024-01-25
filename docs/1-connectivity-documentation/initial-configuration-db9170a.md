@@ -187,11 +187,6 @@ When logging in for the first time, the following screen is displayed every time
 
 ![](images/SCC_InitialConfig_-_DefineSubaccount_b356833.png)
 
-If your internal landscape is protected by a firewall that blocks any outgoing TCP traffic, you must specify an HTTPS proxy that the Cloud Connector can use to connect to SAP BTP. Normally, you must use the same proxy settings as those being used by your standard Web browser. The Cloud Connector needs this proxy for two operations:
-
--   Download the correct connection configuration corresponding to your subaccount ID in SAP BTP.
--   Establish the SSL tunnel connection from the Cloud Connector user to your SAP BTP subaccount.
-
 > ### Note:  
 > If you want to skip the initial configuration, you can click the ![](images/Skip_initial_configuration_000bd0a.png) icon in the upper right corner. You might need this in case of connectivity issues shown in your logs. You can add subaccounts later as described in [Managing Subaccounts](managing-subaccounts-f16df12.md).
 
@@ -230,15 +225,23 @@ The Cloud Connector collects the following required information for your subacco
     > ### Note:  
     > Location IDs provided in older versions of the Cloud Connector are discarded during upgrade to ensure compatibility for existing scenarios.
 
-5.  Enter a suitable proxy host from your network and the port that is specified for this proxy. If your network requires an authentication for the proxy, enter a corresponding proxy user and password. You must specify a proxy server that supports SSL communication \(a standard HTTP proxy does not suffice\).
+5.  \(Optional\) Enter proxy host and port. Omit the proxy configuration unless your internal landscape is protected by a firewall that blocks any outgoing TCP traffic. In that case, you must specify an HTTPS proxy that the Cloud Connector can use to connect to SAP BTP.
+
+    The Cloud Connector performs two operations for which it may need a proxy in the situation outlined above:
+
+    -   Downloading the correct connection configuration corresponding to your subaccount ID in SAP BTP.
+    -   Establishing the TLS tunnel connection from the Cloud Connector to your SAP BTP subaccount.
 
     > ### Note:  
-    > These settings strongly depend on your specific network setup. If you need more detailed information, please contact your local system administrator.
+    > A proxy server is required to support TLS communication; a standard HTTP proxy will not suffice. Typically, you choose the same proxy settings as those being used by your standard Web browser.
+
+    > ### Note:  
+    > Some proxy servers require credentials for authentication. In this case, you need to provide the relevant user/password information.
 
 6.  \(Optional\) You can provide a *<Description\>* \(free-text\) of the subaccount that is shown when choosing the *Details* icon in the *Actions* column of the *Subaccount Dashboard*. It lets you identify the particular Cloud Connector you use.
 7.  Choose *Save*.
 
-The Cloud Connector now starts a handshake with SAP BTP and attempts to establish a secure SSL tunnel to the server that hosts the subaccount in which your on-demand applications are running. However, no requests are yet allowed to pass from the cloud side to any of your internal back-end systems. To allow your on-demand applications to access specific internal back-end systems, proceed with the access configuration described in the next section.
+The Cloud Connector now starts a handshake with SAP BTP and attempts to establish a secure TLS tunnel to the server that hosts the subaccount in which your on-demand applications are running. However, no requests are yet allowed to pass from the cloud side to any of your internal backend systems. To allow your on-demand applications to access specific internal back-end systems, proceed with the access configuration described in the next section.
 
 > ### Note:  
 > The internal network must allow access to the port. Specific configuration for opening the respective port\(s\) depends on the firewall software used. The default ports are `80` for HTTP and `443` for HTTPS. For RFC communication, you must open a gateway port \(default: `33+<instance number>` and an arbitrary message server port. For a connection to a HANA Database \(on SAP BTP\) via JDBC, you must open an arbitrary *outbound* port in your network. Mail \(SMTP\) communication is not supported.

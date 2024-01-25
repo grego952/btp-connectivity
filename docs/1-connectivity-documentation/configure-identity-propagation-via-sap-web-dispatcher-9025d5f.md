@@ -49,7 +49,7 @@ The following data and setup is used for this scenario:
 -   Your SAP Web Dispatcher version is 7.53 or higher. See SAP note [908097](https://me.sap.com/notes/908097) for information on recommended SAP Web Dispatcher versions.
 -   We recommend that you use a standalone Web Dispatcher deployment. To learn about deployment options, see SAP note [3115889](https://me.sap.com/notes/3115889).
 -   Make sure your SAP Web Dispatcher supports SSL. See [Configure SAP Web Dispatcher to Support SSL](https://help.sap.com/viewer/683d6a1797a34730a6e005d1e8de6f22/latest/en-US/493db10a19341067e10000000a42189c.html).
--   Ensure that SSL client certificates can be used for authentication in the backend system. See [How to Configure SAP Web Dispatcher to Forward SSL Certificates for X.509 Authentication](https://wiki.scn.sap.com/wiki/display/SI/How+to+Configure+SAP+Web+Dispatcher+to+Forward+SSL+Certificates+for+X.509+Authentication) for step-by-step instructions.
+-   Ensure that TLS client certificates can be used for authentication in the backend system. See [How to Configure SAP Web Dispatcher to Forward SSL Certificates for X.509 Authentication](https://wiki.scn.sap.com/wiki/display/SI/How+to+Configure+SAP+Web+Dispatcher+to+Forward+SSL+Certificates+for+X.509+Authentication) for step-by-step instructions.
 
 Back to [Tasks](configure-identity-propagation-via-sap-web-dispatcher-9025d5f.md#loio9025d5f808d14fef9bad1de88d93f3a3__tasks)
 

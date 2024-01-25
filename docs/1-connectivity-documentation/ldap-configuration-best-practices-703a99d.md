@@ -8,7 +8,7 @@ Get background information on LDAP configuration for the Cloud Connector.
 
 [Connect to the LDAP Server](ldap-configuration-best-practices-703a99d.md#loio703a99d1b00d495298d6fd2cf7492e10__connect)
 
-[SSL Issues](ldap-configuration-best-practices-703a99d.md#loio703a99d1b00d495298d6fd2cf7492e10__ssl)
+[TLS Issues](ldap-configuration-best-practices-703a99d.md#loio703a99d1b00d495298d6fd2cf7492e10__ssl)
 
 [Authentication](ldap-configuration-best-practices-703a99d.md#loio703a99d1b00d495298d6fd2cf7492e10__auth)
 
@@ -46,9 +46,9 @@ Back to [Top](ldap-configuration-best-practices-703a99d.md#loio703a99d1b00d49529
 
 ## Connect to the LDAP Server
 
-In a first step, you must establish a connection to the LDAP server. Like an HTTP connection, the connection to LDAP can be secure \(via SSL/TLS\) or plain. It points to a host and port. The address looks like this:
+In a first step, you must establish a connection to the LDAP server. Like an HTTP connection, the connection to LDAP can be secure \(via TLS\) or plain. It points to a host and port. The address looks like this:
 
--   SSL/TLS connection: `ldaps://<ldap.server.in.your.company>:<numeric port>`
+-   TLS connection: `ldaps://<ldap.server.in.your.company>:<numeric port>`
 -   Plain connection: `ldap://<ldap.server.in.your.company>:<numeric port>` 
 
 > ### Sample Code:  
@@ -70,9 +70,9 @@ Back to [Top](ldap-configuration-best-practices-703a99d.md#loio703a99d1b00d49529
 
 <a name="loio703a99d1b00d495298d6fd2cf7492e10__ssl"/>
 
-## SSL Issues
+## TLS Issues
 
-LDAP connection over SSL/TLS will run into SSL errors if the LDAP server uses an "untrusted" certificate. This could be a self-signed certificate or a certificate signed by a generally untrusted authority.
+LDAP connection over TLS will run into TLS errors if the LDAP server uses an "untrusted" certificate. This could be a self-signed certificate or a certificate signed by a generally untrusted authority.
 
 If you cannot use a trusted certificate on your LDAP server, you must import the public part of the issuer certificate to the JDK's trust storage. See the JDK documentation how to do that.
 

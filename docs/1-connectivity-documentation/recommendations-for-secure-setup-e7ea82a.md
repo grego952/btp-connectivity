@@ -85,9 +85,9 @@ Hard drive encryption for machines with a Cloud Connector installation ensures t
 
 ## Supported Protocols
 
-Currently, the protocols HTTP and RFC are supported for connections between the SAP BTP and on-premise systems when the Cloud Connector and the Connectivity service are used. The whole route from the application virtual machine in the cloud to the Cloud Connector is always SSL-encrypted.
+Currently, the protocols HTTP, HTTPS, RFC, RFC with SNC, LDAP, LDAPS, TCP, and TCP over TLS are supported for connections between the SAP BTP and on-premise systems when the Cloud Connector and the Connectivity service are used. The whole route from the application virtual machine in the cloud to the Cloud Connector is always SSL-encrypted.
 
-The route from the connector to the back-end system can be SSL-encrypted or SNC-encrypted. See [Configure Access Control \(HTTP\)](configure-access-control-http-e7d4927.md) and [Configure Access Control \(RFC\)](configure-access-control-rfc-ca58689.md).
+The route from the connector to the back-end system can be TLS-encrypted or SNC-encrypted. See [Configure Access Control \(HTTP\)](configure-access-control-http-e7d4927.md) and [Configure Access Control \(RFC\)](configure-access-control-rfc-ca58689.md).
 
 
 
@@ -130,7 +130,7 @@ Ciphers are either enabled or disabled, and they are either compatible or incomp
 **Related Information**  
 
 
-[Connectivity via Reverse Proxy](connectivity-via-reverse-proxy-dde01af.md "")
+[Connectivity via Reverse Proxy](connectivity-via-reverse-proxy-dde01af.md "The text discusses the use of a reverse proxy as an alternative approach to connect on-premise services to SAP BTP. While it allows for reuse of existing network infrastructure, it exposes services to potential attacks and requires significant involvement from your IT department. The Cloud Connector is recommended as a more secure and efficient solution, providing TLS tunneling and fine-grained access control.")
 
 [Security](security-cb50b61.md "Learn how Cloud Connector features help you manage security.")
 

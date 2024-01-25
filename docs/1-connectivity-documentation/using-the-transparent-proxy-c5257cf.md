@@ -22,5 +22,5 @@ To target a given destination for handling by the transparent proxy, you should 
 
 [Managed Namespaces Mode](managed-namespaces-mode-6588a65.md "Manage namespaces for the transparent proxy for Kubernetes.")
 
-[Communication between Internal Components](communication-between-internal-components-80455ca.md "Configure secure internal communication between transparent proxy components.")
+ <?sap-ot O2O class="- topic/link " href="80455cab3d024991b649963187ec2e17.xml" text="" desc="" xtrc="link:7" xtrf="file:/home/builder/src/dita-all/jjq1673438782153/loiob2927cc326be495da9f4fea0b6bda2b3_en-US/src/content/localization/en-us/c5257cf110bf4b7b9054eab74ededff4.xml" output-class="" current-file="file:/home/builder/tp.net.sf.dita-ot/2.3/plugins/com.elovirta.dita.markdown_1.3.0/xsl/dita2markdownImpl.xsl" ?> 
 

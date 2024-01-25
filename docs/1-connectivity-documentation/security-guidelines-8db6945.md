@@ -133,7 +133,7 @@ Configure a corporate LDAP system for the user management of the Cloud Connector
 
 You can access the Cloud Connector administration UI remotely via HTTPS.
 
-After installation, it uses a self-signed **X.509 certificate** as SSL server certificate, which is not trusted by default by Web browsers.
+After installation, it uses a self-signed **X.509 certificate** as TLS server certificate, which is not trusted by default by Web browsers.
 
 </td>
 <td valign="top">

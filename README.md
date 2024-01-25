@@ -1,4 +1,4 @@
-[![REUSE status]()]()
+[![REUSE status](https://api.reuse.software/badge/github.com/SAP-docs/btp-connectivity)](https://api.reuse.software/info/github.com/SAP-docs/btp-connectivity)
 
 # Contributions to the SAP BTP Connectivity Documentation
 

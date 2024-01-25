@@ -4,7 +4,7 @@
 
 How to update the Java VM used by the Cloud Connector.
 
-Sometimes you must update the Java VM used by the Cloud Connector, for example, because of expired SSL certificates contained in the JVM, bug fixes, deprecated JVM versions, and so on.
+Sometimes you must update the Java VM used by the Cloud Connector, for example, because of expired TLS certificates contained in the JVM trust store, bug fixes, deprecated JVM versions, and so on.
 
 -   If you make a replacement in the same directory, shut down the Cloud Connector, upgrade the JVM, and restart the Cloud Connector when you are done.
 -   **If you change the installation directory** of the JVM, **follow the steps below** for your operating system.

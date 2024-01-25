@@ -227,7 +227,7 @@ Sets up and configures the Cloud Connector. Scenario steps:
 
 1.  Downloads the Cloud Connector from [https://tools.hana.ondemand.com/\#cloud](https://tools.hana.ondemand.com/#cloud)
 2.  Installs the Cloud Connector.
-3.  Establishes an SSL tunnel from the connector to an SAP BTP subaccount.
+3.  Establishes a TLS tunnel from the connector to an SAP BTP subaccount.
 4.  Configures the exposed back-end systems and resources.
 
 **Application Developer**
