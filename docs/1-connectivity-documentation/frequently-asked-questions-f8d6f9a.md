@@ -377,12 +377,6 @@ See: [Prerequisites](prerequisites-e23f776.md).
 
 
 
-### **Can I send push messages from an on-premise system to the SAP BTP through the Cloud Connector?**
-
-No, this is not supported by the Cloud Connector.
-
-
-
 ### **Is NTLM supported for authorization against the proxy server?**
 
 No, the Cloud Connector currently supports only basic authentication.

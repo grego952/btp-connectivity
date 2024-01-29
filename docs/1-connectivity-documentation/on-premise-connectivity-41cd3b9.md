@@ -17,7 +17,7 @@ The transparent proxy handles both HTTP and TCP communication protocols for on-p
 > }
 > ```
 
-To target the destination with name “example-dest-onprem” for handling by the transparent proxy, you should create the following Kubernetes resource in the namespace where the transparent proxy is installed:
+To target the destination with name “example-dest-onprem” for handling by the transparent proxy, you should create the following Kubernetes resource in a namespace of your choice:
 
 
 
@@ -62,11 +62,11 @@ Once done, the application can start consuming the destination from within the K
 
 > ### Sample Code:  
 > ```
-> curl example-onprem.<transparent-proxy-namespace>
+> curl example-dest.<destination-cr-namespace>
 > ```
 
 > ### Note:  
-> The namespace is optional if you install the transparent proxy in the namespace of all your other resources. For more information, see [Kubernetes Namespaces and DNS](https://kubernetes.io/docs/concepts/overview/working-with-objects/namespaces/#namespaces-and-dns).
+> The namespace is optional if you have created the destination custom resource \(CR\) in the namespace of the application that will request it. For more information, see [Kubernetes Namespaces and DNS](https://kubernetes.io/docs/concepts/overview/working-with-objects/namespaces/#namespaces-and-dns).
 
 
 
