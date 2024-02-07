@@ -482,12 +482,28 @@ Wait for the next transparent proxy manager completion.
 <tr>
 <td valign="top">
 
+The `destinations.destination.connectivity.api.sap` custom resource referencing your destination with the name "testdest" has the name "testservice". The call to the "testservice" [Kubernetes service](https://kubernetes.io/docs/concepts/services-networking/service/) returns an unsuccessful status code or the [Kubernetes service](https://kubernetes.io/docs/concepts/services-networking/service/) does not exist. The last condition of type "Available" of the `destinations.destination.connectivity.api.sap` custom resource has the status "False" with the reason *ConfigurationError-ReferencedDestination-LoopbackUrlNotSupported*.
+
+</td>
+<td valign="top">
+
+For the destination with the name "testdest", update the *URL* field with supported values:
+
+Should not be empty, and should not be a loopback URL \(loopback URLs are those, which contain exactly one of the following hosts: "localhost", "127.0.0.1", "::1", "0:0:0:0:0:0:0:1"\).
+
+Wait for the next transparent proxy manager completion.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
 The `destinations.destination.connectivity.api.sap` custom resource referencing your destination with the name "testdest" has the name "testservice". The call to the "testservice" [Kubernetes service](https://kubernetes.io/docs/concepts/services-networking/service/) returns an unsuccessful status code or the [Kubernetes service](https://kubernetes.io/docs/concepts/services-networking/service/) does not exist. The last condition of type "Available" of the `destinations.destination.connectivity.api.sap` custom resource has the status "False" with the reason *ConfigurationError-ReferencedDestination-KeyStoreInvalid*.
 
 </td>
 <td valign="top">
 
-Update the destination with the name "testdest" KeyStoreLocation field with supported values. Supported cert store types are `p12`, `pfx`, `pem`, `der`, `cer`, `crt`.
+For the destination with the name "testdest", update the *KeyStoreLocation* field with supported values. Supported cert store types are `p12`, `pfx`, `pem`, `der`, `cer`, `crt`.
 
 </td>
 </tr>
@@ -499,7 +515,7 @@ The `destinations.destination.connectivity.api.sap` custom resource referencing 
 </td>
 <td valign="top">
 
-Update the destination with the name "testdest" TrustStoreLocation field with supported values. Supported cert store types are `p12`, `pfx`, `pem`, `der`, `cer`, `crt`.
+For the destination with the name "testdest", update the *TrustStoreLocation* field with supported values. Supported cert store types are `p12`, `pfx`, `pem`, `der`, `cer`, `crt`.
 
 </td>
 </tr>

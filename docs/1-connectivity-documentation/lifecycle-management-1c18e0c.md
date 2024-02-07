@@ -14,7 +14,7 @@ The transparent proxy Helm chart is available via the RBSC \(*repository-based s
 
 ## Latest Helm Chart Version
 
-The latest helm chart version is 1.4.1 for both RBSC and DockerHub.
+The latest helm chart version is 1.4.3 for both RBSC and DockerHub.
 
 
 
@@ -24,7 +24,7 @@ The latest helm chart version is 1.4.1 for both RBSC and DockerHub.
 
 **Registry:** 73554900100900006891.helmsrv.cdn.repositories.cloud.sap
 
-**Tag:** 1.4.1
+**Tag:** 1.4.3
 
 **Authorization**: See [RBSC documentation](https://help.sap.com/viewer/0a64be17478d4f5ba45d14ab62b0d74c/Cloud/en-US/7e83dfc309834942b441fc2106c5b7f5.html).
 

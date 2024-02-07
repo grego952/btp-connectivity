@@ -414,7 +414,7 @@ Errors
 </td>
 <td valign="top">
 
-INVALID\_REQUEST, ILLEGAL\_STATE
+INVALID\_REQUEST, ILLEGAL\_STATE, RUNTIME\_FAILURE
 
 </td>
 </tr>
@@ -442,6 +442,7 @@ Administrator
 
 -   `INVALID_REQUEST` \(400\): Invalid or missing property values were supplied; this includes wrong user or password
 -   `ILLEGAL_STATE` \(409\): The requested operation cannot be executed given the current state of master and shadow instance. This typically means the master instance does not allow high availability.
+-   `RUNTIME_FAILURE` \(500\): communication error between shadow and master, e.g. handshake failure or master does not respond.
 
 > ### Note:  
 > The logon credentials are used for initial logon to master instance only. If a shadow instance is disconnected from its master instance, it will reconnect to the \(same\) master instance using a certificate. Hence, user and password can be omitted when reconnecting.

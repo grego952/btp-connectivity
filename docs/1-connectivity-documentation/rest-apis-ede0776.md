@@ -36,7 +36,7 @@ The payload \(that is, the data transmitted in the body\) of requests and respon
 
 Values that represent a date are provided as a UTC long number, which is the number of milliseconds since 1 January 1970 00:00:00 UT \(GMT+00\).
 
-In case of errors, the HTTP status code is *4xx*. Error details are supplied in the response body in JSON format:
+In case of errors, the HTTP status code is *4xx* or *500*. Error details are supplied in the response body in JSON format:
 
 ```
 {type: <type>, message: <message>}
@@ -195,9 +195,6 @@ The following general errors can be returned by each API:
 -   500 – Operation failed.
 
 Most APIs return specific error details depending on the situation. Such errors are addressed by the respective API description.
-
-> ### Note:  
-> The error texts depend on the request locale.
 
 Back to [Top](rest-apis-ede0776.md#loioede077617d9d4181b5c755fed15e56c3__top)
 
