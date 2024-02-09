@@ -749,7 +749,7 @@ Europe \(Frankfurt\) - AWS
 > 
 > **Action:**
 > 
-> If you restrict system access by *allowlisting IPs* in firewall rules, make sure you update your configuration accordingly. The new IP addresses may be used starting from end of Q1, 2024.
+> If you restrict system access by *allowlisting IPs* in firewall rules, make sure you update your configuration as soon as possible. The new IP addresses may be used starting from end of Q1, 2024.
 
 
 
@@ -861,7 +861,7 @@ Europe \(Frankfurt\) - AWS
 > 
 > **Action:**
 > 
-> If you restrict system access by *allowlisting IPs* in firewall rules, make sure you update your configuration accordingly. The new IP addresses may be used starting from end of Q1, 2024.
+> If you restrict system access by *allowlisting IPs* in firewall rules, make sure you update your configuration as soon as possible. The new IP addresses may be used starting from end of Q1, 2024.
 
 
 
@@ -1025,7 +1025,7 @@ US East \(VA\) - AWS
 > 
 > **Action:**
 > 
-> If you restrict system access by *allowlisting IPs* in firewall rules, make sure you update your configuration accordingly. The new IP addresses may be used starting from end of Q1, 2024.
+> If you restrict system access by *allowlisting IPs* in firewall rules, make sure you update your configuration as soon as possible. The new IP addresses may be used starting from end of Q1, 2024.
 
 
 
@@ -1250,7 +1250,7 @@ Brazil \(São Paulo\) - AWS
 > 
 > **Action:**
 > 
-> If you restrict system access by *allowlisting IPs* in firewall rules, make sure you update your configuration accordingly. The new IP addresses may be used starting from end of Q1, 2024.
+> If you restrict system access by *allowlisting IPs* in firewall rules, make sure you update your configuration as soon as possible. The new IP addresses may be used starting from end of Q1, 2024.
 
 
 
@@ -1314,7 +1314,7 @@ Japan \(Tokyo\) - AWS
 > 
 > **Action:**
 > 
-> If you restrict system access by *allowlisting IPs* in firewall rules, make sure you update your configuration accordingly. The new IP addresses may be used starting from end of Q1, 2024.
+> If you restrict system access by *allowlisting IPs* in firewall rules, make sure you update your configuration as soon as possible. The new IP addresses may be used starting from end of Q1, 2024.
 
 
 
@@ -1421,7 +1421,7 @@ Australia \(Sydney\) - AWS
 > 
 > **Action:**
 > 
-> If you restrict system access by *allowlisting IPs* in firewall rules, make sure you update your configuration accordingly. The new IP addresses may be used starting from end of Q1, 2024.
+> If you restrict system access by *allowlisting IPs* in firewall rules, make sure you update your configuration as soon as possible. The new IP addresses may be used starting from end of Q1, 2024.
 
 
 
@@ -1485,7 +1485,7 @@ Asia Pacific \(Singapore\) - AWS
 > 
 > **Action:**
 > 
-> If you restrict system access by *allowlisting IPs* in firewall rules, make sure you update your configuration accordingly. The new IP addresses may be used starting from end of Q1, 2024.
+> If you restrict system access by *allowlisting IPs* in firewall rules, make sure you update your configuration as soon as possible. The new IP addresses may be used starting from end of Q1, 2024.
 
 
 
@@ -1549,7 +1549,7 @@ Asia Pacific \(Seoul\) - AWS
 > 
 > **Action:**
 > 
-> If you restrict system access by *allowlisting IPs* in firewall rules, make sure you update your configuration accordingly. The new IP addresses may be used starting from end of Q1, 2024.
+> If you restrict system access by *allowlisting IPs* in firewall rules, make sure you update your configuration as soon as possible. The new IP addresses may be used starting from end of Q1, 2024.
 
 
 
@@ -1701,7 +1701,7 @@ Canada \(Montreal\) - AWS
 > 
 > **Action:**
 > 
-> If you restrict system access by *allowlisting IPs* in firewall rules, make sure you update your configuration accordingly. The new IP addresses may be used starting from end of Q1, 2024.
+> If you restrict system access by *allowlisting IPs* in firewall rules, make sure you update your configuration as soon as possible. The new IP addresses may be used starting from end of Q1, 2024.
 
 
 

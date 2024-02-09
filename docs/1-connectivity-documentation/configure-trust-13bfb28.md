@@ -83,7 +83,9 @@ To enable secured backend communication, you must add trusted certificate author
 > You must provide the CA's X.509 certificates in `DER` or `PEM` format.
 
 > ### Caution:  
-> If you don't want to specify explicit CAs you are going to trust, but rather **trust all backends**, you can switch off the handle. In this case, the allowlist is ignored. This option considered less secure, since all backends are trusted now.
+> If you don't want to specify explicit CAs for trust, but rather **trust all certificates used by your backends**, you can switch off the trust store. In this case, the allowlist is ignored. However, this is considered less secure, since all server certificates are trusted and the issuing CA is not checked.
+> 
+> As a result, certain attacks on the hop between Cloud Connector and internal systems can be performed more easily. Therefore, **we strongly recommend that you *don't do this in productive installations***.
 > 
 > ![](images/SCC_Configure_Trust_-_Trust_Store_TrustAll_bb6c361.png)
 
