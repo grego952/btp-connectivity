@@ -54,7 +54,7 @@ Install the shadow instance in the same network segment as the master instance. 
 
     ![](images/SCC_HA_-_Installation_Type_fd13d62.png)
 
-2.  From the main menu, choose *Shadow Connector* and provide connection data for the master instance, that is, the master host and port. As of version 2.8.1.1, you can choose from the list of known host names, to use the host name under which the shadow host is visible to the master. You can specify a host name manually, if the one you want is not on the list. For the first connection, you must log on to the master instance, using the user name and password for the master instance. The master and shadow instances exchange X.509 certificates, which will be used for mutual authentication.
+2.  From the main menu, choose *Shadow Connector* and provide connection data for the master instance, that is, the master host and port. You can choose from the list of known host names, to use the host name under which the shadow host is visible to the master. You can specify a host name manually, if the one you want is not on the list. For the first connection, you must log on to the master instance, using the user name and password for the master instance. The master and shadow instances exchange X.509 certificates, which will be used for mutual authentication.
 
     ![](images/SCC_HA_-_Shadow_Edit_5499f27.png)
 
@@ -66,7 +66,7 @@ Install the shadow instance in the same network segment as the master instance. 
 
     ![](images/SCC_HA_-_ShadowInfoMaster_f78b153.png)
 
-5.  As of version **2.6.0**, the *High Availability* view includes an *Alert Messages* panel. It displays alerts if configuration changes have not been pushed successfully. This might happen, for example, if a temporary network failure occurs at the same time a configuration change is made. This panel lets an administrator know if there is an inconsistency in the configuration data between master and shadow that could cause trouble if the shadow needs to take over. Typically, the master recognizes this situation and tries to push the configuration change at a later time automatically. If this is successful, all failure alerts are removed and replaced by a warning alert showing that there had been trouble before. As of version **2.8.0.1**, these alerts have been integrated in the general *Alerting* section; there is no longer a separate *Alert Messages* panel.
+5.  *High Availability* alert messages inform you if configuration changes have not been pushed successfully. This might happen, for example, if a temporary network failure occurs at the same time a configuration change is made. As an administrator, you can check if there is an inconsistency in the configuration data between master and shadow that could cause trouble if the shadow needs to take over. Typically, the master recognizes this situation and tries to push the configuration change at a later time automatically. If this is successful, all failure alerts are removed and replaced by a warning alert showing that there had been trouble before. These alerts are diesplayed in the general *Alerting* section.
 
     If the master doesn't recover automatically, disconnect, then reconnect the shadow, which triggers a complete configuration transfer.
 

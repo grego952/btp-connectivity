@@ -41,7 +41,7 @@ By default, the Cloud Connector includes a self-signed UI certificate. It is use
 
     ![](images/SCC_Exchange_UI_Certificates_-_2_13_0430eef.png)
 
-    As of Cloud Connector version 2.13, you can also upload an existing PKCS\#12 certificate directly \(instead of generating a CSR\).
+    You can also upload an existing PKCS\#12 certificate directly \(instead of generating a CSR\).
 
     ![](images/ExchangeUICertificates_2_13_PKCS_12_60499b9.png)
 

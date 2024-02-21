@@ -84,7 +84,7 @@ Using the selection menu, you can assign values for the following parameters:
 > ### Note:  
 > If the token provided by the Identity Provider contains additional values that are stored in attributes with different names, but you still want to use it for the subject pattern, you can edit the variable name to place the corresponding attribute value in the subject accordingly. For example, provide `${email}`, if a SAML assertion uses `email` instead of providing `mail`, or `${user_uuid}` if the attribute `user_uuid` representing the global user ID is contained in the assertion.
 > 
-> When using a subaccount in the **Cloud Foundry** environment: As of version 2.12.5, the Cloud Connector also offers direct access to custom variables injected in the JWT \(JSON Web token\) by SAP BTP *Authorization & Trust Management* that were taken over from a SAML assertion.
+> When using a subaccount in the **Cloud Foundry** environment: The Cloud Connector also offers direct access to custom variables injected in the JWT \(JSON Web token\) by SAP BTP *Authorization & Trust Management* that were taken over from a SAML assertion.
 
 The values for these variables are provided by the trusted identiy provider in the token which is passed to the Cloud Connector and specifies the user that has logged on to the cloud application.
 
@@ -118,7 +118,7 @@ By choosing *Generate Sample Certificate* you can create a sample certificate th
 
 You can change the validity settings by choosing the *Edit* button.
 
-![](images/SCC_SubjectPattern_-_Validity_c6975b3.png)
+![]()
 
 **Related Information**  
 

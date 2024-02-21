@@ -32,16 +32,25 @@ You have logged into the cockpit and opened the *Destinations* editor.
     > ### Note:  
     > To access a mail server located in your own network \(via Cloud Connector\), choose `OnPremise`. To access an external mail server, choose `Internet`.
 
-6.  Optional: You can enter additional properties.
+6.  Choose the *Authentication* type to be used for the destination and enter the required parameters. For a detailed parameter description, see [Configuring Authentication](http-destinations-42a0e6b.md#loio42a0e6b966924f2e902090bdf435e1b2__config).
+
+7.  Enter the additional property *mail.smtp.host* to specify the address of the target mail server.
+
+    1.  In the *Additional Properties* panel, choose *New Property*.
+
+    2.  Choose *mail.smtp.host* from the dropdown menu and specify a value for the property.
+
+
+8.  \(Optional\) You can enter more additional properties.
 
     1.  In the *Additional Properties* panel, choose *New Property*.
 
     2.  Enter a key \(name\) or choose one from the dropdown menu and specify a value for the property. You can add as many properties as you need. Each key of an additional property must start with "`mail.`".
 
-    3.  To delete a property, choose the ![](images/Delete_property_cockpit_321c7c7.png) button next to it.
+    3.  To remove a property, choose the *Remove* button next to it.
 
 
-7.  When you are ready, choose the *Save* button.
+9.  When you are done, choose *Save*.
 
 
 **Related Information**  

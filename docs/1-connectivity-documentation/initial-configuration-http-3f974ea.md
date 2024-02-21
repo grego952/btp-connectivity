@@ -8,7 +8,7 @@ Configure the Cloud Connector for HTTP communication.
 
 <a name="loio3f974eae3cba4dafa274ec59f69daba6__section_N1001A_N10011_N10001"/>
 
-## Installation of a System Certificate for Mutual Authentication
+## Install a System Certificate for Mutual Authentication
 
 To set up a mutual authentication between the Cloud Connector and any backend system it connects to, you can import an X.509 client certificate into the Cloud Connector. The Cloud Connector then uses the so-called *system certificate* for all HTTPS requests to backends that request or require a client certificate. The certificate authority \(CA\) that signed the Cloud Connector's system certificate must be trusted by all backend systems to which the Cloud Connector is supposed to connect.
 
@@ -36,7 +36,17 @@ If a system certificate has been imported successfully, its distinguished name, 
 
 ![](images/SCC_CS_InitialConfigHTTP_-_ImportCertificate_Result_e78de6b.png)
 
-If a system certificate is no longer required, you can delete it. To do this, use the respective button and confirm deletion. If you need the public key for establishing trust with a server, you can simply export the full chain via the *Export* button.
+
+
+<a name="loio3f974eae3cba4dafa274ec59f69daba6__section_vnt_vm3_m1c"/>
+
+## Delete, Export, or Renew a System Certificate
+
+You can delete a system certificate that is no longer required. To do this, use the respective button and confirm deletion.
+
+If you need the public key for establishing trust with a server, you can export the full chain via the *Export* button.
+
+To renew a certificate that is close to expiration, install the new certificate as described above. This will replace the expiring certificate.
 
 **Related Information**  
 

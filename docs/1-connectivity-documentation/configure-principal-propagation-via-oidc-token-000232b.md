@@ -74,7 +74,7 @@ Back to [Tasks](configure-principal-propagation-via-oidc-token-000232b.md#loio00
 
 ![](images/CS_TASK_Dev_a4c82d5.png)
 
-As of version 2.13.0, the Cloud Connector supports principal propagation for OIDC tokens. If on the cloud application side the user is represented by an OIDC token, the application can send the user principal to the Connectivity service \(thus reaching the Cloud Connector\), using the `SAP-Connectivity-Authentication` HTTP header.
+The Cloud Connector supports principal propagation for OIDC tokens. If on the cloud application side the user is represented by an OIDC token, the application can send the user principal to the Connectivity service \(thus reaching the Cloud Connector\), using the `SAP-Connectivity-Authentication` HTTP header.
 
 The Cloud Connector validates the token, extracts the available user data, and enables further processing through a configured subject pattern for the resulting short-lived X.509 client certificate.
 

@@ -82,7 +82,7 @@ Back to [Top](rest-apis-ede0776.md#loioede077617d9d4181b5c755fed15e56c3__top)
 
 ## User Roles
 
-As of Cloud Connector 2.12, the REST API supports different user roles. Depending on the role, an API grants or denies access. In default configuration, the Cloud Connector uses local user storage and supports the single user *Administrator* \(administrator role\). Using LDAP user storage, you can use various users:
+The REST API supports different user roles. Depending on the role, an API grants or denies access. In default configuration, the Cloud Connector uses local user storage and supports the single user *Administrator* \(administrator role\). Using LDAP user storage, you can use various users:
 
 
 <table>

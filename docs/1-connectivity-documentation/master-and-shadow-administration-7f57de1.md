@@ -8,7 +8,7 @@
 
 There are several administration activities you can perform on the shadow instance. All configuration of tunnel connections, host mappings, access rules, and so on, must be maintained on the master instance; however, you can replicate them to the shadow instance for display purposes. You may want to modify the **check interval** \(time between checks of whether the master is still alive\) and the **takeover delay** \(time the shadow waits to see whether the master would come back online, before taking over the master role itself\).
 
-As of Cloud Connector version 2.11.2, you can configure the timeout for the connection check, by pressing the gear icon in the section *Connection To Master* of the shadow connector main page.
+You can configure the timeout for the connection check, by pressing the gear icon in the section *Connection To Master* of the shadow connector main page.
 
 ![](images/SCC_HA_-_Shadow_TimoutSettings_355ae0c.png)
 

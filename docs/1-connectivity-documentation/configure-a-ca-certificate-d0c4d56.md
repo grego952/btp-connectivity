@@ -34,7 +34,7 @@ Use either of the following options to install a local CA certificate:
 
 -   Option 1: Choose the PKCS\#12 file from the file system, using the file upload dialog. For the import process, you must also provide the file password.
 -   Option 2: Start a *Certificate Signing Request* \(CSR\) procedure like for the UI certificate, see [Exchange UI Certificates in the Administration UI](exchange-ui-certificates-in-the-administration-ui-b70bf16.md).
--   Option 3: \(As of version 2.10\) Generate a self-signed certificate, which might be useful in a demo setup or if you need a dedicated CA. In particular for this option, it is useful to export the public key of the CA via the button *Download certificate in DER format*.
+-   Option 3: Generate a self-signed certificate, which might be useful in a demo setup or if you need a dedicated CA. In particular for this option, it is useful to export the public key of the CA via the button *Download certificate in DER format*.
 
 > ### Caution:  
 > The CA certificate should have the `KeyUsage` attribute `keyCertSign`. Many systems verify that the issuer of a certificate has this attribute and deny a client certificate, if this attribute is not present. When using the *Certificate Signing Request* procedure, the attribute will be requested for the CA certificate. Also, when generating a self-signed certificate, this attribute will be added automatically.

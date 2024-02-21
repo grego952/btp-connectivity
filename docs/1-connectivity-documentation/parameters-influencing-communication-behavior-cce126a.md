@@ -76,7 +76,7 @@ Defines the Cloud Connector version used for establishing a connection to the on
 </td>
 <td valign="top">
 
-As of Cloud Connector 2.9.0, you can connect multiple Cloud Connectors to a subaccount as long as their location ID is different. The location ID specifies the Cloud Connector over which the connection is opened. The default value is an empty string identifying the Cloud Connector that is connected without any location ID. This is also valid for all Cloud Connector versions prior to 2.9.0.
+You can connect multiple Cloud Connectors to a subaccount as long as their location ID is different. The location ID specifies the Cloud Connector over which the connection is opened. The default value is an empty string identifying the Cloud Connector that is connected without any location ID.
 
 > ### Note:  
 > When working with the *Destinations* editor in the cockpit, enter the Cloud Connector location ID in the *<Location ID\>* field. Do not enter it as additional property.

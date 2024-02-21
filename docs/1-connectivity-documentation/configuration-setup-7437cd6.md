@@ -8,7 +8,7 @@ This section provides detailed information how you can adjust the configuration 
 
 To change the connection parameters, proceed as follows:
 
--   As of Cloud Connector 2.11, you can configure the number of physical connections through the Cloud Connector UI. See also [Configure Advanced Connectivity](configure-advanced-connectivity-3975253.md).
+-   You can configure the number of physical connections through the Cloud Connector UI. See also [Configure Advanced Connectivity](configure-advanced-connectivity-3975253.md).
 -   In versions prior to 2.11, you have to modify the configuration files with an editor and restart the Cloud Connector to activate the changes.
 
 In general, the Cloud Connector tunnel is multiplexing multiple virtual connections over a single physical connection. Thus, a single connection can handle a considerable amount of traffic. However, increasing the maximum number of physical connections allows you to make use of the full available bandwidth and to minimize latency effects.

@@ -43,7 +43,7 @@ Back to [Tasks](configure-accessible-resources-3b12086.md#loio3b12086100b344d39a
 
 ## Use Scenarios for Resources
 
-As of version 2.12, the Cloud Connector lets you define a set of resources as a scenario that you can export, and import into another Cloud Connector.
+The Cloud Connector lets you define a set of resources as a scenario that you can export, and import into another Cloud Connector.
 
 Scenarios are useful if you provide an application to many consumers, which invokes a large number of resources in an on-premise system. In this case, you must expose a system on your Cloud Connector that covers all required resources, which increases the risk of incorrect configuration.
 

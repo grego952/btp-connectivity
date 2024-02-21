@@ -12,14 +12,14 @@ If you want to monitor the Cloud Connector with the SAP Solution Manager, you ca
 
 ## Prerequisites
 
--   You have installed the SAP Diagnostics Agent and SAP Host Agent on the Cloud Connector host and connected them to the SAP Solution Manager. As of Cloud Connector version 2.11.2, the RPM on Linux ensures that the host agent configuration is adjusted and that user groups are setup correctly.
+-   You have installed the SAP Diagnostics Agent and SAP Host Agent on the Cloud Connector host and connected them to the SAP Solution Manager. The RPM on Linux ensures that the host agent configuration is adjusted and that user groups are setup correctly.
 
     For more details about the host agent and diagnostics agent, see [SAP Host Agent](https://help.sap.com/viewer/3ce0859db2164fe19541dda577d29020/7.52.0/en-US) and the SCN Wiki [SAP Solution Manager Setup/Managed System Checklist](https://wiki.scn.sap.com/wiki/display/SMSETUP/Managed+System+Checklist).
 
     See also SAP notes [2607632](https://me.sap.com/notes/2607632) \(*SAP Solution Manager 7.2 - Managed System Configuration for SAP Cloud Connector*\) and [1018839](https://me.sap.com/notes/1018839) \(*Registering in the System Landscape Directory using sldreg*\). For consulting, contact your local SAP partner.
 
     > ### Note:  
-    > Linux OS: if you installed the host agent after installing the Cloud Connector, you can execute `enableSolMan.sh` in the installation directory \(available as of Cloud Connector version 2.11.2\) to adjust the host agent configuration and user group setup. This action requires root permission.
+    > Linux OS: if you installed the host agent after installing the Cloud Connector, you can execute `enableSolMan.sh` in the installation directory to adjust the host agent configuration and user group setup. This action requires root permission.
 
 -   The SAP Solution Manager must be of release 7.2 SP06 or higher.
 

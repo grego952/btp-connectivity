@@ -91,7 +91,7 @@ systemd distributions: systemctl stop|restart|start|status scc_daemon
 > 
 > **Example**: After a file system restore, the system files represent Cloud Connector 2.3.0 but the RPM package management "believes" that version 2.4.3 is installed. In this case, commands like `rpm -U` and `rpm -e` do not work as expected. Furthermore, avoid using the `--force` parameter as it may lead to an unpredictable state with two versions being installed concurrently, which is not supported.
 
-**Extending the Daemon \(as of Cloud Connector version 2.12.3\)**
+**Extending the Daemon**
 
 When using SNC for encrypting RFC communication, it might be required to provide some settings, for example, environment variables that must be visible for the Cloud Connector process. To achieve this, you must store a file named `scc_daemon_extension.sh` in the installation directory of the Cloud Connector \(`/opt/sap/scc`\), containing all commands needed for initialization without a shebang.
 

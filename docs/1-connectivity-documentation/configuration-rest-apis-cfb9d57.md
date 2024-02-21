@@ -10,7 +10,7 @@ You can use a set of APIs to perform the basic setup of the Cloud Connector.
 
 ## Context
 
-As of version 2.11, the Cloud Connector provides several REST APIs that let you configure a newly installed Cloud Connector. The configuration options correspond to the following steps:
+The Cloud Connector provides several REST APIs that let you configure a newly installed Cloud Connector. The configuration options correspond to the following steps:
 
 -   [Initial Configuration](initial-configuration-db9170a.md)
 
