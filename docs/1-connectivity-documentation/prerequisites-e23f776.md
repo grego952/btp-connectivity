@@ -3034,7 +3034,7 @@ Back to [Content](prerequisites-e23f776.md#loioe23f776e4d594fdbaeeb1196d47bbcc0_
 
 [Installation on Linux OS](installation-on-linux-os-f069840.md "Installing the Cloud Connector on a Linux operating system.")
 
-[Installation on Mac OS X](installation-on-mac-os-x-6c3eec1.md "Installing the Cloud Connector on a Mac OS X operating system.")
+[Installation on Apple macOS](installation-on-apple-macos-6c3eec1.md "Installing the Cloud Connector on an Apple macOS operating system.")
 
 [Recommendations for Secure Setup](recommendations-for-secure-setup-e7ea82a.md "For the Connectivity service and the Cloud Connector, you should apply the following guidelines to guarantee the highest level of security for these components.")
 

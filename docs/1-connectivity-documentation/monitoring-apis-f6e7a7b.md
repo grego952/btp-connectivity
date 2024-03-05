@@ -833,23 +833,23 @@ Administrator, Monitoring
 **Response Properties:**
 
 -   `physicalKB`: usage of the physical memory, split into four categories \(all sizes in KB\):
-    -   `total`: the total size of the physical memory
-    -   `CloudConnector`: the size of the physical memory used by the Cloud Connector
-    -   `others`: the size of the physical memory used by all other processes
-    -   `free`: the size of the free physical memory
+    -   `total`: total size of the physical memory
+    -   `CloudConnector`: size of the physical memory used by the Cloud Connector
+    -   `others`: size of the physical memory used by all other processes
+    -   `free`: size of the free physical memory
 
 
 -   `virtualKB` : usage of the virtual memory, split into four categories \(all sizes in KB\)
-    -   `total`: the total size of the virtual memory
-    -   `CloudConnector`: the size of the virtual memory used by the Cloud Connector
-    -   `others`: the size of the virtual memory used by all other processes
-    -   `free`: the size of the free virtual memory
+    -   `total`: total size of the virtual memory
+    -   `CloudConnector`: size of the virtual memory used by the Cloud Connector
+    -   `others`: size of the virtual memory used by all other processes
+    -   `free`: size of the free virtual memory
 
 
 -   `cloudConnectorHeapKB` : usage of the Java heap, split into three categories \(all sizes in KB\):
-    -   `total`: the total size of the Java heap
-    -   `used`: the size of the Java heap used by the Cloud Connector
-    -   `free`: the size of the free Java heap
+    -   `total`: total size of the Java heap
+    -   `used`: size of the Java heap used by the Cloud Connector
+    -   `free`: size of the free Java heap
 
 
 > ### Sample Code:  
@@ -956,13 +956,13 @@ Administrator, Monitoring
 
 **Response Properties:**
 
--   `expired`: the list of all expired certificates
--   `expiring`: the list of all certificates that will expire in less than N days, where N is the number of days specified in the alerting setup regarding certificates that are close to their expiration date
--   `ok`: the list of all certificates that continue to be valid for N days or more, where N is the number of days specified in the alerting setup regarding certificates that are close to their expiration date
+-   `expired`: list of all expired certificates
+-   `expiring`: list of all certificates that will expire in less than N days, where N is the number of days specified in the alerting setup regarding certificates that are close to their expiration date
+-   `ok`: list of all certificates that continue to be valid for N days or more, where N is the number of days specified in the alerting setup regarding certificates that are close to their expiration date
 
 A certificate in any of those lists is represented by a JSON object with the following properties:
 
--   `type`: the type of the certificate which can be one of the following strings:
+-   `type`: type of the certificate which can be one of the following strings:
     -   `UI` \(for the UI certificate\)
 
     -   `System` \(for the system certificate\)
@@ -972,10 +972,12 @@ A certificate in any of those lists is represented by a JSON object with the fol
     -   `subaccount` \(for subaccount certificates\)
 
 
--   `validTo`: the end date of the respective certificate's validty \(as a long integer, that is, a UTC timestamp\)
--   `subjectDN`: the subject DN of the respective certificate \(included only for non-subaccount certificates\)
--   `subaccountName`: the name of the subaccount \(only for subaccount certificates\)
--   `subaccountRegion`: the region or landscape host of the the subaccount \(only for subaccount certificates\)
+-   `validTo`: end date of the respective certificate's validty \(as a long integer, that is, a UTC timestamp\)
+-   `subjectDN`: subject DN of the respective certificate \(included only for non-subaccount certificates\)
+-   `issuerDN`: issuer DN of the respective certificate \(included only for non-subaccount certificates\)
+-   `serialNumber`: serial number of the respective certificate as hex-encoded string \(included only for non-subaccount certificates\)
+-   `subaccountName`: name of the subaccount \(only for subaccount certificates\)
+-   `subaccountRegion`: region or landscape host of the the subaccount \(only for subaccount certificates\)
 
 > ### Sample Code:  
 > ```
@@ -1089,7 +1091,7 @@ Administrator, Monitoring
 
 **Response Properties:**
 
--   `type`: the type of the certificate which can be one of the following strings:
+-   `type`: type of the certificate which can be one of the following strings:
     -   `UI` \(for the UI certificate\)
 
     -   `System` \(for the system certificate\)
@@ -1099,10 +1101,10 @@ Administrator, Monitoring
     -   `subaccount` \(for subaccount certificates\)
 
 
--   `validTo`: the end date of the respective certificate's validty \(as a long integer, that is, a UTC timestamp\)
--   `subjectDN`: the subject DN of the respective certificate \(included only for non-subaccount certificates\)
--   `subaccountName`: the name of the subaccount \(only for subaccount certificates\)
--   `subaccountRegion`: the region or landscape host of the the subaccount \(only for subaccount certificates\)
+-   `validTo`: end date of the respective certificate's validty \(as a long integer, that is, a UTC timestamp\)
+-   `subjectDN`: subject DN of the respective certificate \(included only for non-subaccount certificates\)
+-   `subaccountName`: name of the subaccount \(only for subaccount certificates\)
+-   `subaccountRegion`: region or landscape host of the the subaccount \(only for subaccount certificates\)
 
 > ### Sample Code:  
 > ```

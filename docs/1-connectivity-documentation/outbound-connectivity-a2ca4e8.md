@@ -20,5 +20,5 @@ To use the database tunnel, two different SAP BTP users are required:
 **Related Information**  
 
 
-[Using Service Channels](using-service-channels-16f6342.md "Configure Cloud Connector service channels to connect your on-premise network to specific services on SAP BTP.")
+[Using Service Channels](using-service-channels-16f6342.md "Configure Cloud Connector service channels to connect your on-premise network to specific services on SAP BTP or to an ABAP Cloud system.")
 

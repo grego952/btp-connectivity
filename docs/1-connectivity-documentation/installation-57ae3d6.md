@@ -51,7 +51,7 @@ On **Microsoft Windows** and **Linux**, two installation modes are available: a 
 
 -   [Installation on Microsoft Windows OS](installation-on-microsoft-windows-os-204aaad.md)
 -   [Installation on Linux OS](installation-on-linux-os-f069840.md)
--   [Installation on Mac OS X](installation-on-mac-os-x-6c3eec1.md)
+-   [Installation on Apple macOS](installation-on-apple-macos-6c3eec1.md)
 
 **Related Information**  
 

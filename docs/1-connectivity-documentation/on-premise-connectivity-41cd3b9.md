@@ -4,7 +4,19 @@
 
 Use the transparent proxy for Kubernetes to set up connections of type `on-premise`.
 
-The transparent proxy handles both HTTP and TCP communication protocols for on-premise destinations. As an application developer, you must create an SAP BTP destination of proxy type `OnPremise`, for example:
+The transparent proxy handles both HTTP and TCP communication protocols for on-premise destinations. To use the on-premise scenarios, as an application developer you need to install a connectivity proxy and integrate it with the transparent proxy. This happens in the transparent proxy configuration integration section. For example:
+
+> ### Sample Code:  
+> ```
+> integration:
+>   connectivityProxy:
+>     serviceName: connectivity-proxy.<namespace>
+>     serviceCredentials:
+>       secretName: <the secret that contains the connectivity proxy instance credentials>
+>       secretNamespace: <the secret namespace>
+> ```
+
+Then, you must create an SAP BTP destination of proxy type `OnPremise`, for example:
 
 > ### Sample Code:  
 > ```

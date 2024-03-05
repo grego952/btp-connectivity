@@ -709,6 +709,23 @@ None
 <tr>
 <td valign="top">
 
+deployment.nodeSelector
+
+</td>
+<td valign="top">
+
+Label\(s\) which are configured for the `nodeSelector` property for all connectivity proxy-associated pods. More info: [https://kubernetes.io/docs/concepts/scheduling-eviction/assign-pod-node/\#nodeselector](https://kubernetes.io/docs/concepts/scheduling-eviction/assign-pod-node/#nodeselector)
+
+</td>
+<td valign="top">
+
+None
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
 deployment.image.pullPolicy
 
 </td>

@@ -215,12 +215,12 @@ The provided secret cannot be found in the referenced `namespace.Examples`:
 <tr>
 <td valign="top">
 
-`secretName` should be provided for connectivity proxy service instance.
+`secretName` should be provided for connectivity proxy service instance in shared mode.
 
 </td>
 <td valign="top">
 
-`config.integration.connectivityProxy.serviceCredentials.secretName` and `config.integration.connectivityProxy.serviceCredentials.secretKey` should be provided when `config.integration.connectivityProxy.serviceName` is not blank.
+`config.integration.connectivityProxy.serviceCredentials.secretName` should be provided when `config.integration.connectivityProxy.serviceName` is not blank, and the connectivity proxy referenced by `config.integration.connectivityProxy.serviceName` is in shared mode.
 
 </td>
 </tr>

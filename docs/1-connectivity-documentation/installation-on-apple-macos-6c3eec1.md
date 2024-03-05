@@ -1,24 +1,25 @@
 <!-- loio6c3eec1350e04d4fab801263e26ad939 -->
 
-# Installation on Mac OS X
+# Installation on Apple macOS
 
-Installing the Cloud Connector on a Mac OS X operating system.
+Installing the Cloud Connector on an Apple macOS operating system.
 
 
 
 ## Prerequisites
 
 > ### Note:  
-> Mac OS X is not supported for productive scenarios. The developer version described below must not be used as productive version.
+> Apple macOS is not supported for productive scenarios. The developer version described below must not be used as productive version.
 
 > ### Caution:  
-> The Cloud Connector does not natively support the M1/M2 architecture yet. Make sure you use a JVM based on the *x64* CPU architecture, and not the *aarch64* one.
+> There are two different Cloud Connector portable versions available for running on Apple macOS with native support either for Apple M1/M2 CPUs based on the *aarch64* architecture, or with native support for INTEL x86 64-bit CPUs based on the *x64* architecture. Make sure you download and use the Cloud Connector version in combination with a JVM version, which both match your used hardware CPU architecture.
 
 -   You have one of the supported 64-bit operating systems. For more information, see [Product Availability Matrix](prerequisites-e23f776.md#loioe23f776e4d594fdbaeeb1196d47bbcc0__matrix).
--   You have downloaded the `tar.gz` archive for the developer use case on Mac OS X from [SAP Development Tools for Eclipse](https://tools.hana.ondemand.com/#cloud).
+-   The supported platforms are *aarch64* and *x64*, represented below by the variable `<platform>`.
+-   You have downloaded the `tar.gz` archive for the developer use case on Apple macOS from [SAP Development Tools for Eclipse](https://tools.hana.ondemand.com/#cloud).
 -   A supported Java version must be installed. For more information, see [JDKs](prerequisites-e23f776.md#loioe23f776e4d594fdbaeeb1196d47bbcc0__jdk).
 
-    If you want to use SAP JVM, you can download it from the [SAP Development Tools for Eclipse](https://tools.hana.ondemand.com/#cloud) page.
+    If you are running Apple macOS on an INTEL x86 64-bit CPU and you want to use SAP JVM, you can download it from the [SAP Development Tools for Eclipse](https://tools.hana.ondemand.com/#cloud) page.
 
 -   Environment variable *<JAVA\_HOME\>* must be set to the Java installation directory so that the `bin` subdirectory can be found. Alternatively, you can add the Java installation's `bin` subdirectory to the *<PATH\>* variable.
 
@@ -29,7 +30,7 @@ Installing the Cloud Connector on a Mac OS X operating system.
 1.  Extract the `tar.gz` file to an arbitrary directory on your local file system using the following command:
 
     ```
-    tar -xzof sapcc-<version>-macosx-x64.tar.gz 
+    tar -xzof sapcc-<version>-macosx-<platform>.tar.gz 
     ```
 
 2.  Go to this directory and start Cloud Connector using the `go.sh` script.
@@ -37,7 +38,7 @@ Installing the Cloud Connector on a Mac OS X operating system.
 3.  Continue with the `Next Steps` section.
 
     > ### Note:  
-    > The Cloud connector is not started as a daemon, and therefore will not automatically start after a reboot of your system. Also, the Mac OS X version of Cloud Connector does not support the automatic upgrade procedure.
+    > The Cloud connector is not started as a daemon, and therefore will not automatically start after a reboot of your system. Also, the macOS version of the Cloud Connector does not support the automatic upgrade procedure.
 
 
 

@@ -9,9 +9,9 @@ The service channel port overview lists all service channels that are configured
 In addition, you can find the following information about each service channel:
 
 -   Status \(***enabled***, ***disabled***, ***disconnected***\)
--   Service channel type \(***SAP HANA Database***, ***Virtual Machine***, ***ABAP Cloud System***, ***Kubernetes Cluster***\)
+-   Service channel type \(***ABAP Cloud System***, ***Kubernetes Cluster***\)
 -   Assigned subaccount \(display name\)
--   Details \(for example, the assigned SAP HANA instance name or ABAP Cloud tenant host\)
+-   Details \(for example, the assigned ABAP Cloud tenant host\)
 
 From the *Actions* column, you can switch directly to the *On-Premise To Cloud* section of the corresponding subaccount and edit the selected service channel.
 

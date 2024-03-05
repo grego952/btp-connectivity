@@ -2,13 +2,13 @@
 
 # Using Service Channels
 
-Configure Cloud Connector service channels to connect your on-premise network to specific services on SAP BTP.
+Configure Cloud Connector service channels to connect your on-premise network to specific services on SAP BTP or to an ABAP Cloud system.
 
 
 
 ## Context
 
-Cloud Connector service channels provide access from an external network to certain services on SAP BTP. The called services are not exposed to direct access from the Internet. The Cloud Connector ensures that the connection is always available and communication is secured.
+Cloud Connector service channels provide access from an external network to specific services on SAP BTP, or to an ABAP Cloud system. The called services are not exposed to direct access from the Internet. The Cloud Connector ensures that the connection is always available and communication is secured.
 
 
 <table>
@@ -27,12 +27,12 @@ Description
 <tr>
 <td valign="top">
 
-**RFC Connection** to SAP BTP ABAP environment
+**RFC Connection** to an ABAP Cloud system
 
 </td>
 <td valign="top">
 
-The service channel for **RFC** supports calls from on-premise systems to the SAP BTP ABAP environment using RFC.
+The service channel for **RFC** supports calls from on-premise systems to an ABAP Cloud system using RFC.
 
 </td>
 </tr>
@@ -53,8 +53,6 @@ Service channel to establish a connection to a service in a Kubernetes cluster o
 
 
 ## Next Steps
-
-[Connect DB Tools to SAP HANA via Service Channels](connect-db-tools-to-sap-hana-via-service-channels-64d6a51.md)
 
 [Configure a Service Channel for RFC](configure-a-service-channel-for-rfc-18602c2.md)
 

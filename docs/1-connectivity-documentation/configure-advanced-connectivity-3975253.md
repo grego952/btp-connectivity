@@ -37,20 +37,6 @@ Additionally, you can specify the number of allowed tunnel connections for each 
 > ### Note:  
 > If you don't change the value for a trusted application, it keeps the default setting specified above. If you change the value, it may be higher or lower than the default and must be higher than 0.
 
-To add a specific connection limit to a trusted application, do the following:
-
-1.  From your subaccount menu, choose *Cloud To On-Premise* \> *Applications*. In section *Tunnel Connection Limits*, choose *Add*.
-
-    ![](images/SCC_Configure_Tunnel_Connections_-_Limits_a480a9e.png)
-
-2.  In the *Edit Tunnel Connections Limit* dialog, enter the *<Application Name\>* and change the number of *<Tunnel Connections\>* as required.
-
-    > ### Note:  
-    > The application name is visible in the SAP BTP cockpit under *Applications* \> *Java Applications*. To allow a subscribed application, you must add it to the allowlist in the format `<providerSubaccount>:<applicationName>`. In particular, when using HTML5 applications, an implicit subscription to *services:dispatcher* is required.
-
-3.  Choose *Save*.
-
-To edit this setting, select the application from the *Limits* list and choose *Edit*.
 
 
 
