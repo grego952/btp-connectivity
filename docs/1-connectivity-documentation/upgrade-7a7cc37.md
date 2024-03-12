@@ -50,7 +50,7 @@ For more information, see [Install a Failover Instance for High Availability](in
     ```
 
     > ### Note:  
-    > **Daemon extensions**
+    > **Daemon extensions \(as of Cloud Connector version 2.12.3\)**
     > 
     > All extensions to the daemon provided via `scc_daemon_extension.sh` mechanism will survive a version update. An upgrade to version 2.12.3 will already consider an existing file, even though previous versions were not supporting that feature.
 

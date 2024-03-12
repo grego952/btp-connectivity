@@ -199,7 +199,7 @@ In addition to identity provider \(XSUAA\) user info attributes, there are some 
 -   `$.['user_attributes']['xs.saml.groups']`
 
 > ### Note:  
-> The `'xs.saml.groups'` attribute, read from the passed JWT, is renamed to `'Groups'` in the resulting SAML assertion. See also [Settings for Default SAML Federation Attributes of Any Identity Provider](https://help.sap.com/viewer/65de2977205c403bbc107264b8eccf4b/Cloud/en-US/6d073332bc5743fdb7f7f06bde499ab7.html "This table is supposed to display the attribute settings of the identity provider and the values administrators use to establish trust between the SAML 2.0 identity provider and a new subaccount.") :arrow_upper_right:.
+> The `'xs.saml.groups'` attribute, read from the passed JWT, is renamed to `'Groups'` in the resulting SAML assertion. See also [Settings for Default SAML Federation Attributes of Identity Providers for Business Users](https://help.sap.com/viewer/65de2977205c403bbc107264b8eccf4b/Cloud/en-US/2ce3938c66d94479848bff3090999027.html#loio6d073332bc5743fdb7f7f06bde499ab7 "This table shows the attribute settings of the identity provider and the values administrators use to establish trust between the SAML 2.0 identity provider and a subaccount.") :arrow_upper_right:.
 
 Back to [Tasks](user-propagation-via-saml-2-0-bearer-assertion-flow-3cb7b81.md#loio3cb7b81115c44cf594e0e3631291af94__tasks_up)
 

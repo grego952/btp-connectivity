@@ -72,7 +72,7 @@ Errors
 </td>
 <td valign="top">
 
-
+INVALID\_REQUEST, FORBIDDEN
 
 </td>
 </tr>
@@ -92,7 +92,12 @@ Administrator
 
 **Request Properties**:
 
--   `password`: the password used to encrypt sensitive data.
+-   `password`: password used to encrypt sensitive data.
+
+**Errors:**
+
+-   `INVALID_REQUEST` \(400\): if no password was provided.
+-   `FORBIDDEN` \(403\): if the instance role is *shadow*.
 
 > ### Note:  
 > Only sensitive data in the backup are encrypted with an arbitrary password of your choice. The password is required for the restore operation. The returned ZIP archive itself is not password-protected.
@@ -170,7 +175,7 @@ Errors
 </td>
 <td valign="top">
 
-INVALID\_REQUEST
+INVALID\_REQUEST, FORBIDDEN, INTERNAL\_SERVER\_ERROR
 
 </td>
 </tr>
@@ -191,11 +196,13 @@ Administrator
 **Request Properties**:
 
 -   `backup`: a backup file \(produced through POST request\).
--   `password`: the password chosen when creating the backup.
+-   `password`: password chosen when creating the backup.
 
 **Errors**:
 
--   INVALID\_REQUEST \(400\): invalid or missing file, or incorrect or missing password.
+-   `INVALID_REQUEST` \(400\): if invalid or no backup file, or incorrect or missing password was provided.
+-   `FORBIDDEN` \(403\): if the instance role is *shadow*.
+-   `INTERNAL_SERVER_ERROR` \(500\): if an error happened during restore.
 
 > ### Note:  
 > Since this API uses a multipart request, it requires a multipart request header.

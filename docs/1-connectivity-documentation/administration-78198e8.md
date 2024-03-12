@@ -126,5 +126,17 @@ Create a backup of your destination configurations.
 
 </td>
 </tr>
+<tr>
+<td valign="top">
+
+[Destination Fragments](destination-fragments-b085906.md)
+
+</td>
+<td valign="top">
+
+Use destination fragments to override and/or extend destination properties as part of the “Find Destination” call.
+
+</td>
+</tr>
 </table>
 

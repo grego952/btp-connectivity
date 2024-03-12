@@ -54,6 +54,10 @@ Back to [Response Structure](find-destination-response-structure-83a3f3b.md#loio
 
     The JSON object that represents the value of this property contains the actual properties of the destination. To learn more about the available properties, see [HTTP Destinations](http-destinations-42a0e6b.md).
 
+    If a destination fragment was specified in the “Find Destination” call, the value of this property is represented by the JSON object that contains the actual properties of the destination, merged with the JSON object that contains the properties of the destination fragment.
+
+    For more information on how to extend a destination with a destination fragment, see [Extending Destinations with Fragments](extending-destinations-with-fragments-f56600a.md).
+
 -   **Example:**
 
     > ### Sample Code:  

@@ -18,3 +18,5 @@ Hover over the elements for a description. Click an element for more information
 
 [Resilience Recommendations](resilience-recommendations-6c88a09.md "Improve resilience of your SAP BTP applications.")
 
+[On-Premise Connectivity in the Kyma Environment](on-premise-connectivity-in-the-kyma-environment-7501fbc.md "The connectivity-proxy Kyma module enables secure tunneling between the Kyma environment and on-premise systems. It supports both on-premise-to-cloud and cloud-to-on-premise scenarios. It requires the btp-operator module and Istio sidecar proxy injection for proper functionality.")
+

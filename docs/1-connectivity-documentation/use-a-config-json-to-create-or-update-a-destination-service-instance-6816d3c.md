@@ -66,7 +66,7 @@ Find the `config.json` structure below:
 > ### Sample Code:  
 > ```
 > {
->     "HTML5Runtime_enabled" : "true",
+>     "HTML5Runtime_enabled" : true,
 >     "init_data" : {
 >         "subaccount" : {
 >             "existing_destinations_policy": "update|fail|ignore",
