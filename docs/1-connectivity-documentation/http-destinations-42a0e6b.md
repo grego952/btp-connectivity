@@ -29,7 +29,11 @@ In subscription-based scenarios, it is not always possible to consume a service 
 The proxy types supported by the Connectivity service are:
 
 -   **Internet** - The application can connect to an external REST or SOAP service on the Internet.
--   **OnPremise** - The application can connect to an on-premise back-end system through the Cloud Connector.
+-   **OnPremise** - The application can connect to an on-premise backend system through the Cloud Connector.
+-   **PrivateLink** - Selected SAP BTP services can establish a private connection with selected services in your own IaaS provider accounts.
+
+    For more information, see [What Is SAP Private Link Service?](https://help.sap.com/docs/private-link/private-link1/what-is-sap-private-link-service?version=CLOUD).
+
 
 The proxy type used for a destination is specified by the destination property `ProxyType`. The default value is `Internet`.
 
