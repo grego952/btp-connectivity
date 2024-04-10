@@ -3020,8 +3020,11 @@ Back to [Content](prerequisites-e23f776.md#loioe23f776e4d594fdbaeeb1196d47bbcc0_
 > 
 > 
 > See also [Network Zones](network-zones-7b9d90c.md).
-> 
+
+> ### Note:  
 > For more information about the used ABAP server ports, see: [Ports of SAP NetWeaver Application Server ABAP](http://help.sap.com/saphelp_nw75/helpdata/en/4e/c26cdc58e968b9e10000000a42189e/frameset.htm).
+> 
+> For more information about additional IP addresses for SAP Business Application Studio, see [SAP Business Application Studio Inbound IP Addresses](https://help.sap.com/docs/bas/sap-business-application-studio/sap-business-application-studio-availability#inbound-ip-address).
 
 Back to [Network](prerequisites-e23f776.md#loioe23f776e4d594fdbaeeb1196d47bbcc0__network)
 

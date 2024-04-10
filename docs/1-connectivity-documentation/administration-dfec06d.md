@@ -174,5 +174,17 @@ Find an overview of backup procedures for the Cloud Connector.
 
 </td>
 </tr>
+<tr>
+<td valign="top">
+
+[Secure Store](secure-store-2c51da2.md)
+
+</td>
+<td valign="top">
+
+Reduce the size of the Cloud Connector Secure Store.
+
+</td>
+</tr>
 </table>
 

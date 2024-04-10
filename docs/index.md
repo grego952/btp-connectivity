@@ -228,6 +228,7 @@
             -   [Troubleshooting](1-connectivity-documentation/troubleshooting-e7df7f1.md)
             -   [Process Guidelines for Hybrid Scenarios](1-connectivity-documentation/process-guidelines-for-hybrid-scenarios-cfc2c6b.md)
             -   [Configuring Backup](1-connectivity-documentation/configuring-backup-9b4e1e3.md)
+            -   [Secure Store](1-connectivity-documentation/secure-store-2c51da2.md)
         -   [Security](1-connectivity-documentation/security-cb50b61.md)
             -   [Application Layer](1-connectivity-documentation/application-layer-26bede7.md)
             -   [Service Layer](1-connectivity-documentation/service-layer-3ce0cbb.md)
