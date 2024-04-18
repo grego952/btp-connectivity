@@ -276,6 +276,7 @@
         -   [Using the Transparent Proxy](1-connectivity-documentation/using-the-transparent-proxy-c5257cf.md)
             -   [Internet Connectivity](1-connectivity-documentation/internet-connectivity-d5ba479.md)
             -   [On-Premise Connectivity](1-connectivity-documentation/on-premise-connectivity-41cd3b9.md)
+            -   [783d44d73212468fbe414495dc32a721.xml](783d44d73212468fbe414495dc32a721.md)
             -   [HTTP Authentication](1-connectivity-documentation/http-authentication-5883721.md)
             -   [Managed Namespaces Mode](1-connectivity-documentation/managed-namespaces-mode-6588a65.md)
         -   [Multitenancy](1-connectivity-documentation/multitenancy-6478985.md)

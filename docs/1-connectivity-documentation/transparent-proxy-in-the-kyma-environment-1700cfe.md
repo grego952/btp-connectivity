@@ -79,6 +79,10 @@ For more information, see the [Configuration Guide](configuration-guide-2a22cd7.
 
 If no resources of api version *services.cloud.sap.com/v1* and kind `ServiceInstance` exist in namespace `sap-transp-proxy-system`, and no destination service instances are directly specified in the transparent proxy custom resource, a default, empty destination service instance with name `sap-transp-proxy-default` will be created in namespace `sap-transp-proxy-system` and loaded as destination service instance in the transparent proxy custom resource.
 
+**Connectivity Proxy**
+
+The transparent proxy will automatically connect with the connectivity proxy if the Kyma module for the connectivity proxy is enabled. If you choose to manually link to a connectivity proxy, the automatic connection will not override your configuration.
+
 
 
 <a name="loio1700cfe070704d2e80aa76de1033a6c4__TransparentProxyinKymaenvironment-Encryptionbetweenmicro-components"/>

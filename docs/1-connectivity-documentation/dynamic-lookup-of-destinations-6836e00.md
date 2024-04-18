@@ -26,7 +26,9 @@ The transparent proxy identifies the destination for which a request should be c
 > ### Note:  
 > This header is specifically intended to identify a destination within a Destination service instance and its tenants.
 
-For example:
+The destination can also be combined by optionally providing a custom header called `X-Fragment-Name`.
+
+**Example Destination:**
 
 ```
 {
@@ -40,9 +42,24 @@ For example:
 }
 ```
 
+**Example Fragment:**
+
+```
+{
+    "FragmentName": "example-fragment",
+    "URL": "https:/myotherapp.com"
+}
+```
+
 If you want to call the `example-dest-client-cert` destination through the Kubernetes service named `dynamic-destination`, you can execute the command below:
 
 ```
 curl dynamic-destination.<transparent-proxy-namespace> -H "X-Destination-Name: example-dest-client-cert"
+```
+
+If you want to call `example-dest-client-cert` destination, enriching it with the properties from fragment `example-fragment` through the Kubernetes service named `dynamic-destination`, you can execute the command below:
+
+```
+curl dynamic-destination.<transparent-proxy-namespace> -H "X-Destination-Name: example-dest-client-cert" -H "X-Fragment-Name: example-fragment"
 ```
 

@@ -239,173 +239,6 @@ False
 <tr>
 <td valign="top">
 
-`config.integration.connectivityProxy.serviceCredentials.secretName`
-
-</td>
-<td valign="top">
-
-Name of the existing secret, which holds the credentials for the connectivity proxy or the name of the secret to be created based on "secretName", "secretData", "secretKey" fields.
-
-</td>
-<td valign="top">
-
- 
-
-</td>
-<td valign="top">
-
- 
-
-</td>
-<td valign="top">
-
-False
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-`config.integration.connectivityProxy.serviceCredentials.secretKey`
-
-</td>
-<td valign="top">
-
-Key in the connectivity proxy secret resource, which holds the base64 encoded value of the connectivity proxy service key.
-
-> ### Note:  
-> Make sure you provide the right key for an existing secret.
-
-
-
-</td>
-<td valign="top">
-
- 
-
-</td>
-<td valign="top">
-
- 
-
-</td>
-<td valign="top">
-
-False
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-`config.integration.connectivityProxy.serviceCredentials.secretData` 
-
-</td>
-<td valign="top">
-
-base64-encoded value of the service key, obtained from the connectivity proxy service instance. Required when transparent proxy should create secret and not required when describing an existing secret.
-
-</td>
-<td valign="top">
-
- 
-
-</td>
-<td valign="top">
-
- 
-
-</td>
-<td valign="top">
-
-False
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-`config.integration.connectivityProxy.serviceCredentials.secretNamespace` 
-
-</td>
-<td valign="top">
-
-Namespace of the existing secret to be used, which holds the credentials for the connectivity proxy. This field should not be present if there is no existing secret and transparent proxy would create one based on "secretName", "secretData", "secretKey" fields.
-
-</td>
-<td valign="top">
-
- 
-
-</td>
-<td valign="top">
-
- 
-
-</td>
-<td valign="top">
-
-False
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-`config.integration.connectivityProxy.serviceCredentials.privateKey.secretName` 
-
-</td>
-<td valign="top">
-
-Name of the Kubernetes secret, which holds the private key to authenticate if using an x509-based service key to the connectivity proxy.
-
-</td>
-<td valign="top">
-
- 
-
-</td>
-<td valign="top">
-
- 
-
-</td>
-<td valign="top">
-
-False
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-`config.integration.connectivityProxy.serviceCredentials.privateKey.secretInternalKey` 
-
-</td>
-<td valign="top">
-
-Name of the internal key inside the Kubernetes secret holding the private key to authenticate if using an x509-based service key to the connectivity proxy.
-
-</td>
-<td valign="top">
-
- 
-
-</td>
-<td valign="top">
-
- 
-
-</td>
-<td valign="top">
-
-False
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
 `config.integration.serviceMesh.istio.istio-injection`
 
 </td>
@@ -1021,6 +854,33 @@ The name of the internal key inside the Kubenetes secret holding the private key
 <td valign="top">
 
 pk.pem
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+False
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`config.integration.destinationService.instances[n].associateWith.connectivityProxy.locallyConfiguredRegionId`
+
+</td>
+<td valign="top">
+
+The locally configured region id from the connectivity proxy multi region configurations, that will be used by default when consuming destinations from the given destination service instance. Will be overridden for HTTP scenarios if header`SAP-Connectivity-Region-Configuration-Id` is passed.
+
+</td>
+<td valign="top">
+
+ 
 
 </td>
 <td valign="top">

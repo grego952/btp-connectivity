@@ -95,7 +95,30 @@ When creating an HTTP destination, you can use different authentication types fo
 
 ## Custom Query Parameters and Headers
 
-For most of these authentication types, you can add custom query parameters and headers to the URL of a destination. For more information, see the details of the respective authentication type.
+By default, the Destination service does not use URL-associated queries and header parameters.
+
+For most authentication types however, you can add them as custom parameters to the URL of a destination.
+
+> ### Tip:  
+> You can use tools like the*transparent proxy for Kubernetes* to process those attributes automatically at runtime.
+> 
+> For more information, see [Using the Transparent Proxy](using-the-transparent-proxy-c5257cf.md).
+
+When using the *Destinations* editor for destination configuration, you can add these parameters as *additional properties*:
+
+-   `URL.headers.HEADER_KEY` for headers
+
+-   `URL.queries.QUERY_KEY` for query parameters
+
+Replace `HEADER_KEY` and `QUERY_KEY` with the name of the headers or query parameters and set the respective values.
+
+![](images/CS_HTTP_Destinations_-_HeaderQuery_Parameters_b8e3519.png)
+
+In the example above, the destination has a `language` query parameter with the value *EN* and an `apiKey` header with the value *<my-api-key\>*.
+
+Those additional headers and query parameters are added for every communication with the given destination.
+
+For more information on additional properties, see [Create HTTP Destinations](create-http-destinations-783fa1c.md) \(step 9\) and the details of the respective [authentication type](http-destinations-42a0e6b.md#loio42a0e6b966924f2e902090bdf435e1b2__config).
 
 **Related Information**  
 

@@ -9,11 +9,18 @@ Check the transparent proxy for Kubernetes after installation.
 > ### Note:  
 > You may have to wait for a few seconds before all the components are started and can be consumed.
 
-To check the status of the transparent proxy's components, execute the following:
+To check the status of the transparent proxy's components, execute the following, replacing the namespace placeholder:
 
 ```
-kubectl run perform-hc --image=curlimages/curl -it --rm --restart=Never -- curl -w "\n" 'sap-transp-proxy-int-healthcheck.{installation-namespace}/status'
+kubectl run perform-hc --image=radial/busyboxplus:curl -it --rm --restart=Never -- curl -w "\n" 'sap-transp-proxy-int-healthcheck.{installation-namespace}/status'
+```
 
+or the following commands when your transaparent proxy is started within *Istio Service Mesh*:
+
+```
+kubectl run perform-hc --image=radial/busyboxplus:curl --labels="sidecar.istio.io/inject=true" -it --rm
+curl -w '\n' sap-transp-proxy-int-healthcheck.{installation-namespace}/status
+exit
 ```
 
 and observe the result.

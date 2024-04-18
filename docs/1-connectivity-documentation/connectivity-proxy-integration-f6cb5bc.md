@@ -10,7 +10,27 @@ The connectivity proxy is a Kubernetes component that connects workloads running
 
     For more information, see [Lifecycle Management](lifecycle-management-60c0a45.md).
 
-2.  Follow the instructions under [Lifecycle Management](lifecycle-management-1c18e0c.md) and set up the `values.yaml` for integrating with the connectivity proxy, providing the `config.integration.connectivityProxy.*` parameters. For more information, see [Configuration Guide](configuration-guide-2a22cd7.md).
+2.  Follow the instructions under [Lifecycle Management](lifecycle-management-1c18e0c.md) and set up the `values.yaml` for integrating with the connectivity proxy, providing the `config.integration.connectivityProxy.serviceName`.
+
+    For more information, see [Configuration Guide](configuration-guide-2a22cd7.md).
+
+3.  If the connectivity proxy runs in multi-region mode, you can link a transparent proxy configuration for a Destination service instance with a connectivity proxy local region configuration. This can be done at design time by adding an association. Doing this, you won't need to provide the HTTP header `SAP-Connectivity-Region-Configuration-Id` on each request - the transparent proxy will automatically pass it to the connectivity proxy:
+
+    ```
+    config:
+      integration:
+        destinationService:
+          instances:
+          - name: <local-instance-name>
+            serviceCredentials:
+              secretKey: <secret-key>
+              secretName: <secret-name>
+              secretNamespace: <secret-namespace>
+            associateWith:
+              connectivityProxy:
+                locallyConfiguredRegionId: <locally-configured-conn-proxy-region-id>
+    ```
+
 
 **Related Information**  
 
