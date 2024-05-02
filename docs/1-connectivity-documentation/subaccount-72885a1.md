@@ -239,6 +239,24 @@ Request
 <tr>
 <td valign="top">
 
+Request
+
+\(as of version 2.17.0\)
+
+</td>
+<td valign="top">
+
+```
+{authenticationData, locationID, displayName, description}
+```
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
 Response
 
 </td>
@@ -289,6 +307,7 @@ Administrator, Subaccount Administrator
 
 -   `cloudPassword`: password for the cloud user.
 
+-   `authenticationData`: subaccount authentication data, used instead of `cloudUser`, `cloudPassword` and `regionHost` \(as of version 2.17.0\).
 -   `locationID`: location identifier for the Cloud Connector instance \(a string; optional\).
 -   `displayName`: display name of the subaccount \(a string; optional\).
 -   `description`: subaccount description \(a string; optional\).
@@ -653,6 +672,24 @@ Request
 <tr>
 <td valign="top">
 
+Request
+
+\(as of version 2.17.0\)
+
+</td>
+<td valign="top">
+
+```
+{authenticationData}
+```
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
 Response
 
 </td>
@@ -670,12 +707,12 @@ Response
 <tr>
 <td valign="top">
 
-Errors
+Errors \(as of version 2.17.0\) 
 
 </td>
 <td valign="top">
 
- 
+BAD\_REQUEST
 
 </td>
 </tr>
@@ -699,6 +736,7 @@ Administrator, Subaccount Administrator
 
 -   `password`: password for the \(cloud\) user.
 
+-   `authenticationData`: subaccount authentication data, used instead of `cloudUser` and `cloudPassword` \(as of version 2.17.0\).
 
 **Response Properties**:
 
@@ -709,6 +747,9 @@ Administrator, Subaccount Administrator
 -   `description`: subaccount description \(a string\); this property is not available if there is no description.
 -   `tunnel`: object outlining the current state of the tunnel.
 
+**Errors** \(as of version 2.17.0\):
+
+-   `BAD_REQUEST` \(400\): the region in authentication data does not match the region of the subaccount.
 
 Back to [Operations](subaccount-72885a1.md#loio72885a1eee784790a8c8d07538051134__operations)
 
@@ -1205,6 +1246,11 @@ Request
 </td>
 <td valign="top">
 
+```
+{enabled}
+
+```
+
 
 
 </td>
@@ -1246,6 +1292,10 @@ Administrator, Subaccount Administrator
 </td>
 </tr>
 </table>
+
+**Request Properties**:
+
+-   `enabled`: true or false, indicating the specified trust source should be enabled or disabled.
 
 **Errors**:
 
@@ -1453,6 +1503,4 @@ Administrator, Subaccount Administrator
 -   `NOT_FOUND` \(404\): There is no trusted application with the given <id\>.
 
 Back to [Operations](subaccount-72885a1.md#loio72885a1eee784790a8c8d07538051134__operations)
-
-
 

@@ -651,7 +651,7 @@ Back to [Top](system-mapping-resources-99df2b9.md#loio99df2b95fb5245c7921673ad8f
 ## Get Allowed Clients for RFC System Mapping
 
 > ### Note:  
-> Available as of version 2.1.4.
+> Available as of version 2.14.
 
 Returns the list of allowed ABAP clients for the system mapping definition.
 
@@ -755,7 +755,7 @@ Back to [Top](system-mapping-resources-99df2b9.md#loio99df2b95fb5245c7921673ad8f
 ## Set Allowed Clients for RFC System Mapping
 
 > ### Note:  
-> Available as of version 2.1.4.
+> Available as of version 2.14.
 
 
 <table>
@@ -856,7 +856,7 @@ Back to [Top](system-mapping-resources-99df2b9.md#loio99df2b95fb5245c7921673ad8f
 ## Add Allowed Clients for RFC System Mapping
 
 > ### Note:  
-> Available as of version 2.1.4.
+> Available as of version 2.14.
 
 Adds more ABAP clients to the allowed list for the system mapping definition.
 
@@ -959,7 +959,7 @@ Back to [Top](system-mapping-resources-99df2b9.md#loio99df2b95fb5245c7921673ad8f
 ## Delete an Allowed Client for RFC System Mapping
 
 > ### Note:  
-> Available as of version 2.1.4.
+> Available as of version 2.14.
 
 
 <table>
@@ -1046,7 +1046,7 @@ Back to [Top](system-mapping-resources-99df2b9.md#loio99df2b95fb5245c7921673ad8f
 ## Delete all Allowed Clients for RFC System Mapping
 
 > ### Note:  
-> Available as of version 2.1.4.
+> Available as of version 2.14.
 
 
 <table>
@@ -1136,7 +1136,7 @@ Back to [Top](system-mapping-resources-99df2b9.md#loio99df2b95fb5245c7921673ad8f
 ## Get Blocked Users for RFC System Mapping
 
 > ### Note:  
-> Available as of version 2.1.4.
+> Available as of version 2.14.
 
 Returns the list of blocked ABAP users for the system mapping definition.
 
@@ -1238,7 +1238,7 @@ Back to [Top](system-mapping-resources-99df2b9.md#loio99df2b95fb5245c7921673ad8f
 ## Set Blocked Users for RFC System Mapping
 
 > ### Note:  
-> Available as of version 2.1.4.
+> Available as of version 2.14.
 
 Sets or replaces the list of blocked ABAP users for the system mapping definition.
 
@@ -1340,7 +1340,7 @@ Back to [Top](system-mapping-resources-99df2b9.md#loio99df2b95fb5245c7921673ad8f
 ## Add Blocked Users for RFC System Mapping
 
 > ### Note:  
-> Available as of version 2.1.4.
+> Available as of version 2.14.
 
 Adds the provided list of blocked ABAP users to the current list.
 
@@ -1442,7 +1442,7 @@ Back to [Top](system-mapping-resources-99df2b9.md#loio99df2b95fb5245c7921673ad8f
 ## Remove one Blocked User for RFC System Mapping
 
 > ### Note:  
-> Available as of version 2.1.4.
+> Available as of version 2.14.
 
 Removes one user from the list of blocked ABAP users for the system mapping definition.
 
@@ -1531,7 +1531,7 @@ Back to [Top](system-mapping-resources-99df2b9.md#loio99df2b95fb5245c7921673ad8f
 ## Remove all Blocked Users for RFC System Mapping
 
 > ### Note:  
-> Available as of version 2.1.4.
+> Available as of version 2.14.
 
 Removes the list of blocked ABAP users for the system mapping definition.
 

@@ -156,12 +156,19 @@ Back to[Tasks](initial-configuration-db9170a.md#loiodb9170a7d97610148537d5a84bf7
 
 ## Initial Setup
 
-1.  When you first log in, you must change the password before you continue, regardless of the installation type you have chosen.
-2.  Choose between master and shadow installation. Use *Master* if you are installing a single Cloud Connector instance or a main instance from a pair of Cloud Connector instances. See [Install a Failover Instance for High Availability](install-a-failover-instance-for-high-availability-c697705.md).
+1.  When you first log in, you must change the password before you continue.
 
-    ![](images/SCC_InitialConfig_-_MandatoryPWChange_InstallType_76126d2.png)
+    ![](images/SCC_InitialConfig_-_MandatoryPWChange_76126d2.png)
+
+2.  Afterwards, you can choose between master and shadow installation. Select *Master* if you are installing a single Cloud Connector instance or the main instance of a *high availability* setup. For more information, see [High Availability Setup](high-availability-setup-2f9250b.md).
+
+    ![](images/SCC_InitialConfig_-_InstallType_6b60986.png)
 
 3.  \(Optional\): When configuring a master, you can provide a \(free-text\) *Description* for this Cloud Connector instance that helps you distinguish different Cloud Connectors. This information will also be shown in the *Cloud Connectors* view in the SAP BTP cockpit.
+
+4.  Afterwards, you are forwarded to the main page. In the top right corner you can always see how long your current session is still valid until you need to login again before proceeding.
+
+    ![](images/SCC_InitialConfig_-_CurrentSession_a141ab3.png)
 
 
 **User Administration**
@@ -187,61 +194,104 @@ When logging in for the first time, the following screen is displayed every time
 
 ![](images/SCC_InitialConfig_-_DefineSubaccount_b356833.png)
 
-> ### Note:  
-> If you want to skip the initial configuration, you can click the ![](images/Skip_initial_configuration_000bd0a.png) icon in the upper right corner. You might need this in case of connectivity issues shown in your logs. You can add subaccounts later as described in [Managing Subaccounts](managing-subaccounts-f16df12.md).
+Press *Add Subaccount* to define a subaccount. This will open a dialog or wizard through which the Cloud Connector collects the following optional and required information:
 
-The Cloud Connector collects the following required information for your subaccount connection:
+1.  \(Optional\) Enter an HTTPS proxy. When in doubt, consult your network administrator to check if a proxy is required.
 
-1.  For *<Region\>*, specify the SAP BTP region that should be used. You can choose it from the drop-down list, see [Regions](https://help.sap.com/viewer/65de2977205c403bbc107264b8eccf4b/Cloud/en-US/350356d1dc314d3199dca15bd2ab9b0e.html "You can deploy applications in different regions. Each region represents a geographical location (for example, Europe, US East) where applications, data, or services are hosted.") :arrow_upper_right:. 
+    ![](images/SCC_InitialConfig_-_HTTPS_Proxy_6164393.png)
 
-    > ### Note:  
-    > You can also configure a region yourself, if it is not part of the standard list. Either insert the region host manually, or create a custom region, as described in [Configure Custom Regions](configure-custom-regions-a994a75.md).
+2.  In the next step, you can choose between a *manual* configuration and a *file-based* configuration.
 
-2.  For *<Subaccount\>*, *<Subaccount User\>* and *<Password\>*, enter the values you obtained when you registered your subaccount on SAP BTP.
+    ![](images/SCC_InitialConfig_-_ManualFileBasedConfig_7edd7f1.png)
 
-    > ### Note:  
-    > For a subaccount in the **Cloud Foundry** environment, you must enter the subaccount **ID** as *<Subaccount\>*, rather than its actual \(technical\) name. For information on getting the subaccount ID, see [Find Your Subaccount ID \(Cloud Foundry Environment\)](find-your-subaccount-id-cloud-foundry-environment-b43eff2.md). As *<Subaccount User\>* you must provide your `Login E-mail` instead of a user ID. The user must be a member of the global account the subaccount belongs to.
+3.  \(Skip if you have selected *file-based* configuration\) For *manual* configuration, the following dialog is shown:
 
-    You can also add a new subaccount user with the role `Cloud Connector Admin` in the SAP BTP cockpit and use the new user and password.
+    ![](images/SCC_InitialConfig_-_ManualConfig_40086e7.png)
 
-    > ### Note:  
-    > The Cloud Connector does not yet support *SAP Universal ID*. Please use your S-user or P-user credentials for the *<subaccount user\>* and *<password\>* fields instead.
-    > 
-    > For more information, see SAP note [3085908](https://me.sap.com/notes/3085908).
+    1.  The *<Region\>* field specifies the SAP BTP region that should be used such as *Europe \(Rot\)*, for example. Both a value help and a drop-down box with suggestions while typing are available.
 
-    For the **Neo** environment, see [Add Members to Your Neo Subaccount](https://help.sap.com/viewer/ea72206b834e4ace9cd834feed6c0e09/Cloud/en-US/a253570f081e448d9f78fc2bfeedfdc3.html "Add users as members to a subaccount in the Neo environment and assign roles to them using the SAP BTP cockpit.") :arrow_upper_right:.
+        > ### Remember:  
+        > The available regions and region domains depend on the SAP BTP environment you are using. For more information, see [Regions](https://help.sap.com/docs/btp/sap-business-technology-platform/regions?version=Cloud) \(Cloud Foundry and ABAP environment\) or [Regions and Hosts Available for the Neo Environment](https://help.sap.com/docs/btp/sap-btp-neo-environment/regions-and-hosts-available-for-neo-environment?version=Cloud).
 
-    For the **Cloud Foundry** environment, see [Add Org Members Using the Cockpit](https://help.sap.com/viewer/65de2977205c403bbc107264b8eccf4b/Cloud/en-US/a4eeaf179ee646b99558f27c0bae7b3e.html "Add users as org members and assign roles to grant the users access to information, such as user and quota information in a Cloud Foundry org.") :arrow_upper_right:.
+        > ### Note:  
+        > You can also configure a region yourself, if it is not part of the standard list. Either insert the region host manually, or create a custom region, as described in [Configure Custom Regions](configure-custom-regions-a994a75.md).
 
-    > ### Tip:  
-    > When using SAP Cloud Identity Services - Identity Authentication \(IAS\) as platform identity provider with two-factor authentication for your subaccount, you can simply append the required token to the regular password.
+    2.  For *<Subaccount\>*, enter the value you obtained when you registered your subaccount on SAP BTP.
 
-    > ### Tip:  
-    > For a subaccount in the **Cloud Foundry** environment, the Cloud Connector supports the use of a custom identity provider \(IDP\) via single sign-on \(SSO\) passcode. For more information, see [Use a Custom IDP for Subaccount Configuration](use-a-custom-idp-for-subaccount-configuration-2022612.md).
+        > ### Note:  
+        > For a subaccount in the **Cloud Foundry** environment, you must enter the subaccount **ID** as *<Subaccount\>*, rather than its actual \(technical\) name. For information on getting the subaccount ID, see [Find Your Subaccount ID \(Cloud Foundry Environment\)](find-your-subaccount-id-cloud-foundry-environment-b43eff2.md).
+        > 
+        > For the **c** environment, enter the subaccount's **technical name** in the field *<Subaccount\>*, not the subaccount ID.
 
-3.  \(Optional\) You can define a *<Display Name\>* that lets you easily recognize a specific subaccount in the UI compared to the technical subaccount name.
-4.  \(Optional\) You can define a *<Location ID\>* identifying the location of this Cloud Connector for a specific subaccount. The location ID is used as routing information and therefore you can connect multiple Cloud Connectors to a single subaccount. If you don't specify any value for *<Location ID\>*, the default is used, which represents the behavior of previous Cloud Connector versions. The location ID must be unique per subaccount and should be an identifier that can be used in a URI. To route requests to a Cloud Connector with a location ID, the location ID must be configured in the respective destinations.
+    3.  *<Subaccount User\>* and *<Password\>* require dedicated values, depending on the type of identity provider \(IDP\) you are using:
 
-    > ### Note:  
-    > Location IDs provided in older versions of the Cloud Connector are discarded during upgrade to ensure compatibility for existing scenarios.
+        > ### Note:  
+        > To understand which is the IDP configured in your subaccount \(**Neo** environment\), see[Configuring Platform Identity Provider](https://help.sap.com/docs/btp/sap-btp-neo-environment/configuring-platform-identity-provider-feature-set-b?version=Cloud).
+        > 
+        > For more information on IDPs in the **Cloud Foundry** environment, see [Trust and Federation with Identity Providers](https://help.sap.com/docs/btp/sap-business-technology-platform/trust-and-federation-with-identity-providers?version=Cloud).
 
-5.  \(Optional\) Enter proxy host and port. Omit the proxy configuration unless your internal landscape is protected by a firewall that blocks any outgoing TCP traffic. In that case, you must specify an HTTPS proxy that the Cloud Connector can use to connect to SAP BTP.
+        -   *SAP ID Service* \(Default\):
 
-    The Cloud Connector performs two operations for which it may need a proxy in the situation outlined above:
+            -   User/password from SAP ID Service must be used.
 
-    -   Downloading the correct connection configuration corresponding to your subaccount ID in SAP BTP.
-    -   Establishing the TLS tunnel connection from the Cloud Connector to your SAP BTP subaccount.
+                > ### Note:  
+                > For a subaccount in the **Cloud Foundry** environment, you must provide your `Login E-mail` as *<Subaccount User\>* instead of a user ID. The user must be a member of the global account the subaccount belongs to.
 
-    > ### Note:  
-    > A proxy server is required to support TLS communication; a standard HTTP proxy will not suffice. Typically, you choose the same proxy settings as those being used by your standard Web browser.
+            -   The user must be a member of the subaccount, and the subaccount must have the correct \(SAP ID Service\) user base.
 
-    > ### Note:  
-    > Some proxy servers require credentials for authentication. In this case, you need to provide the relevant user/password information.
+            > ### Note:  
+            > Alternatively, you can add a new subaccount user in the SAP BTP cockpit, assign the required authorization \(see section [Prerequisites](initial-configuration-db9170a.md#loiodb9170a7d97610148537d5a84bf79ba2__prereq)\), and use the new user and password.
+            > 
+            > For a **Neo** subaccount, you can also add a new subaccount user with the role `Cloud Connector Admin` from the *Members* tab in the SAP BTP cockpit and use the new user and password.
 
-6.  \(Optional\) You can provide a *<Description\>* \(free-text\) of the subaccount that is shown when choosing the *Details* icon in the *Actions* column of the *Subaccount Dashboard*. It lets you identify the particular Cloud Connector you use.
-7.  Choose *Save*.
 
-The Cloud Connector now starts a handshake with SAP BTP and attempts to establish a secure TLS tunnel to the server that hosts the subaccount in which your on-demand applications are running. However, no requests are yet allowed to pass from the cloud side to any of your internal backend systems. To allow your on-demand applications to access specific internal back-end systems, proceed with the access configuration described in the next section.
+        -   *Custom IDP* \(IAS tenant\):
+            -   **Neo** subaccount:
+                -   User/password from the configured IAS tenant must be provided.
+                -   The user must be a member of the subaccount, and the subaccount must have the correct \(IAS tenant\) user base.
+
+            -   **Cloud Foundry** subaccount:
+                -   For a subaccount in the **Cloud Foundry** environment, the Cloud Connector supports the use of a custom IDP via single sign-on \(SSO\) passcode.
+
+                    For more information, see [Use a Custom IDP for Subaccount Configuration](use-a-custom-idp-for-subaccount-configuration-2022612.md).
+
+
+
+
+        > ### Note:  
+        > The Cloud Connector does not yet support *SAP Universal ID*. Please use your S-user or P-user credentials for the *<subaccount user\>* and *<password\>* fields instead.
+        > 
+        > For more information, see SAP note [3085908](https://me.sap.com/notes/3085908).
+
+        For the **Neo** environment, see also [Add Members to Your Neo Subaccount](https://help.sap.com/viewer/ea72206b834e4ace9cd834feed6c0e09/Cloud/en-US/a253570f081e448d9f78fc2bfeedfdc3.html "Add users as members to a subaccount in the Neo environment and assign roles to them using the SAP BTP cockpit.") :arrow_upper_right:.
+
+        For the **Cloud Foundry** environment, see also [Add Org Members Using the Cockpit](https://help.sap.com/viewer/65de2977205c403bbc107264b8eccf4b/Cloud/en-US/a4eeaf179ee646b99558f27c0bae7b3e.html "Add users as org members and assign roles to grant the users access to information, such as user and quota information in a Cloud Foundry org.") :arrow_upper_right:.
+
+        > ### Tip:  
+        > When using SAP Cloud Identity Services - Identity Authentication \(IAS\) as platform identity provider with two-factor authentication \(2FA / MFA\) for your subaccount, you can simply append the required token to the regular password. For example, if your password is "eX7?6rUm" and the one-time passcode is "123456", you must enter "eX7?6rUm123456" into the *<Password\>* field.
+
+    4.  \(Optional\) You can define a *<Display Name\>* that lets you easily recognize a specific subaccount in the UI compared to the technical subaccount name.
+    5.  \(Optional\) You can define a *<Location ID\>* identifying the location of this Cloud Connector for a specific subaccount. The location ID is used as routing information.It lets you connect multiple Cloud Connectors to a single subaccount. If you don't specify any value for *<Location ID\>*, the default is used. The location ID must be unique per subaccount and should be an identifier that can be used in a URI. To route requests to a Cloud Connector with a location ID, the location ID must be configured in the respective destinations.
+    6.  \(Optional\) You can provide a *<Description\>* of the subaccount that becomes a part of the subaccount's detail information.
+
+        > ### Note:  
+        > Location ID and description can be changed later on at any time. See [Managing Subaccounts](managing-subaccounts-f16df12.md).
+
+    7.  Choose *Finish*.
+
+
+4.  \(Skip if you have selected *manual* configuration\) For the *file-based* approach, the following dialog is shown:
+
+    ![](images/SCC_InitialConfig_-_FileBasedConfig_ab635bc.png)
+
+    Choose the file containing the desired authentication data and press *Next*. You can then review the data extracted from the file, as well as optionally enter a location ID and a description \(see step 3d and 3e for details on the latter two properties\).
+
+    ![](images/SCC_InitialConfig_-_FileBasedConfig_Summary_92c40f6.png)
+
+    When done, press *Finish*.
+
+
+The Cloud Connector now starts a handshake with SAP BTP and attempts to establish a secure TLS tunnel to the server that hosts the subaccount in which your cloud applications are running. However, no requests are yet allowed to pass from the cloud side to any of your internal backend systems. To allow your cloud applications to access specific internal backend systems, proceed with [Configure Access Control](configure-access-control-f42fe44.md).
 
 > ### Note:  
 > The internal network must allow access to the port. Specific configuration for opening the respective port\(s\) depends on the firewall software used. The default ports are `80` for HTTP and `443` for HTTPS. For RFC communication, you must open a gateway port \(default: `33+<instance number>` and an arbitrary message server port. For a connection to a HANA Database \(on SAP BTP\) via JDBC, you must open an arbitrary *outbound* port in your network. Mail \(SMTP\) communication is not supported.
@@ -250,7 +300,7 @@ The Cloud Connector now starts a handshake with SAP BTP and attempts to establis
 
     ![](images/SCC_InitialConfig_-_HTTPS_Proxy_169e625.png)
 
--   If you want to change the description for your Cloud Connector, choose *Configuration* from the main menu, go to the *Cloud* tab, section *Connector Info* and edit the description:
+-   If you want to change the description for your Cloud Connector \(don't confuse with the description of subaccounts\), choose *Configuration* from the main menu, go to the *Cloud* tab, section *Connector Info* and edit the description:
 
     ![](images/SCC_InitialConfig_-_ConnectorInfo_8898b57.png)
 

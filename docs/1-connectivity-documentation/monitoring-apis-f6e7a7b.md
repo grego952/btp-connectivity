@@ -40,19 +40,21 @@ Users must be assigned to the roles `sccmonitoring` or `sccadmin`.
 
 The following APIs are currently available.
 
--   [Health Check](monitoring-apis-f6e7a7b.md#loiof6e7a7bc6af345d2a334c2427a31d294__Health) \(available as of version 2.16.0\)
+-   [Health Check](monitoring-apis-f6e7a7b.md#loiof6e7a7bc6af345d2a334c2427a31d294__Health) \(available as of version 2.6.0\)
 -   [Subaccount Data](monitoring-apis-f6e7a7b.md#loiof6e7a7bc6af345d2a334c2427a31d294__Subaccounts) \(as of 2.10.0\)
 -   [Open Connections to On-Premise Backend Systems](monitoring-apis-f6e7a7b.md#loiof6e7a7bc6af345d2a334c2427a31d294__Connections) \(as of 2.10.0\)
 -   [Open Connections to Cloud Services](monitoring-apis-f6e7a7b.md#loiof6e7a7bc6af345d2a334c2427a31d294__cloud) \(as of 2.15.0\)
 -   [Performance Data](monitoring-apis-f6e7a7b.md#loiof6e7a7bc6af345d2a334c2427a31d294__Performance) \(as of 2.10.0\)
 -   [Top Time Consumers](monitoring-apis-f6e7a7b.md#loiof6e7a7bc6af345d2a334c2427a31d294__Consumers) \(as of 2.11.0\)
 -   [Memory Status](monitoring-apis-f6e7a7b.md#loiof6e7a7bc6af345d2a334c2427a31d294__memory) \(as of 2.13.0\)
+-   [Disk Status](monitoring-apis-f6e7a7b.md#loiof6e7a7bc6af345d2a334c2427a31d294__disk) \(as of 2.17.0\)
+-   [CPU Status](monitoring-apis-f6e7a7b.md#loiof6e7a7bc6af345d2a334c2427a31d294__cpu) \(as of 2.17.0\)
 -   [Certificate Status](monitoring-apis-f6e7a7b.md#loiof6e7a7bc6af345d2a334c2427a31d294__certificates) \(as of 2.13.0\)
--   [Certificate Selection List](monitoring-apis-f6e7a7b.md#loiof6e7a7bc6af345d2a334c2427a31d294__cert_selection) \(as of 2.13.0\)
+-   [Certificate Selection List](monitoring-apis-f6e7a7b.md#loiof6e7a7bc6af345d2a334c2427a31d294__cert_selection) \(as of 2.13.0, extended in 2.17.0\)
 -   [Usage Statistics](monitoring-apis-f6e7a7b.md#loiof6e7a7bc6af345d2a334c2427a31d294__usage) \(as of 2.13.0\)
 -   [Master Role Check](monitoring-apis-f6e7a7b.md#loiof6e7a7bc6af345d2a334c2427a31d294__masterRole) \(as of 2.15.0\)
 
-**Health Check \(available as of version 2.16.0\)**
+**Health Check \(available as of version 2.6.0\)**
 
 Using the health check API, it is possible to recognize that the Cloud Connector is up and running. The purpose of this health check is only to verify that the Cloud Connector is not down. It does not check any internal state or tunnel connection states. Thus, it is a quick check that you can execute frequently:
 
@@ -190,7 +192,7 @@ GET
 <td valign="top" colspan="2">
 
 ```
-
+{subaccounts,version}
 ```
 
 
@@ -865,6 +867,194 @@ Back to [Available APIs](monitoring-apis-f6e7a7b.md#loiof6e7a7bc6af345d2a334c242
 
 Back to [Context](monitoring-apis-f6e7a7b.md#loiof6e7a7bc6af345d2a334c2427a31d294__context)
 
+**Disk Status** \(available as of version 2.17.0\)
+
+
+<table>
+<tr>
+<td valign="top">
+
+**URI** 
+
+</td>
+<td valign="top" colspan="2">
+
+`/api/monitoring/disk` 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+**Method**
+
+</td>
+<td valign="top" colspan="2">
+
+GET
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+**Request** 
+
+</td>
+<td valign="top" colspan="2">
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+**Response** 
+
+</td>
+<td valign="top" colspan="2">
+
+```
+{total, CloudConnector, others, free} 
+ 
+
+```
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+**Errors**
+
+</td>
+<td valign="top" colspan="2">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+**Roles**
+
+</td>
+<td valign="top" colspan="2">
+
+Administrator, Monitoring
+
+</td>
+</tr>
+</table>
+
+**Response Properties**:
+
+-   `total`: total size of the disk \(in MB\)
+-   `CloudConnector`: disk usage of the Cloud Connector \(in MB\)
+-   `others`: any other disk usage \(in MB\)
+-   `free`: free disk space \(in MB\)
+
+Back to [Available APIs](monitoring-apis-f6e7a7b.md#loiof6e7a7bc6af345d2a334c2427a31d294__api)
+
+Back to [Context](monitoring-apis-f6e7a7b.md#loiof6e7a7bc6af345d2a334c2427a31d294__context)
+
+**CPU Status** \(available as of version 2.17.0\)
+
+
+<table>
+<tr>
+<td valign="top">
+
+**URI** 
+
+</td>
+<td valign="top" colspan="2">
+
+`/api/monitoring/cpu` 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+**Method**
+
+</td>
+<td valign="top" colspan="2">
+
+GET
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+**Request** 
+
+</td>
+<td valign="top" colspan="2">
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+**Response** 
+
+</td>
+<td valign="top" colspan="2">
+
+```
+{total, CloudConnector} 
+ 
+
+```
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+**Errors**
+
+</td>
+<td valign="top" colspan="2">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+**Roles**
+
+</td>
+<td valign="top" colspan="2">
+
+Administrator, Monitoring
+
+</td>
+</tr>
+</table>
+
+**Response Properties**:
+
+-   `total`: total CPU usage \(as percentage %\)
+-   `CloudConnector`: CPU usage of the Cloud Connector \(as percentage %\)
+
+Back to [Available APIs](monitoring-apis-f6e7a7b.md#loiof6e7a7bc6af345d2a334c2427a31d294__api)
+
+Back to [Context](monitoring-apis-f6e7a7b.md#loiof6e7a7bc6af345d2a334c2427a31d294__context)
+
 **Certificate Status \(available as of version 2.13.0\)**
 
 > ### Note:  
@@ -992,7 +1182,7 @@ Back to [Available APIs](monitoring-apis-f6e7a7b.md#loiof6e7a7bc6af345d2a334c242
 
 Back to [Context](monitoring-apis-f6e7a7b.md#loiof6e7a7bc6af345d2a334c2427a31d294__context)
 
-**Certificate Selection List \(available as of version 2.13.0\)**
+**Certificate Selection List \(available as of version 2.13.0, extended in 2.17.0\)**
 
 > ### Note:  
 > This API is relevant for the master instance only.
@@ -1103,6 +1293,8 @@ Administrator, Monitoring
 
 -   `validTo`: end date of the respective certificate's validty \(as a long integer, that is, a UTC timestamp\)
 -   `subjectDN`: subject DN of the respective certificate \(included only for non-subaccount certificates\)
+-   `issuerDN`: issuer DN of the respective certificate \(included only for non-subaccount certificates\)
+-   `serialNumber`: serial number of the respective certificate as hex encoded string \(included only for non-subaccount certificates\)
 -   `subaccountName`: name of the subaccount \(only for subaccount certificates\)
 -   `subaccountRegion`: region or landscape host of the the subaccount \(only for subaccount certificates\)
 

@@ -20,8 +20,14 @@ To perform rule-based mapping of certificates in the ABAP server, proceed as fol
     > If dynamic parameters are disabled, enter the value using transaction RZ10 and restart the whole ABAP system.
 
 2.  Configure rule-based mapping
-    1.  To create a sample certificate with the Cloud Connector, logon to the Cloud Connector UI and from the main menu, choose *Configuration*. In the *System Certificate* section, enter a sample CN name and download the sample certificate to the *Downloads* folder of your machine.
-    2.  To import the sample certificate into the ABAP server, choose transaction CERTRULE and select*Import certificate*.
+    1.  Create a sample certificate with the Cloud Connector.
+        1.  Log on to the Cloud Connector UI.
+        2.  From the main menu, choose *Configuration*, tab *On Premise*.
+        3.  Go to the **Principal Propagation** section. In the area **Subject Patterns**, press *Add*.
+        4.  Enter a subject pattern and choose *Save*.
+        5.  The added item appears in the list of subject patterns. Select the item and choose **Generate a sample certificate**. The certificate will be downloaded to your machine.
+
+    2.  To import the sample certificate into the ABAP server, choose transaction CERTRULE and select *Import certificate*.
 
         > ### Note:  
         > To access transaction CERTRULE, you need the corresponding authorizations \(see: [Assign Authorization Objects for Rule-based Mapping](assign-authorization-objects-for-rule-based-mapping-0ef22ae.md)\).

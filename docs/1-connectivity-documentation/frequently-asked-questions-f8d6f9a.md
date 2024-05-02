@@ -385,7 +385,9 @@ No, the Cloud Connector currently supports only basic authentication.
 
 ### **Which operating systems are supported by the Cloud Connector?**
 
-See [Prerequisites](prerequisites-e23f776.md).
+We currently support Windows and Linux versions with an installer for productive scenarios. Additionally, the portable variant of the Cloud Connector is available not only for those operating systems, but also for macOS.
+
+You can find the full product availability matrix in [Prerequisites](prerequisites-e23f776.md).
 
 
 
@@ -393,7 +395,9 @@ See [Prerequisites](prerequisites-e23f776.md).
 
 We currently support 64-bit operating systems running only on an x86-64 processor \(also known as x64, x86\_64 or AMD64\), and for Linux also on the *PowerPC Little Endian* variant \(also known as *ppc64le*\).
 
-See: [Prerequisites](prerequisites-e23f776.md).
+For macOS, also the ARM64 processor \(also known as aarch64\).
+
+See [Prerequisites](prerequisites-e23f776.md).
 
 
 
@@ -538,38 +542,35 @@ For trial users, the account name is typically your user name, followed by the s
 
 ### **Does the Cloud Connector work with the SAP BTP Cloud Foundry environment?**
 
-As of version 2.10, the Cloud Connector can establish a connection to regions based on the SAP BTP Cloud Foundry environment. Newer regions, however, require a Cloud Connector version 2.11 or higher.
+Yes, the Cloud Connector can establish a connection to regions based on the SAP BTP Cloud Foundry environment.
 
 
 
 ### **Does the Cloud Connector work with SAP S/4HANA Cloud?**
 
-As of version 2.10, the Cloud Connector offers a Service Channel to S/4HANA Cloud instances, given that they are associated with the respective SAP BTP subaccount. For more information, see [Using Service Channels](using-service-channels-16f6342.md).
+The Cloud Connector offers a Service Channel to S/4HANA Cloud instances, given that they are associated with the respective SAP BTP subaccount. For more information, see [Using Service Channels](using-service-channels-16f6342.md).
 
-Also supported as of version 2.10: S/4HANA Cloud communication scenarios invoking HTTP services or remote-enabled function modules \(RFMs\) in on-premise ABAP systems.
+The Cloud Connector also supports S/4HANA Cloud communication scenarios invoking HTTP services or remote-enabled function modules \(RFMs\) in on-premise ABAP systems.
 
 
 
 ### **Does the Cloud Connector work with the SAP BTP ABAP environment?**
 
-As of version 2.11, the Cloud Connector supports communication from and to the SAP BTP ABAP environment, when using the **Neo** Connectivity service. Using the **Cloud Foundry** Connectivity service requires a Cloud Connector version 2.12.3 or higher.
+The Cloud Connector supports communication from and to the SAP BTP ABAP environment using the **Cloud Foundry** Connectivity service, which requires a Cloud Connector version 2.12.3 or higher.
 
 
 
 ### **How do I bind multiple Cloud Connectors to one SAP BTP subaccount?**
 
-As of version 2.9, you can connect multiple Cloud Connectors to a single subaccount. This lets you assign multiple separate corporate network segments.
+You can connect multiple Cloud Connectors to a single subaccount. This lets you assign multiple separate corporate network segments.
 
 Those Cloud Connectors are distinguishable based on the location ID, which you must provide to the destination configuration on the cloud side.
-
-> ### Note:  
-> During an upgrade, location IDs provided in earlier versions of the Cloud Connector are dropped to ensure that running scenarios are not disturbed.
 
 
 
 ### **Is WebSocket communication through the Cloud Connector supported?**
 
-Yes, this is possible as of version 2.12.
+Yes, this is possible.
 
 
 
@@ -581,7 +582,7 @@ No, this functionality is not currently planned.
 
 ### **Can I use the Cloud Connector from cloud to on-premise for any protocol?**
 
-As of version 2.10, you can use the TCP channel of the Cloud Connector, if the client supports a SOCKS5 proxy to establish the connection. However, only the HTTP and RFC protocols currently provide an additional level of access control by checking invoked resources.
+You can use the TCP channel of the Cloud Connector, if the client supports a SOCKS5 proxy to establish the connection and the protocol is TCP-based. However, only the HTTP and RFC protocols currently provide an additional level of access control by checking invoked resources.
 
 
 

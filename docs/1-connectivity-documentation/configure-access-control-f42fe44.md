@@ -22,7 +22,9 @@ Find the detailed configuration steps for each communication protocol here:
 
 ## Copy Access Control Settings
 
-When you add new subaccounts, you can copy the complete access control settings from another subaccount on the same Cloud Connector. You can also do it any time later by using the import/export mechanism provided by the Cloud Connector.
+Adding a new subaccount is not of any use unless you expose the systems you want to be available for this subaccount in the access control settings. You can copy the complete access control settings from another subaccount on the same Cloud Connector, or from a file, by using the import/export mechanism provided by the Cloud Connector.
+
+You can find detailed information, for example the entry creation date for access control or resource entries, by choosing the *Details* button in the **Actions** column.
 
 
 
@@ -33,6 +35,8 @@ When you add new subaccounts, you can copy the complete access control settings 
 3.  You can later import this file into a different Cloud Connector.
 
 
+
+<a name="loiof42fe4471d6a4a5fb09b7f3bb83c66a4__section_tkl_jsw_1bc"/>
 
 ## Import Access Control Settings
 
@@ -51,6 +55,197 @@ Two additional options define the behavior of the import:
     > A system mapping is uniquely identified by the combination of virtual host and port.
 
 -   *Include Resources*: When this checkbox is selected \(default\), the resources that belong to an imported system are also imported. Otherwise no resources are imported, that is, imported system mappings do not expose any resources.
+
+
+
+<a name="loiof42fe4471d6a4a5fb09b7f3bb83c66a4__section_ukl_jsw_1bc"/>
+
+## Backend Types
+
+When creating a new access control entry, you can select one of the following backend types :
+
+
+<table>
+<tr>
+<th valign="top">
+
+Type
+
+</th>
+<th valign="top">
+
+Supported Protocols
+
+</th>
+<th valign="top">
+
+Type-Specific Features
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+ABAP System
+
+</td>
+<td valign="top">
+
+HTTP\(S\), RFC\(S\), TCP\(S\)
+
+</td>
+<td valign="top">
+
+Supports:
+
+-   ABAP-specific connection check features
+-   [URL mangling for BSPs](https://community.sap.com/t5/additional-blogs-by-sap/bsp-in-depth-url-mangling/ba-p/12859663) 
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Non-SAP System
+
+</td>
+<td valign="top">
+
+HTTP\(S\), TCP\(S\), LDAP\(S\)
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Other SAP System
+
+</td>
+<td valign="top">
+
+HTTP\(S\), TCP\(S\)
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+SAP Application Server Java
+
+</td>
+<td valign="top">
+
+HTTP\(S\)
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+SAP Business Connector
+
+</td>
+<td valign="top">
+
+HTTP\(S\)
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+SAP Composition Environment
+
+</td>
+<td valign="top">
+
+HTTP\(S\)
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+SAP Gateway
+
+</td>
+<td valign="top">
+
+HTTP\(S\), RFC\(S\), TCP\(S\)
+
+</td>
+<td valign="top">
+
+Supports:
+
+-   [URL mangling for BSPs](https://community.sap.com/t5/additional-blogs-by-sap/bsp-in-depth-url-mangling/ba-p/12859663)
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+SAP HANA
+
+</td>
+<td valign="top">
+
+HTTP\(S\), TCP\(S\)
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+SAP Process Integration
+
+</td>
+<td valign="top">
+
+HTTP\(S\)
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+</table>
 
 **Related Information**  
 

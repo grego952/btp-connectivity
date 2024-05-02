@@ -34,11 +34,11 @@ The *Log and Trace Files* page includes some files for troubleshooting that are 
 
 If you encounter problems that seem to be caused by some trouble in the communication between your cloud application and the on-premise system, choose *Log and Trace Files* from your *Subaccount* menu, go to section *Settings*, and activate the respective traces by selecting the *Edit* button:
 
--   *Cloud Connector Loggers* adjusts the levels for Java loggers directly related to Cloud Connector functionality.
--   *Other Loggers* adjusts the log level for all other Java loggers available at the runtime. Change this level only when requested to do so by SAP support. When set to a level higher than `Information`, it generates a large number of trace entries.
+-   *Cloud Connector Trace Level* adjusts the levels for Java loggers directly related to Cloud Connector functionality.
+-   *Other Components Trace Level* adjusts the log level for all other Java loggers available at the runtime. Change this level only when requested to do so by SAP support. When set to a level higher than `Information`, it generates a large number of trace entries.
 -   *CPIC Trace Level* allows you to set the level between 0 and 3 and provides traces for the CPIC-based RFC communication with ABAP systems.
--   When the *Payload Trace* is activated for a subaccount, all the HTTP and RFC traffic crossing the tunnel for that subaccount going through this Cloud Connector, is traced in files with names `traffic_trace_<subaccount id>_on_<regionhost>.trc`. This is helpful if you need to understand what documents have been exchanged between the involved systems.
--   **Payload SNC Trace**: When the *Payload SNC trace* is activated for an account, all RFC SNC-based traffic crossing a service channel for that account \(going through this Cloud Connector\), is traced in files with names *payload\_snc\_trace\_<account id\>\_on\_<landscapehost\>.trc*. This is helpful if you need to understand issues with SNC termination in the Cloud Connector.
+-   When the *Tunnel Traffic Trace* is activated for a subaccount, all the HTTP and RFC traffic crossing the tunnel for that subaccount going through this Cloud Connector, is traced in files with names `tunnel_traffic_<account id>_on_<landscapehost>.trc`. This is helpful if you need to understand what documents have been exchanged between the involved systems.
+-   **ABAP Cloud SNC Traffic Trace**: When the *ABAP Cloud SNC traffic trace* is activated for an account, all RFC SNC-based traffic crossing a service channel for that account \(going through this Cloud Connector\), is traced in files with names *snc\_traffic\_<account id\>\_on\_<landscapehost\>.trc*. This is helpful if you need to understand issues with SNC termination in the Cloud Connector.
 -   *SSL Trace*: When the SSL trace is activated, the `ljs_trace.log` file includes information for SSL-protected communication. To activate a change of this setting, a restart is required. Activate this trace only when requested by SAP support. It has a high impact on performance as it produces a large amount of traces.
 
 -   *Automatic Cleanup* lets you remove old trace files that have not been changed for a period of time exceeding the configured interval. You can choose from a list of predefined periods. The default is `Never`.
@@ -46,7 +46,7 @@ If you encounter problems that seem to be caused by some trouble in the communic
 ![](images/SCC_Troubleshooting_-_Log_Settings_f567ff2.png)
 
 > ### Caution:  
-> Use any **payload and CPIC tracing at level 3** carefully, and only when requested to do so for support reasons. These traces may write sensitive information \(such as payload data of HTTP/RFC requests and responses\) to the trace files, and thus present a potential security risk. The Cloud Connector supports the implementation of a "four-eyes principle" for activating the trace levels that dump the network traffic into a trace file. This principle requires two users to activate a trace level that records traffic data.
+> Use any **traffic and CPIC tracing at level 3** carefully, and only when requested to do so for support reasons. These traces may write sensitive information \(such as payload data of HTTP/RFC requests and responses\) to the trace files, and thus present a potential security risk. The Cloud Connector supports the implementation of a "four-eyes principle" for activating the trace levels that dump the network traffic into a trace file. This principle requires two users to activate a trace level that records traffic data.
 > 
 > For more information, see [Secure the Activation of Traffic Traces](secure-the-activation-of-traffic-traces-4c8f678.md).
 
@@ -120,10 +120,10 @@ If you contactSAP support for help, please always attach the appropriate log fil
 
 Some typical settings to get the required data are listed below:
 
--   *<Cloud Connector Loggers\>* provide **details related to connections to SAP BTP and to backend systems as well as master-shadow communication in case of a high availability setup**. However, it does not contain any payload data. This kind of trace is written into `ljs_trace.log`, which is the most relevant log for the Cloud Connector.
--   *<Other Loggers\>* provide **details related to the tomcat runtime**, in which the Cloud Connector is running. The traces are written into `ljs_trace.log` as well, but they are needed only in very special support situations. If you don't need these traces, leave the level on `Information` or even lower.
--   **Payload data** are written into the traffic trace file for HTTP or RFC requests if the payload trace is activated, or into the CPI-C trace file for RFC requests, if the CPI-C trace is set to level 3.
--   **Payload SNC data** are written into a payload SNC trace file for incoming SNC RFC requests if SNC payload trace is activated.
+-   *<Cloud Connector Trace\>* provides **details related to connections to SAP BTP and to backend systems as well as master-shadow communication in case of a high availability setup**. However, it does not contain any payload data. This kind of trace is written into `scc_core.trc`, which is the most relevant log for the Cloud Connector.
+-   *<Other Components Trace\>* provides **details related to the tomcat runtime**, in which the Cloud Connector is running. The traces are written into `scc_core.trc` as well, but they are needed only in very special support situations. If you don't need these traces, leave the level on `Information` or even lower.
+-   **Tunnel traffic** is written into the traffic trace file for HTTP or RFC requests if the tunnel traffic trace is activated, or into the CPI-C trace file for RFC requests, if the CPI-C trace is set to level 3.
+-   **ABAP Cloud SNC traffic** is written into a ABAP Cloud SNC traffic file for incoming SNC RFC requests if ABAP Cloud SNC traffic trace is activated.
 -   *<TLS trace\>* is helpful to **analyze TLS handshake failures** from Cloud Connector to Cloud or from Cloud Connector to backend. It should be turned off again as soon as the issue has been reproduced and recorded in the traces.
 -   Setting the audit log on level `ALL` for *<Subaccount Audit Level\>* is the easiest way to **check if a request reached the the Cloud Connector and if it is being processed**.
 

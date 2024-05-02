@@ -326,6 +326,23 @@ Oracle JDK 64-bit
 
 </td>
 </tr>
+<tr>
+<td valign="top">
+
+[SAP Machine](https://sap.github.io/SapMachine/) 64-bit
+
+</td>
+<td valign="top">
+
+21
+
+</td>
+<td valign="top">
+
+2.17.0 and higher
+
+</td>
+</tr>
 </table>
 
 Back to [Content](prerequisites-e23f776.md#loioe23f776e4d594fdbaeeb1196d47bbcc0__content)

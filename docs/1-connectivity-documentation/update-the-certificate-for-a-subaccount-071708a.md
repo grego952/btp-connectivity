@@ -27,13 +27,13 @@ See:
 
 Proceed as follows to update your subaccount certificate:
 
-1.  From the main menu, choose your subaccount.
+1.  From the main menu, choose your subaccount, and navigate to subaccount overview.
 
     > ### Note:  
     > To check the certificate's validity, click on the *<Subaccount Certificate\>* in section *Subaccount Overview*.
 
-2.  Choose the *Certificate* button. A dialog opens, requesting a user name and password.
-3.  Enter *<User Name\>* and *<Password\>* and choose *OK*. The certificate assigned to your subaccount is refreshed.
+2.  Press the *Certificate* button. Depending on the cloud environment, you can refresh using authentication data from a file or manually by providing user name and password, or only the latter. The respective dialog or wizard is shown.
+3.  Enter *<User Name\>* and *<Password\>* \(or use the file with authentication data if the option is offered\) and choose *Refresh* \(or *Finish*\). The certificate assigned to your subaccount is refreshed.
 
     > ### Note:  
     > In the **Cloud Foundry** environment, you must provide your `Login E-mail` instead of a user ID as *<User Name\>*.
@@ -41,8 +41,4 @@ Proceed as follows to update your subaccount certificate:
     > ### Tip:  
     > When using SAP Cloud Identity Services - Identity Authentication \(IAS\) as platform identity provider with two-factor authentication \(2FA / MFA\) for your subaccount, you can simply append the required token to the regular password. For example, if your password is "eX7?6rUm" and the one-time passcode is "123456", you must enter "eX7?6rUm123456" into the *<Password\>* field.
 
-4.  If you have configured a disaster recovery subaccount, go to section *Disaster Recovery Subaccount* below and choose *Refresh Disaster Recovery Certificate*.
-5.  Enter *<User Name\>* and *<Password\>* as in step 3 and choose *OK*.
-
-![](images/SCC_ManagingSubaccounts_-_UpdateCertificate_784e094.png)
 

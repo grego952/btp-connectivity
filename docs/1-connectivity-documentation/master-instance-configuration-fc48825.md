@@ -103,6 +103,9 @@ Administrator, Display, Support
 -   `haPort`: Port on which the shadow instance can connect \(restart required after change\).
 -   `allowedShadowHost`: Name of the shadow host \(a string\) that is allowed to connect; an empty string signifies that any host is allowed to connect as shadow.
 
+> ### Note:  
+> `haPort` is an optional field in the HA shadow configuration, available as of version 2.17.0. Default value for the `haPort` parameter is the Cloud Connector's UI port.
+
 
 
 ## Example
@@ -208,6 +211,9 @@ Administrator
 **Errors:**
 
 -   `INVALID_REQUEST` \(400\): if the name of the shadow host is not a valid host name
+
+> ### Note:  
+> `haPort` is an optional field in the HA shadow configuration, available as of version 2.17.0. Default value for the `haPort` parameter is the Cloud Connector's UI port.
 
 
 

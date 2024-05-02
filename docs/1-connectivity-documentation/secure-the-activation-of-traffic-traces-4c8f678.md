@@ -31,8 +31,8 @@ By assigning these roles to two different people, you can ensure that both perso
     -   Initially, the file should contain a line like `allowed=false`.
     -   In the security properties of the file `scc_config.ini`\(same directory\), make sure that only the OS user who runs the `cloud connector` process has write/modify permissions for this file. The most efficient way to do this is simply by removing all other users from the list.
 
-2.  Once you've created this file, the Cloud Connector refuses any attempt to activate the *Payload Trace* or *SNC Payload Trace* flag.
-3.  To set CPIC trace level 3 or activate any payload trace, first the owner of `writeHexDump` must change the file content from `allowed=false` to `allowed=true`. Thereafter, the *Administrator* user can activate any payload trace from the Cloud Connector administration screens.
+2.  Once you've created this file, the Cloud Connector refuses any attempt to activate the *Tunnel Traffic Trace* or *ABAP Cloud SNC Traffic Trace* flag.
+3.  To set CPIC trace level 3 or activate any traffic trace, first the owner of `writeHexDump` must change the file content from `allowed=false` to `allowed=true`. Thereafter, the *Administrator* user can activate any traffic trace from the Cloud Connector administration screens.
 
 
 
@@ -43,6 +43,6 @@ By assigning these roles to two different people, you can ensure that both perso
     -   The `scctunnel` user needs read-only permissions for this file.
     -   Initially, the file should contain a line like `allowed=false`.
 
-2.  Once you've created this file, the Cloud Connector refuses any attempt to activate the *Payload Trace* or *SNC Payload Trace* flag.
-3.  To set CPIC trace level 3 or activate any payload trace, first the owner of the `writeHexDump` file mentioned above must change the file content from `allowed=false` to `allowed=true`. Then, the *Administrator* user can activate any payload trace from the Cloud Connector administration screens.
+2.  Once you've created this file, the Cloud Connector refuses any attempt to activate the *Tunnel Traffic Trace* or *ABAP Cloud SNC Traffic Trace* flag.
+3.  To set CPIC trace level 3 or activate any traffic trace, first the owner of the `writeHexDump` file mentioned above must change the file content from `allowed=false` to `allowed=true`. Then, the *Administrator* user can activate any traffic trace from the Cloud Connector administration screens.
 

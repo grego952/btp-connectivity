@@ -2,13 +2,15 @@
 
 # Master and Shadow Administration
 
+Manage the Cloud Connector master and shadow instances in a high availability setup.
+
 
 
 ## Administration of Shadow Instances
 
 There are several administration activities you can perform on the shadow instance. All configuration of tunnel connections, host mappings, access rules, and so on, must be maintained on the master instance; however, you can replicate them to the shadow instance for display purposes. You may want to modify the **check interval** \(time between checks of whether the master is still alive\) and the **takeover delay** \(time the shadow waits to see whether the master would come back online, before taking over the master role itself\).
 
-As of Cloud Connector version 2.11.2, you can configure the timeout for the connection check, by pressing the gear icon in the section *Connection To Master* of the shadow connector main page.
+Also, you can configure the timeout for the connection check, by pressing the gear icon in the section *Connection To Master* of the shadow connector main page.
 
 ![](images/SCC_HA_-_Shadow_TimoutSettings_355ae0c.png)
 
@@ -21,6 +23,8 @@ Keep in mind the following points:
 -   Audit logs are only written on the master instance and are not transferred to the shadow. However, if the shadow becomes the master for some time, the audit log is potentially distributed over both master and shadow instances.
 
 You can use the *Reset* button to drop all the configuration information on the shadow that is related to the master, but only if the shadow is not connected to the master.
+
+As of version 2.17, the shadow instance lets you monitor [Hardware Metrics](hardware-metrics-6684f08.md) just like the master instance.
 
 
 

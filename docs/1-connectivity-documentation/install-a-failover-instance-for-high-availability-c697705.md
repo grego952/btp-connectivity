@@ -2,18 +2,7 @@
 
 # Install a Failover Instance for High Availability
 
-The Cloud Connector lets you install a redundant instance that monitors the main instance.
-
-
-
-<a name="loioc697705179a24d2b8b6be038fae59c33__context"/>
-
-## Context
-
-In a failover setup, when the main instance should go down for some reason, a redundant one can take over its role. The main instance of the Cloud Connector is called **master** and the redundant instance is called the **shadow**. The shadow has to be installed and connected to its master. During the setup of high availability, the master pushes the entire configuration to the shadow. Later on, during normal operation, the master also pushes configuration updates to the shadow. Thus, the shadow instance is kept synchronized with the master instance. The shadow pings the master regularly. If the master is not reachable for a while, the shadow tries to take over the master role and to establish the tunnel to SAP BTP.
-
-> ### Note:  
-> For detailed information about sizing of the master and the shadow instance, see also [Sizing Recommendations](sizing-recommendations-f008494.md).
+Install a redundant Cloud Connector instance \(shadow instance\) that monitors the main instance.
 
 <a name="concept_p4y_fhj_q4"/>
 
@@ -25,7 +14,7 @@ In a failover setup, when the main instance should go down for some reason, a re
 
 <a name="concept_p4y_fhj_q4__preparing"/>
 
-## Preparing the Master Instance for High Availability
+## Prepare the Master Instance for High Availability
 
 1.  Open the Cloud Connector UI and go to the master instance.
 2.  From the main menu, choose *High Availability*.
@@ -33,17 +22,26 @@ In a failover setup, when the main instance should go down for some reason, a re
 
     ![](images/SCC_HA_-_Enable_f1b81ec.png)
 
-    If this flag is not activated, no shadow instance can connect to this Cloud Connector. Additionally, when providing a concrete *Shadow Host*, you can ensure that only from this host a shadow instance can be connected.
+    If this flag is not activated, no shadow instance can connect to this Cloud Connector. Additionally, by providing a concrete *Shadow Host* you can ensure that only from this host a shadow instance can be connected.
 
-    > ### Caution:  
-    > Pressing the *Reset* button resets all high availability settings to their initial state. As a result, high availability is disabled and the shadow host is cleared. Reset only works if no shadow is connected.
 
+**Optional Configuration**
+
+1.  Choose *Edit*.
+
+    ![](images/SCC_HA_-_Enable_Optional_af20cd8.png)
+
+2.  You can now change the high availability \(HA\) port to a different one from where the Cloud Connector administration UI is accessible. This port is then used for the master/shadow communication only, that is, to check for failovers or push configuration. This is especially needed in case of a [Logon to the Cloud Connector via Client Certificate](logon-to-the-cloud-connector-via-client-certificate-daa547f.md), so that master/shadow communication is still possible without having a client certificate for logon.
+3.  Additionally, by providing a concrete shadow host you can ensure that a shadow instance can be connected from this host only.
+
+> ### Caution:  
+> Pressing the *Reset* button resets all high availability settings \(besides the own port configuration\) to their initial state. As a result, high availability is disabled and the shadow host is cleared. Reset only works if no shadow is connected.
 
 
 
 <a name="concept_p4y_fhj_q4__install"/>
 
-## Installing and Setting Up a Shadow Instance
+## Install and Set Up a Shadow Instance
 
 Install the shadow instance in the same network segment as the master instance. Communication between master and shadow via proxy is not supported. The same distribution package is used for master and shadow instance.
 
@@ -54,19 +52,18 @@ Install the shadow instance in the same network segment as the master instance. 
 
     ![](images/SCC_HA_-_Installation_Type_fd13d62.png)
 
-2.  From the main menu, choose *Shadow Connector* and provide connection data for the master instance, that is, the master host and port. You can choose from the list of known host names, to use the host name under which the shadow host is visible to the master. You can specify a host name manually, if the one you want is not on the list. For the first connection, you must log on to the master instance, using the user name and password for the master instance. The master and shadow instances exchange X.509 certificates, which will be used for mutual authentication.
+2.  From the main menu, choose *Shadow Connector* and provide connection data for the master instance, that is, the master host and port. Optionally, you can change the high availability \(HA\) port to a different one from where the Cloud Connector administration UI is accessible. This port is then used for the master/shadow communication only, that is, to check for failovers or push configuration. This is especially needed in case of a [Logon to the Cloud Connector via Client Certificate](logon-to-the-cloud-connector-via-client-certificate-daa547f.md) so that master/shadow communication is still possible without having a client certificate for logon.
+
+    Additionally, you can choose from the list of known host names, to use the host name under which the shadow host is visible to the master. You can specify a host name manually, if the one you want is not on the list. For the first connection, you must log on to the master instance, using the user name and password for the master instance. The master and shadow instances exchange X.509 certificates, which will be used for mutual authentication.
 
     ![](images/SCC_HA_-_Shadow_Edit_5499f27.png)
 
     > ### Note:  
-    > If you want to attach the shadow instance to a different master, press the *Reset* button. All your high availability settings will be removed, that is, reset to their initial state. This works only if the shadow is not connected.
+    > If you want to attach the shadow instance to a different master, press the *Reset* button. All your high availability settings \(besides the own port configuration\) will be removed, that is, reset to their initial state. This works only if the shadow is not connected.
 
 3.  Upon a successful connection, the master instance pushes the entire configuration plus some information about itself to the shadow instance. You can see this information in the UI of the shadow instance, but you can't modify it.
-4.  The UI on the master instance shows information about the connected shadow instance. From the main menu, choose *High Availability*:
-
-    ![](images/SCC_HA_-_ShadowInfoMaster_f78b153.png)
-
-5.  *High Availability* alert messages inform you if configuration changes have not been pushed successfully. This might happen, for example, if a temporary network failure occurs at the same time a configuration change is made. As an administrator, you can check if there is an inconsistency in the configuration data between master and shadow that could cause trouble if the shadow needs to take over. Typically, the master recognizes this situation and tries to push the configuration change at a later time automatically. If this is successful, all failure alerts are removed and replaced by a warning alert showing that there had been trouble before. These alerts are diesplayed in the general *Alerting* section.
+4.  The UI on the master instance shows information about the connected shadow instance. To display this information, choose *High Availability* from the main menu.
+5.  If configuration changes have not been pushed successfully, alert messages are generated in the general **Alerting** section. This might happen, for example, if a temporary network failure occurs at the same time a configuration change is made. As an administrator, you can check if there is an inconsistency in the configuration data between master and shadow that could cause trouble if the shadow needs to take over. Typically, the master recognizes this situation and tries to push the configuration change at a later time automatically. If this is successful, all failure alerts are removed and replaced by a warning alert showing that there had been trouble before.
 
     If the master doesn't recover automatically, disconnect, then reconnect the shadow, which triggers a complete configuration transfer.
 
@@ -76,5 +73,5 @@ Install the shadow instance in the same network segment as the master instance. 
 
 [Initial Configuration](initial-configuration-db9170a.md "After installing and starting the Cloud Connector, log on to the administration UI and perform the required configuration to make your Cloud Connector operational.")
 
-[Master and Shadow Administration](master-and-shadow-administration-7f57de1.md "")
+[Master and Shadow Administration](master-and-shadow-administration-7f57de1.md "Manage the Cloud Connector master and shadow instances in a high availability setup.")
 

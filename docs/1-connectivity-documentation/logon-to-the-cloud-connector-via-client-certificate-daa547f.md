@@ -4,8 +4,10 @@
 
 Switch from default logon to client certificate logon to access the Cloud Connector.
 
-> ### Restriction:  
-> Limitation for Cloud Connector version 2.16.0: This feature does not work if *high availability* setup is active. A Cloud Connector shadow instance cannot connect due to missing trust with error: *There is no trust with Cloud Connector on https://<host\>:<port\>. Reset shadow configuration and try to connect shadow again*.
+> ### Caution:  
+> If *high availability* setup is active, this feature does only work if *an additional port has been specified* \(for more information, see [Install a Failover Instance for High Availability](install-a-failover-instance-for-high-availability-c697705.md)\).
+> 
+> Otherwise, a Cloud Connector shadow instance cannot connect due to missing trust with error: *There is no trust with Cloud Connector on https://<host\>:<port\>. Reset shadow configuration and try to connect shadow again*.
 
 > ### Restriction:  
 > Configuring the logon with a certificate is not allowed for SAP-operated Cloud Connectors, for example in the context of *Enterprise Cloud Services* or *S/4HANA Private Cloud Edition*.

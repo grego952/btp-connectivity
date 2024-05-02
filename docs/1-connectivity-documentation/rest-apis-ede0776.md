@@ -196,6 +196,11 @@ The following general errors can be returned by each API:
 
 Most APIs return specific error details depending on the situation. Such errors are addressed by the respective API description.
 
+> ### Remember:  
+> The Cloud Connector forbids simultaneous changes on a subaccount from different clients. A subaccount used by the Cloud Connector UI is blocked for changes made from other instances. Even just *selecting* a subaccount in the Cloud Connector dashboard \(displaying the list of all subaccounts\) blocks this subaccount. If you have selected more than one subaccount, the first one in the list is blocked.
+> 
+> Operations on blocked resources raise an error. In this case, REST APIs return the code *409*.
+
 Back to [Top](rest-apis-ede0776.md#loioede077617d9d4181b5c755fed15e56c3__top)
 
 

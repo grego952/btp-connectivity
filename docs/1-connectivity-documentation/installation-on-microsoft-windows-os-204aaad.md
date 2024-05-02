@@ -23,10 +23,9 @@ You can choose between a simple `portable` variant of the Cloud Connector and th
 
 -   You have one of the supported 64-bit operating systems. For more information, see [Product Availability Matrix](prerequisites-e23f776.md#loioe23f776e4d594fdbaeeb1196d47bbcc0__matrix).
 -   You have downloaded either the `portable` variant as ZIP archive for Windows, or the MSI `installer` from the [SAP Development Tools for Eclipse](https://tools.hana.ondemand.com/#cloud) page.
--   You must install Microsoft Visual Studio C++ 2013 *and* \(for the latest SAP JVM versions\) Microsoft Visual Studio C++ 2019 runtime libraries \(download `vcredist_x64.exe` for each version\). For more information, see [Visual C++ Redistributable Packages for Visual Studio 2013](https://www.microsoft.com/en-us/download/details.aspx?id=40784) and [Microsoft Visual C++ Redistributable latest supported downloads](https://docs.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170).
+-   You must install Microsoft Visual Studio C++ 2019 runtime libraries \(download `vc_redist.x64.exe`\).
 
-    > ### Note:  
-    > Even with the more recent version 2019, you still must install the Microsoft Visual Studio C++ 2013 libraries, since they are needed for the Cloud Connector.
+    For more information, see [Microsoft Visual C++ Redistributable latest supported downloads](https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170).
 
 -   A supported Java version must be installed. For more information, see [JDKs](prerequisites-e23f776.md#loioe23f776e4d594fdbaeeb1196d47bbcc0__jdk).
 

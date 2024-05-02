@@ -108,6 +108,9 @@ Administrator, Display, Support
 > ### Note:  
 > This API may take some time to fetch the own hosts from the environment.
 
+> ### Note:  
+> `haPort` is a new field in the HA shadow configuration, available as of version 2.17.0. Default value for the `haPort` parameter is the Cloud Connector's UI port.
+
 
 
 ## Example
@@ -223,6 +226,9 @@ Administrator
 **Response Properties:**
 
 See *Request Properties*.
+
+> ### Note:  
+> `haPort` is an optional field in the HA shadow configuration, available as of version 2.17.0. Default value for the `haPort` parameter is the Cloud Connector's UI port.
 
 
 

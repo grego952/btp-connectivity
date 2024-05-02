@@ -137,50 +137,14 @@ In the subaccount dashboard \(choose your *Subaccount* from the main menu\), you
 
 In the screenshot above, the subaccount with display name *trial* \(actual subaccount ID starts with *ab1220dc-5bfb-45d1-9...*\) is already connected, but has no active resources exposed. All other subaccounts are connected with exposed resources and are fully operational. In addition, depending on the connection state, the dashboard allows you to do disconnect and connect subaccounts by pressing the respective button in the *Actions* column. You may also view details of, delete, or navigate to a subaccount using buttons from the *Actions* column.
 
-The *Sort* buttons for the columns **Subaccount** and **Display Name** let you sort the entries by the column either ascending or descending, and the *Filter* buttons in the colunms let you filter the listed entries.
+The *Sort* buttons for the columns **Subaccount** and **Display Name** let you sort the entries by the column either ascending or descending, and the *Filter* buttons in the columns let you filter the listed entries.
 
 You can use the *Filter* buttons above the dashboard to filter the shown subaccounts based on the connection status. You can select *all subaccounts*, *all connected ones*, *all disconnected ones*, *all subaccounts currently in connecting or reconnecting status*, or *all subaccounts for which establishing the connection has failed*.
 
-If you want to connect an additional subaccount with your on-premise landscape, simply press the *Add Subaccount* button, which opens a dialog that is similar to the [Initial Configuration](initial-configuration-db9170a.md) operation when establishing the first connection.
+If you want to connect an additional subaccount to your on-premise landscape, press the *Add Subaccount* button. For more information on the configuration procedure, see [Set up Connection Parameters and HTTPS Proxy](initial-configuration-db9170a.md#loiodb9170a7d97610148537d5a84bf79ba2__configure_proxy) in the context of initial configuration.
 
-![](images/SCC_ManagingSubaccounts_-_AddSubaccount_e51337e.png)
-
-
-
-## Procedure
-
-1.  The *<Region\>* field specifies the SAP BTP region that should be used, for example, `Europe (Rot)`. Choose the one you need from the drop-down list.
-
-    > ### Remember:  
-    > The available regions and region domains depend on the SAP BTP environment you are using. For more information, see [Regions](https://help.sap.com/viewer/3504ec5ef16548778610c7e89cc0eac3/Cloud/en-US/350356d1dc314d3199dca15bd2ab9b0e.html) \(Cloud Foundry and ABAP environment\) or [Regions and Hosts Available for the Neo Environment](https://help.sap.com/viewer/ea72206b834e4ace9cd834feed6c0e09/Cloud/en-US/d722f7cea9ec408b85db4c3dcba07b52.html).
-
-    > ### Tip:  
-    > You can also configure a region yourself, if it is not part of the standard list. Either insert the region host manually, or create a custom region, as described in [Configure Custom Regions](configure-custom-regions-a994a75.md).
-
-2.  For *<Subaccount\>* and *<Subaccount User\>* \(user/password\), enter the values you obtained when you registered your account on SAP BTP.
-
-    > ### Note:  
-    > If your subaccount is on **Cloud Foundry**, you must enter the subaccount **ID** as *<Subaccount\>*, rather than its actual \(technical\) name. For information on getting the subaccount ID, see [Find Your Subaccount ID \(Cloud Foundry Environment\)](find-your-subaccount-id-cloud-foundry-environment-b43eff2.md). As *<Subaccount User\>* you must provide your `Login E-mail` instead of a user ID.
-    > 
-    > For the **Neo** environment, enter the subaccount's **technical name** in the field *<Subaccount\>*, not the subaccount ID.
-
-    Alternatively, you can add a new subaccount user in the SAP BTP cockpit, assign the required authorization \(see section **Prerequisites** above\), and use the new user and password.
-
-    > ### Note:  
-    > The Cloud Connector does not yet support *SAP Universal ID*. Please use your S-user or P-user credentials for the *<subaccount user\>* and *<password\>* fields instead.
-    > 
-    > For more information, see SAP note [3085908](https://me.sap.com/notes/3085908).
-
-    > ### Tip:  
-    > When using SAP Cloud Identity Services - Identity Authentication \(IAS\) as platform identity provider with two-factor authentication \(2FA / MFA\) for your subaccount, you can simply append the required token to the regular password. For example, if your password is "eX7?6rUm" and the one-time passcode is "123456", you must enter "eX7?6rUm123456" into the *<Password\>* field.
-
-    > ### Tip:  
-    > For a subaccount in the **Cloud Foundry** environment, the Cloud Connector supports the use of a custom identity provider \(IDP\) via single sign-on \(SSO\) passcode. For more information, see [Use a Custom IDP for Subaccount Configuration](use-a-custom-idp-for-subaccount-configuration-2022612.md).
-
-3.  \(Optional\) You can define a *<Display Name\>* that allows you to easily recognize a specific subaccount in the UI compared to the technical subaccount name.
-4.  \(Optional\) You can define a *<Location ID\>* that identifies the location of this Cloud Connector for a specific subaccount. The location ID is used as routing information and therefore you can connect multiple Cloud Connectors to a single subaccount. If you don't specify any value for *<Location ID\>*, the default is used, which represents the behavior of previous Cloud Connector versions. The location ID must be unique per subaccount and should be an identifier that can be used in a URI. To route requests to a Cloud Connector with a location ID, the location ID must be configured in the respective destinations.
-5.  \(Optional\) You can provide a *<Description\>* of the subaccount that is shown when clicking on the *Details* icon in the *Actions* column.
-6.  Choose *Save*.
+> ### Remember:  
+> Keep in mind that the specification of an HTTPS proxy is only offered when establishing the first connection.
 
 
 
@@ -199,7 +163,7 @@ If you want to connect an additional subaccount with your on-premise landscape, 
 
 [Copy a Subaccount Configuration](copy-a-subaccount-configuration-513d129.md "Copy an existing subcaccount configuration in the Cloud Connector to another subaccount.")
 
-[Update the Certificate for a Subaccount](update-the-certificate-for-a-subaccount-071708a.md "")
+[Update the Certificate for a Subaccount](update-the-certificate-for-a-subaccount-071708a.md "Certificates used by the Cloud Connector are issued with a limited validity period. To prevent a downtime while refreshing the certificate, you can update it for your subaccount directly from the administration UI.")
 
 [Configure a Disaster Recovery Subaccount](configure-a-disaster-recovery-subaccount-39447fa.md "Configure a subaccount as backup for disaster recovery.")
 

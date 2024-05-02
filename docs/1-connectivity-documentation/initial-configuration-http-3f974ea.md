@@ -28,6 +28,13 @@ A second option is to start a *certificate signing request* procedure as describ
 
 ![](images/SCC_CS_InitialConfigHTTP_-_CSR_45302a1.png)
 
+> ### Note:  
+> If having intermediate certificates in place, make sure you import the complete chain \(for example, as PKCS\#7 file\) so that mTLS connections always work properly.
+> 
+> You can verify this in the **Certificate Chain** area of the **System Certificate** section:
+> 
+> ![](images/SCC_CS_InitialConfigHTTP_-_CSR_CertChain_3b3aca4.png)
+
 A third option is to generate a self-signed certificate. It might be useful if no CA is needed, for example, in a demo setup or if you want to use a dedicated CA. For this option, choose *Create and import a self-signed certificate*:
 
 ![](images/SCC_CS_InitialConfigHTTP_-_Certificate_Selfsigned_e82bc08.png)

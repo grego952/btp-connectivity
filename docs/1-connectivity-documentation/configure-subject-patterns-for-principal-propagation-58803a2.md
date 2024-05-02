@@ -11,17 +11,17 @@ Using this configuration option, you can define different patterns identifying t
 
 
 
-## Configure Subject Patterns
+## Configure Subject Pattern Rules
 
-To configure a subject pattern, choose *Configuration* \> *On Premise* \> *Principal Propagation*. In the table shown, you can add or modify patterns.
+To configure a subject pattern rule, choose *Configuration* \> *On Premise* \> *Principal Propagation*. In the table shown, you can add or modify a rule consisting of a pattern and a condition.
 
 ![](images/SCC_SubjectPattern_-_Configure_83c48da.png)
 
-This table represents an ordered list containing entries that have a specified condition, and the respective subject pattern. You can change the order for an entry by choosing the arrow buttons. The workflow in the Cloud Connector looks like this:
+This table represents an ordered list containing entries that have a specified condition, and the respective subject pattern. You can change the order for an entry by choosing the respective arrow buttons. The workflow in the Cloud Connector looks like this:
 
 ![](images/SCC_SubjectPattern_-_Workflow_2c30b05.png)
 
-The last entry in the table is the default one having no condition \(that is, it always matches as fallback\). This entry can not be moved or deleted.
+The last entry in the table is the default one having no condition \(that is, it always matches as fallback\). This entry can neither be moved nor deleted.
 
 To modify or add table entries, choose the *Edit* or *Add* icon:
 
@@ -37,6 +37,7 @@ Use either of the following procedures to specify a condition based on the attri
 
 -   Enter the values in the subject pattern fields manually.
 -   Use the selection menu of the corresponding field to enter a predefined variable.
+-   Optionally, provide a description.
 
 Using the selection menu, you can assign values for the following parameters:
 
@@ -118,7 +119,7 @@ By choosing *Generate Sample Certificate* you can create a sample certificate th
 
 You can change the validity settings by choosing the *Edit* button.
 
-![]()
+![](images/SCC_SubjectPattern_-_Validity_c6975b3.png)
 
 **Related Information**  
 
