@@ -4,7 +4,10 @@
 
 Configure specific parameters in a `config.json` file to create or update a Destination service instance.
 
-When creating or updating a Destination service instance, you can configure the following settings, which are part of the `config.json` input file \(see [Open Service Broker API](https://www.openservicebrokerapi.org/)\), both via SAP BTP cockpit or Cloud Foundry command line interface \(CLI\):
+> ### Note:  
+> By default, creating or updating a Destination service instance does not require passing any configuration settings.
+
+When creating or updating a Destination service instance, you can optionally configure the following settings, which are part of the `config.json` input file \(see [Open Service Broker API](https://www.openservicebrokerapi.org/)\), both via SAP BTP cockpit or Cloud Foundry command line interface \(CLI\):
 
 
 <table>
@@ -28,23 +31,6 @@ Description
 <tr>
 <td valign="top">
 
-`init_data`
-
-</td>
-<td valign="top">
-
-JSON
-
-</td>
-<td valign="top">
-
-The data \(destinations, certificates\) to initialise or update the service instance with. The data can be stored on both *service instance* data and *subaccount* data.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
 `HTML5Runtime_enabled`
 
 </td>
@@ -55,7 +41,29 @@ Boolean
 </td>
 <td valign="top">
 
-Indicates whether the SAP BTP HTML5 runtime should be enabled to work with the service instance on behalf of the HTML5 applications associated with it during deployment.
+Optional. Indicates whether the SAP BTP HTML5 runtime should be enabled to work with the service instance on behalf of the HTML5 applications associated with it during deployment.
+
+> ### Note:  
+> Check if the SAP BTP HTML5 runtime is available for the region in which the service instance is being created or updated.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`init_data`
+
+</td>
+<td valign="top">
+
+JSON
+
+</td>
+<td valign="top">
+
+Optional. The data \(destinations, certificates\) to initialise or update the service instance with. The data can be stored on both *service instance* data and *subaccount* data.
 
 </td>
 </tr>

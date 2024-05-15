@@ -6,6 +6,9 @@ Call a function module in a cloud ABAP system via RFC, using a sample Web applic
 
 This scenario performs a remote function call to invoke an ABAP function module, by using the Destination service in the Cloud Foundry environment, as well as a Cloud Foundry application router.
 
+> ### Note:  
+> For more information on invoking ABAP function modules via WebSocket RFC in SAP BTP, ABAP environment, see tutorial [WebSocket RFC to Cloud](https://developers.sap.com/tutorials/abap-websocket-rfc.html).
+
 
 
 <a name="loio55c9d13251dd451caac129594ac6dd68__tasks_tutorial_rfc"/>

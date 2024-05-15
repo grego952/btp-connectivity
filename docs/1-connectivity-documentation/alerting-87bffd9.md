@@ -20,9 +20,9 @@ You must specify the receivers of the alert e-mails \(*E-mail Configuration*\) a
 2.  Enter the sender's e-mail address \(*<Sent From\>*\).
 3.  In *<SMTP Server\>* provide the host of the mail server.
 4.  You can specify an *<SMTP port\>*, if the server is not using the default ports. For details, contact your e-mail administrator or provider.
-5.  Mark the *TLS Enabled* check box if you want to establish a TLS-encrypted connection.
+5.  Mark the *TLS Enabled* check box if you want to establish a potential TLS-encrypted connection using STARTTLS.
 6.  If the SMTP server requires authentication, provide *<User\>* and *<Password\>*.
-7.  In the *Additional Properties* section you can provide any property supported by the [Java Mail library](https://javaee.github.io/javamail/docs/api/com/sun/mail/smtp/package-summary.html). All specified properties will be passed to the SMTP client.
+7.  In the *Additional Properties* section you can provide any property supported by the [Java Mail library](https://javaee.github.io/javamail/docs/api/com/sun/mail/smtp/package-summary.html). Additionally, you can set `mail.debug` to `true` in order to get SMTP protocol debug output. All specified properties will be passed to the SMTP client.
 8.  Select *Save* to change the current configuration.
 
 ![](images/SCC_Alerting_-_Email_0c3698f.png)

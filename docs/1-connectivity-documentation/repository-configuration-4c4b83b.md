@@ -66,5 +66,26 @@ Represents the password for a repository user. If you use such a user, this prop
 
 </td>
 </tr>
+<tr>
+<td valign="top">
+
+`jco.destination.repository.check_interval`
+
+</td>
+<td valign="top">
+
+Time interval in minutes after which the associated repository is regularly checked for outdated metadata in its local cache. If outdated metadata are identified, they will be removed from the cache.
+
+The default value is 0 \(repository checking feature is disabled\).
+
+If multiple repository destination configurations refer to the same repository instance, the smallest configured *non-zero* value of all destinations will be effective for the repository. Therefore, the repository checking feature is only switched off if *all* repository destinations for the repository instance are configured with value 0, or do not specify this property.
+
+> ### Note:  
+> The configured value will only be considered if the respective destination can be used for repository metadata queries. It will be ignored if `jco.destination.repository_destination` has been configured. In this case, the property `jco.destination.repository.check_interval` must be configured in the referred repository destination instead to activate this checking feature.
+
+
+
+</td>
+</tr>
 </table>
 

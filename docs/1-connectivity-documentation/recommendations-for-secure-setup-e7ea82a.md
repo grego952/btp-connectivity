@@ -127,6 +127,9 @@ Ciphers are either enabled or disabled, and they are either compatible or incomp
 > 
 > As the set of supported ciphers may differ, the selected ciphers may not be supported by the new JVM. In that case, the Cloud Connector will not start anymore, and you must fix the issue by manually adapting the file *conf/server.xml*. After a successful switch, you can adjust the list of eligible ciphers again.
 
+> ### Tip:  
+> As of Cloud Connector version 2.17.0, you can run the script `resetCiphers` from the `scc` folder in the Cloud Connector installation directory to reset the ciphers if UI access is blocked due to wrong cipher settings.
+
 **Related Information**  
 
 

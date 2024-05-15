@@ -100,10 +100,14 @@ Back to [Step](configure-identity-propagation-for-https-a8bb87a.md#loioa8bb87a72
     > -   `icm/HTTPS/trust_client_with_subject`: this is the subject of the system certificate \(example data: `CN=SCC`, `OU=BTP Scenarios`, `O=Trust Community`, `C=DE`\).
 
     > ### Caution:  
-    > The ICM expects *blanks after the separating comma* for the issuer and subject elements. So, even if the Cloud Connector administration UI shows a string without blanks, for example: *CN=SCC,OU=BTP Scenarios,O=Trust Community,C=DE*, you must specify in ICM: *CN=SCC, OU=BTP Scenarios, O=Trust Community, C=DE*.
+    > In all kernel releases below 7.53, the ICM expects *blanks after the separating comma* for the issuer and subject elements. Even if the Cloud Connector administration UI shows a string without blanks, for example: *CN=SCC,OU=BTP Scenarios,O=Trust Community,C=DE*, you must specify in ICM: *CN=SCC, OU=BTP Scenarios, O=Trust Community, C=DE*.
+    > 
+    > As of kernel release 7.53, this restriction does not exist any more. For more information, see SAP note [3335949](https://me.sap.com/notes/3335949).
 
     > ### Caution:  
-    > Make sure that `icm/HTTPS/verify_client` is set to either `1` \(request certificate\) or `2` \(require certificate\). If the parameter is set to `0`, trust cannot be established.
+    > Make sure the parameter `icm/server_port` you are using has the attribute `VCLIENT`=1 \(request certificate\) or 2 \(require certificate\). The default value is 1.
+    > 
+    > If `VCLIENT` is set to 0, trust cannot be established. In this case, you may change the value to 1, but beware that this may have a negative influence on the user experience. Alternatively, create a new parameter `icm/server_port` with `VCLIENT`=1 and configure the Cloud Connector to use this parameter.
 
 5.  Save the profile.
 6.  Open the *ICM Monitor* \(transaction `SMICM`\) and restart the ICM by choosing *Administration* \> *ICM* \> *Exit Hard* \> *Global*.
