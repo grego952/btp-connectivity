@@ -129,11 +129,69 @@ For more information on WebSocket RFC, see also:
 
 Optional property.
 
--   If the property is not provided, its default value `CONFIGURED_USER` is used, which means that user, password, or other credentials are specified directly.
--   To enable single sign-on via principal propagation \(which means that the identity logged on in the cloud application is forwarded to the on-premise system\), set the value to `PrincipalPropagation`. In this case, you do not need to provide `jco.client.user` and `jco.client.passwd` in the configuration.
+> ### Note:  
+> SAP BTP supports the propagation of business users \(principal propagation\) and technical users from the cloud application towards on-premise systems.
+> 
+> In both cases, a specific access token representing the business user or technical user is retrieved in the RFC runtime \(for example, in JCo or SAP BTP ABAP environment\), which can then be sent to the Connectivity service.
+> 
+> For more information, see [Authenticating Users against On-Premise Systems](authenticating-users-against-on-premise-systems-b643fbe.md).
+
+-   If the property is not provided, its default value `CONFIGURED_USER` is used. In this case, user, password, or other credentials are specified directly.
+-   To enable single sign-on via principal propagation \(an access token representing the business user logged on in the cloud application is forwarded to the on-premise system\), set the value to `PrincipalPropagation`. In this case, you do not need to provide `jco.client.user` and `jco.client.passwd` in the configuration.
+-   To enable technical user propagation \(an access token representing the technical user is forwarded to the on-premise system\), set the value to `TechnicalUserPropagation`. In this case, you do not need to provide `jco.client.user` and `jco.client.passwd` in the configuration.
 
 > ### Note:  
-> For `PrincipalPropagation`, you should configure the properties `jco.destination.repository.user` and `jco.destination.repository.passwd` instead, since there are special permissions needed \(for metadata lookup in the back end\) that not all business application users might have.
+> For `PrincipalPropagation`/`TechnicalUserPropagation`, you should configure the properties `jco.destination.repository.user` and `jco.destination.repository.passwd` instead, since there are special permissions needed \(for metadata lookup in the back end\) that not all business/technical users might have.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`jco.client.tech_user_id`
+
+</td>
+<td valign="top">
+
+> ### Note:  
+> Only needed for `jco.destination.auth_type`=`TechnicalUserPropagation`.
+
+Client ID of the application.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`jco.client.tech_user_secret`
+
+</td>
+<td valign="top">
+
+> ### Note:  
+> Only needed for `jco.destination.auth_type`=`TechnicalUserPropagation`.
+
+Client secret for the Client ID.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`jco.client.tech_user_service_url`
+
+</td>
+<td valign="top">
+
+> ### Note:  
+> Only needed for `jco.destination.auth_type`=`TechnicalUserPropagation`.
+
+URL of the token service, against which the token exchange is performed.
+
+> ### Remember:  
+> The token service is not accessed through the Cloud Connector, but through the Internet.
 
 
 

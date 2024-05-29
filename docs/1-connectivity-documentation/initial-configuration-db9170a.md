@@ -280,11 +280,18 @@ Press *Add Subaccount* to define a subaccount. This will open a dialog or wizard
     7.  Choose *Finish*.
 
 
-4.  \(Skip if you have selected *manual* configuration\) For the *file-based* approach, the following dialog is shown:
+4.  \(Skip if you have selected *manual* configuration\) For the *file-based* approach using authentication data, the following dialog is shown:
 
     ![](images/SCC_InitialConfig_-_FileBasedConfig_ab635bc.png)
 
-    Choose the file containing the desired authentication data and press *Next*. You can then review the data extracted from the file, as well as optionally enter a location ID and a description \(see step 3d and 3e for details on the latter two properties\).
+    You can download the authentication data file from your subaccount in the SAP BTP cockpit. To do so,
+
+    1.  Log on to the SAP BTP cockpit and choose the subaccount you'd like connect to.
+    2.  Go to section *Connectivity* \> *Cloud Connectors* and press *Download Authentication Data*.
+    3.  Choose the file containing the authentication data and press *Next*.
+
+        You can then review the data extracted from the file, as well as optionally enter a location ID and a description \(see step 3d and 3e for details on the latter two properties\).
+
 
     ![](images/SCC_InitialConfig_-_FileBasedConfig_Summary_92c40f6.png)
 

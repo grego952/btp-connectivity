@@ -223,8 +223,11 @@ To use a direct connection over WebSocket, you must set the value for *<Proxy Ty
 
 **Prerequisites**
 
--   Your target system is an ABAP server as of S/4HANA \(on-premise\) version 1909, or a cloud ABAP system.
--   Your SAP Java buildpack version is at least 1.26.0.
+Your target system is one of the following:
+
+-   S/4HANA Cloud system
+-   SAP BTP, ABAP environment system
+-   ABAP server as of S/4HANA \(on-premise\) version 1909
 
 
 <table>
@@ -329,6 +332,46 @@ If you don't want to use the default JDK trust store \(option *Use default JDK t
 <td valign="top">
 
 Password for the JKS trust store file. This field is mandatory if *<Trust Store Location\>* is used.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`jco.destination.ws_ping_period`
+
+</td>
+<td valign="top">
+
+Optional property.
+
+Time period of a WebSocket client connection in seconds after which a keep alive WebSocket ping packet is sent while waiting for response data during a call.
+
+-   Switching keep alive pinging from off \[0\] to on \[greater than 10\] and vice versa will only affect new RFC connections opened afterwards.
+-   Default is the value of JCo property `jco.ws.ping_period`, which is 300 seconds, if not set to a different value.
+-   Valid values are 0 \[off\] and a range from 10 \[ten seconds\] to 86400 \[one day\].
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`jco.destination.ws_pong_timeout`
+
+</td>
+<td valign="top">
+
+Optional property.
+
+Timeout for a WebSocket keep alive ping reply packet in seconds. If no such so-called pong packet is received from the communication partner as a reply to a previously sent WebSocket keep alive ping packet within this timeout period, the client connection is considered as broken and will be closed.
+
+-   Switching a pong timeout from off \[0\] to on \[greater than 10\] and vice versa will only affect new RFC connections opened afterwards.
+-   Default is the value of JCo property `jco.ws.pong_timeout`, which is 60 seconds, if not set to a different value.
+-   Valid values are 0 \[off\] and a range from 10 \[ten seconds\] to 3600 \[one hour\].
+
+
 
 </td>
 </tr>

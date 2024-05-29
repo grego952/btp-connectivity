@@ -766,7 +766,7 @@ Europe \(Frankfurt\) - AWS
 > 
 > **Action:**
 > 
-> If you restrict system access by *allowlisting IPs* in firewall rules, make sure you update your configuration as soon as possible. The additional IP addresses will be used after March 31, 2024.
+> If you restrict system access by *allowlisting IPs* in firewall rules, make sure you update your configuration as soon as possible.
 
 
 
@@ -780,7 +780,7 @@ connectivitynotification.cf.eu10.hana.ondemand.com
 
 `3.124.222.77`, `3.122.209.241`, `3.124.208.223`
 
-**Additonal IP addresses \(valid after March 31, 2024\):**
+**Additonal IP addresses:**
 
 **18.159.31.22, 3.69.186.98, 3.77.195.119**
 
@@ -796,7 +796,7 @@ connectivitycertsigning.cf.eu10.hana.ondemand.com
 
 `3.124.222.77`, `3.122.209.241`, `3.124.208.223`
 
-**Additonal IP addresses \(valid after March 31, 2024\):**
+**Additonal IP addresses:**
 
 **18.159.31.22, 3.69.186.98, 3.77.195.119**
 
@@ -812,7 +812,7 @@ connectivitytunnel.cf.eu10.hana.ondemand.com
 
 `3.124.222.77`, `3.122.209.241`, `3.124.208.223`
 
-**Additonal IP addresses \(valid after March 31, 2024\):**
+**Additonal IP addresses:**
 
 **18.159.31.22, 3.69.186.98, 3.77.195.119**
 
@@ -828,7 +828,7 @@ connectivitytunnel.cf.eu10-002.hana.ondemand.com
 
 `3.64.227.236`, `3.126.229.22`, `18.193.180.19`
 
-**Additonal IP addresses \(valid after March 31, 2024\):**
+**Additonal IP addresses:**
 
 **18.153.123.11, 3.121.37.195, 3.73.215.90**
 
@@ -844,7 +844,7 @@ connectivitytunnel.cf.eu10-003.hana.ondemand.com
 
 `3.127.77.3`, `3.64.196.58`, `18.156.151.247`
 
-**Additonal IP addresses \(valid after March 31, 2024\):**
+**Additonal IP addresses:**
 
 **18.197.252.154, 3.79.137.29, 52.58.93.50**
 
@@ -860,7 +860,7 @@ connectivitytunnel.cf.eu10-004.hana.ondemand.com
 
 `3.65.185.47`, `3.70.38.218`, `18.196.206.8`
 
-**Additonal IP addresses \(valid after March 31, 2024\):**
+**Additonal IP addresses:**
 
 **3.73.109.100, 3.73.8.210, 52.59.18.183**
 
@@ -878,7 +878,7 @@ Europe \(Frankfurt\) - AWS
 > 
 > **Action:**
 > 
-> If you restrict system access by *allowlisting IPs* in firewall rules, make sure you update your configuration as soon as possible. The additional IP addresses will be used after March 31, 2024.
+> If you restrict system access by *allowlisting IPs* in firewall rules, make sure you update your configuration as soon as possible.
 
 
 
@@ -892,7 +892,7 @@ connectivitynotification.cf.eu11.hana.ondemand.com
 
 `3.124.207.41`, `18.157.105.117`, `18.156.209.198`
 
-**Additonal IP addresses \(valid after March 31, 2024\):**
+**Additonal IP addresses:**
 
 **3.66.26.249, 3.72.216.204, 3.74.99.245**
 
@@ -908,7 +908,7 @@ connectivitycertsigning.cf.eu11.hana.ondemand.com
 
 `3.124.207.41`, `18.157.105.117`, `18.156.209.198`
 
-**Additonal IP addresses \(valid after March 31, 2024\):**
+**Additonal IP addresses:**
 
 **3.66.26.249, 3.72.216.204, 3.74.99.245**
 
@@ -924,7 +924,7 @@ connectivitytunnel.cf.eu11.hana.ondemand.com
 
 `3.124.207.41`, `18.157.105.117`, `18.156.209.198`
 
-**Additonal IP addresses \(valid after March 31, 2024\):**
+**Additonal IP addresses:**
 
 **3.66.26.249, 3.72.216.204, 3.74.99.245**
 
@@ -1042,7 +1042,7 @@ US East \(VA\) - AWS
 > 
 > **Action:**
 > 
-> If you restrict system access by *allowlisting IPs* in firewall rules, make sure you update your configuration as soon as possible. The additional IP addresses will be used after March 31, 2024.
+> If you restrict system access by *allowlisting IPs* in firewall rules, make sure you update your configuration as soon as possible.
 
 
 
@@ -1056,7 +1056,7 @@ connectivitynotification.cf.us10.hana.ondemand.com
 
 `52.23.189.23`, `52.4.101.240`, `52.23.1.211`
 
-**Additonal IP addresses \(valid after March 31, 2024\):**
+**Additonal IP addresses:**
 
 **18.213.242.208, 3.214.110.153, 34.205.56.51**
 
@@ -1072,7 +1072,7 @@ connectivitycertsigning.cf.us10.hana.ondemand.com
 
 `52.23.189.23`, `52.4.101.240`, `52.23.1.211` 
 
-**Additonal IP addresses \(valid after March 31, 2024\):**
+**Additonal IP addresses:**
 
 **18.213.242.208, 3.214.110.153, 34.205.56.51**
 
@@ -1088,7 +1088,7 @@ connectivitytunnel.cf.us10.hana.ondemand.com
 
 `52.23.189.23`, `52.4.101.240`, `52.23.1.211`
 
-**Additonal IP addresses \(valid after March 31, 2024\):**
+**Additonal IP addresses:**
 
 **18.213.242.208, 3.214.110.153, 34.205.56.51**
 
@@ -1104,7 +1104,7 @@ connectivitytunnel.cf.us10-001.hana.ondemand.com
 
 `3.220.114.17`, `3.227.182.44`, `52.86.131.53` 
 
-**Additonal IP addresses \(valid after March 31, 2024\):**
+**Additonal IP addresses:**
 
 **44.218.82.203, 44.219.57.163, 50.16.106.103**
 
@@ -1120,7 +1120,7 @@ connectivitytunnel.cf.us10-002.hana.ondemand.com
 
 `34.202.68.0`, `54.234.152.59`, `107.20.66.86`
 
-**Additonal IP addresses \(valid after March 31, 2024\):**
+**Additonal IP addresses:**
 
 **3.214.116.95, 54.144.230.36, 54.226.37.104**
 
@@ -1267,7 +1267,7 @@ Brazil \(São Paulo\) - AWS
 > 
 > **Action:**
 > 
-> If you restrict system access by *allowlisting IPs* in firewall rules, make sure you update your configuration as soon as possible. The additional IP addresses will be used after March 31, 2024.
+> If you restrict system access by *allowlisting IPs* in firewall rules, make sure you update your configuration as soon as possible.
 
 
 
@@ -1281,7 +1281,7 @@ connectivitynotification.cf.br10.hana.ondemand.com
 
 `18.229.91.150`, `52.67.135.4`, `54.232.179.204` 
 
-**Additonal IP addresses \(valid after March 31, 2024\):**
+**Additonal IP addresses:**
 
 **18.228.53.198, 52.67.149.240, 54.94.179.209**
 
@@ -1297,7 +1297,7 @@ connectivitycertsigning.cf.br10.hana.ondemand.com
 
 `18.229.91.150`, `52.67.135.4`, `54.232.179.204`
 
-**Additonal IP addresses \(valid after March 31, 2024\):**
+**Additonal IP addresses:**
 
 **18.228.53.198, 52.67.149.240, 54.94.179.209**
 
@@ -1313,7 +1313,7 @@ connectivitytunnel.cf.br10.hana.ondemand.com
 
 `18.229.91.150`, `52.67.135.4`, `54.232.179.204` 
 
-**Additonal IP addresses \(valid after March 31, 2024\):**
+**Additonal IP addresses:**
 
 **18.228.53.198, 52.67.149.240, 54.94.179.209**
 
@@ -1331,7 +1331,7 @@ Japan \(Tokyo\) - AWS
 > 
 > **Action:**
 > 
-> If you restrict system access by *allowlisting IPs* in firewall rules, make sure you update your configuration as soon as possible. The additional IP addresses will be used after March 31, 2024.
+> If you restrict system access by *allowlisting IPs* in firewall rules, make sure you update your configuration as soon as possible.
 
 
 
@@ -1345,7 +1345,7 @@ connectivitynotification.cf.jp10.hana.ondemand.com
 
 `13.114.117.83`, `3.114.248.68`, `3.113.252.15`
 
-**Additonal IP addresses \(valid after March 31, 2024\):**
+**Additonal IP addresses:**
 
 **18.178.155.134, 57.180.140.5, 57.180.145.179**
 
@@ -1361,7 +1361,7 @@ connectivitycertsigning.cf.jp10.hana.ondemand.com
 
 `13.114.117.83`, `3.114.248.68`, `3.113.252.15`
 
-**Additonal IP addresses \(valid after March 31, 2024\):**
+**Additonal IP addresses:**
 
 **18.178.155.134, 57.180.140.5, 57.180.145.179**
 
@@ -1377,7 +1377,7 @@ connectivitytunnel.cf.jp10.hana.ondemand.com
 
 `13.114.117.83`, `3.114.248.68`, `3.113.252.15`
 
-**Additonal IP addresses \(valid after March 31, 2024\):**
+**Additonal IP addresses:**
 
 **18.178.155.134, 57.180.140.5, 57.180.145.179**
 
@@ -1438,7 +1438,7 @@ Australia \(Sydney\) - AWS
 > 
 > **Action:**
 > 
-> If you restrict system access by *allowlisting IPs* in firewall rules, make sure you update your configuration as soon as possible. The additional IP addresses will be used after March 31, 2024.
+> If you restrict system access by *allowlisting IPs* in firewall rules, make sure you update your configuration as soon as possible.
 
 
 
@@ -1452,7 +1452,7 @@ connectivitynotification.cf.ap10.hana.ondemand.com
 
 `13.236.220.84`, `13.211.73.244`, `3.105.95.184`
 
-**Additonal IP addresses \(valid after March 31, 2024\):**
+**Additonal IP addresses:**
 
 **13.55.188.95, 3.105.212.249, 3.106.45.106**
 
@@ -1468,7 +1468,7 @@ connectivitycertsigning.cf.ap10.hana.ondemand.com
 
 `13.236.220.84`, `13.211.73.244`, `3.105.95.184`
 
-**Additonal IP addresses \(valid after March 31, 2024\):**
+**Additonal IP addresses:**
 
 **13.55.188.95, 3.105.212.249, 3.106.45.106**
 
@@ -1484,7 +1484,7 @@ connectivitytunnel.cf.ap10.hana.ondemand.com
 
 `13.236.220.84`, `13.211.73.244`, `3.105.95.184`
 
-**Additonal IP addresses \(valid after March 31, 2024\):**
+**Additonal IP addresses:**
 
 **13.55.188.95, 3.105.212.249, 3.106.45.106**
 
@@ -1502,7 +1502,7 @@ Asia Pacific \(Singapore\) - AWS
 > 
 > **Action:**
 > 
-> If you restrict system access by *allowlisting IPs* in firewall rules, make sure you update your configuration as soon as possible. The additional IP addresses will be used after March 31, 2024.
+> If you restrict system access by *allowlisting IPs* in firewall rules, make sure you update your configuration as soon as possible.
 
 
 
@@ -1516,7 +1516,7 @@ connectivitynotification.cf.ap11.hana.ondemand.com
 
 `3.0.9.102`,`18.140.39.70`, `18.139.147.53`
 
-**Additonal IP addresses \(valid after March 31, 2024\):**
+**Additonal IP addresses:**
 
 **13.229.158.122, 18.140.228.217, 52.74.215.89**
 
@@ -1532,7 +1532,7 @@ connectivitycertsigning.cf.ap11.hana.ondemand.com
 
 `3.0.9.102`, `18.140.39.70`, `18.139.147.53`
 
-**Additonal IP addresses \(valid after March 31, 2024\):**
+**Additonal IP addresses:**
 
 **13.229.158.122, 18.140.228.217, 52.74.215.89**
 
@@ -1548,7 +1548,7 @@ connectivitytunnel.cf.ap11.hana.ondemand.com
 
 `3.0.9.102`, `18.140.39.70`, `18.139.147.53`
 
-**Additonal IP addresses \(valid after March 31, 2024\):**
+**Additonal IP addresses:**
 
 **13.229.158.122, 18.140.228.217, 52.74.215.89**
 
@@ -1566,7 +1566,7 @@ Asia Pacific \(Seoul\) - AWS
 > 
 > **Action:**
 > 
-> If you restrict system access by *allowlisting IPs* in firewall rules, make sure you update your configuration as soon as possible. The additional IP addresses will be used after March 31, 2024.
+> If you restrict system access by *allowlisting IPs* in firewall rules, make sure you update your configuration as soon as possible.
 
 
 
@@ -1580,7 +1580,7 @@ connectivitynotification.cf.ap12.hana.ondemand.com
 
 `3.35.255.45`, `3.35.106.215`, `3.35.215.12`
 
-**Additonal IP addresses \(valid after March 31, 2024\):**
+**Additonal IP addresses:**
 
 **13.209.236.215, 43.201.194.105, 43.202.204.5**
 
@@ -1596,7 +1596,7 @@ connectivitycertsigning.cf.ap12.hana.ondemand.com
 
 `3.35.255.45`, `3.35.106.215`, `3.35.215.12`
 
-**Additonal IP addresses \(valid after March 31, 2024\):**
+**Additonal IP addresses:**
 
 **13.209.236.215, 43.201.194.105, 43.202.204.5**
 
@@ -1612,7 +1612,7 @@ connectivitytunnel.cf.ap12.hana.ondemand.com
 
 `3.35.255.45`, `3.35.106.215`, `3.35.215.12`
 
-**Additonal IP addresses \(valid after March 31, 2024\):**
+**Additonal IP addresses:**
 
 **13.209.236.215, 43.201.194.105, 43.202.204.5**
 
@@ -1718,7 +1718,7 @@ Canada \(Montreal\) - AWS
 > 
 > **Action:**
 > 
-> If you restrict system access by *allowlisting IPs* in firewall rules, make sure you update your configuration as soon as possible. The additional IP addresses will be used after March 31, 2024.
+> If you restrict system access by *allowlisting IPs* in firewall rules, make sure you update your configuration as soon as possible.
 
 
 
@@ -1732,7 +1732,7 @@ connectivitynotification.cf.ca10.hana.ondemand.com
 
 `3.98.102.153`, `35.182.75.101`, `35.183.74.34`
 
-**Additonal IP addresses \(valid after March 31, 2024\):**
+**Additonal IP addresses:**
 
 **15.157.88.166, 3.98.202.222, 52.60.210.33**
 
@@ -1748,7 +1748,7 @@ connectivitycertsigning.cf.ca10.hana.ondemand.com
 
 `3.98.102.153`, `35.182.75.101`, `35.183.74.34`
 
-**Additonal IP addresses \(valid after March 31, 2024\):**
+**Additonal IP addresses:**
 
 **15.157.88.166, 3.98.202.222, 52.60.210.33**
 
@@ -1764,7 +1764,7 @@ connectivitytunnel.cf.ca10.hana.ondemand.com
 
 `3.98.102.153`, `35.182.75.101`, `35.183.74.34`
 
-**Additonal IP addresses \(valid after March 31, 2024\):**
+**Additonal IP addresses:**
 
 **15.157.88.166, 3.98.202.222, 52.60.210.33**
 
