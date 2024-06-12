@@ -198,6 +198,9 @@ Press *Add Subaccount* to define a subaccount. This will open a dialog or wizard
 
 1.  \(Optional\) Enter an HTTPS proxy. When in doubt, consult your network administrator to check if a proxy is required.
 
+    > ### Note:  
+    > During the configuration process, the Cloud Connector sends HEAD requests to track the status of the proxy in the Cloud Connector UI. As a prerequisite, the proxy must be confgured to allow those HEAD requests. Otherwise, it closes the connection and you get the message *Proxy is not operational \(status code 503\)*.
+
     ![](images/SCC_InitialConfig_-_HTTPS_Proxy_6164393.png)
 
 2.  In the next step, you can choose between a *manual* configuration and a *file-based* configuration.

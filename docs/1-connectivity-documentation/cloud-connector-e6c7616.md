@@ -53,9 +53,6 @@ The Cloud Connector:
     -   Can be run in a high-availability setup.
 
 
-> ### Caution:  
-> The Cloud Connector must not be used to connect to products other than SAP BTP or S/4HANA Cloud.
-
 Back to [Content](cloud-connector-e6c7616.md#loioe6c7616abb5710148cfcf3e75d96d596__content)
 
 

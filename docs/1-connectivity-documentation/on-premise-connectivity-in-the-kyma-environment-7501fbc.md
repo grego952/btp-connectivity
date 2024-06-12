@@ -71,7 +71,9 @@ For more information, see [Connectivity Service](connectivity-service-0edfc0b.md
 
 The installation also exposes the public facing endpoint of the connectivity proxy via the built-in Istio Ingress controller \(TLS certificates are generated automatically during this process\). This endpoint is used by the Cloud Connector to reach the proxy.
 
-The `Ingress` endpoint is propagated transparently for *cloud-to-on-premise* scenarios. For *on-premise-to-cloud* connections, you must look it up manually. You can find it in the created `Gateway` resource of the *kyma-system* namespace.
+The `Ingress` endpoint is propagated transparently for *cloud-to-on-premise* scenarios.
+
+For *on-premise-to-cloud* connections, you must look it up manually. You can find it in the created `Gateway` resource of the *kyma-system* namespace. Look for the *Istio* `Gateway` resource with name `connectivity-proxy-tunnel`. The exact auto-provisioned host will be shown in the `Servers` section.
 
 **Capabilities**
 
