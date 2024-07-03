@@ -2,7 +2,7 @@
 
 # OAuth JWT Bearer Authentication
 
-Learn about the OAuth JWT bearer authentication type for HTTP destinations in the Cloud Foundry environment: use cases, supported properties and examples.
+Learn about the OAuth JWT bearer authentication type for HTTP destinations: use cases, supported properties and examples.
 
 
 

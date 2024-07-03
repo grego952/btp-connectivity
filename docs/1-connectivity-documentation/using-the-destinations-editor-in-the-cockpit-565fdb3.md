@@ -2,13 +2,13 @@
 
 # Using the Destinations Editor in the Cockpit
 
-Use the *Destinations* editor in the SAP BTP cockpit to configure HTTP, RFC or mail destinationsin the Cloud Foundry environment.
+Use the *Destinations* editor in the SAP BTP cockpit to configure HTTP, RFC or mail destinations.
 
 The *Destinations* editor lets you manage destinations on subaccount or service instance level.
 
 You can use a destination to:
 
--   Connect yourCloud Foundry application to the **Internet** \(via HTTP\), as well as to an **on-premise system** \(via HTTP or RFC\).
+-   Connect your application to the **Internet** \(via HTTP\), as well as to an **on-premise system** \(via HTTP or RFC\).
 -   Send and retrieve e-mails, configuring a mail destination.
 -   Create a destination for subscription-based scenarios, pointing to your service instance. For more information, see [Destinations Pointing to Service Instances](destinations-pointing-to-service-instances-685f383.md).
 
@@ -60,5 +60,5 @@ You can use a destination to:
 **Related Information**  
 
 
-[Destination Examples](destination-examples-3a2d575.md "Find configuration examples for HTTP and RFC destinations in the Cloud Foundry environment, using different authentication types.")
+[Destination Examples](destination-examples-3a2d575.md "Find configuration examples for HTTP and RFC destinations in SAP BTP, using different authentication types.")
 

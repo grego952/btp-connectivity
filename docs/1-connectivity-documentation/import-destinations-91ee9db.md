@@ -32,5 +32,5 @@ You have previously created an HTTP destination.
 
 [Edit and Delete Destinations](edit-and-delete-destinations-372dee2.md "How to edit and delete destinations in the Destinations editor (SAP BTP cockpit).")
 
-[Destination Examples](destination-examples-3a2d575.md "Find configuration examples for HTTP and RFC destinations in the Cloud Foundry environment, using different authentication types.")
+[Destination Examples](destination-examples-3a2d575.md "Find configuration examples for HTTP and RFC destinations in SAP BTP, using different authentication types.")
 

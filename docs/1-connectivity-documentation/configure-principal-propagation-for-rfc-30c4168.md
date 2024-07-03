@@ -2,7 +2,7 @@
 
 # Configure Principal Propagation for RFC
 
-Enable single sign-on \(SSO\) via RFC by forwarding the identity of cloud users from the Cloud Foundry environment to an on-premise system.
+Enable single sign-on \(SSO\) via RFC by forwarding the identity of cloud users to an on-premise system.
 
 
 

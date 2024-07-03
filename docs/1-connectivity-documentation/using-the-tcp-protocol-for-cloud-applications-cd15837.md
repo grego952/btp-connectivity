@@ -2,7 +2,7 @@
 
 # Using the TCP Protocol for Cloud Applications
 
-Access on-premise systems from a Cloud Foundry application via TCP-based protocols, using a SOCKS5 Proxy.
+Access on-premise systems from an application via TCP-based protocols, using a SOCKS5 Proxy.
 
 
 

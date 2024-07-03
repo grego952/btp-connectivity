@@ -5,7 +5,7 @@
 SAP BTP Connectivity: overview, features, restrictions.
 
 > ### Note:  
-> This documentation refers to SAP BTP, Cloud Foundry environment. If you are looking for information about the Neo environment, see [Connectivity for the Neo Environment](https://help.sap.com/viewer/b865ed651e414196b39f8922db2122c7/Cloud/en-US/5ceb84290d5644638f73d40fde3af5d0.html).
+> This documentation refers to SAP BTP, multi-cloud foundation. If you are looking for information about the Neo environment, see [Connectivity for the Neo Environment](https://help.sap.com/viewer/b865ed651e414196b39f8922db2122c7/Cloud/en-US/5ceb84290d5644638f73d40fde3af5d0.html).
 
 
 
@@ -37,7 +37,7 @@ SAP BTP Connectivity allows SAP BTP applications to securely access remote servi
 -   Provides a Java API that application developers can use to consume remote services.
 -   Allows you to make connections to on-premise systems, using the Cloud Connector.
 -   Lets you establish a secure tunnel from your on-premise network to applications on SAP BTP, while you keep full control and auditability of what is exposed to the cloud.
--   Supports both the Neo and the Cloud Foundry environment for application development on SAP BTP.
+-   Supports both the Neo environment and the multi-cloud foundation for application development on SAP BTP.
 
 
 
@@ -139,7 +139,7 @@ Back to [Content](connectivity-e54cc8f.md#loioe54cc8fbbb571014beb5caaf6aa31280__
 
 [Protocols](connectivity-e54cc8f.md#loioe54cc8fbbb571014beb5caaf6aa31280__protocols)
 
-[Cloud Foundry Environment](connectivity-e54cc8f.md#loioe54cc8fbbb571014beb5caaf6aa31280__cf)
+[Multi-Cloud Foundation](connectivity-e54cc8f.md#loioe54cc8fbbb571014beb5caaf6aa31280__cf)
 
 
 
@@ -267,7 +267,7 @@ You can use TCP-based communication for any client that supports SOCKS5 proxies.
 
 Back to [Restrictions](connectivity-e54cc8f.md#loioe54cc8fbbb571014beb5caaf6aa31280__restrictions)
 
-**Cloud Foundry Environment**
+Mmulti-Cloud Foundation
 
 
 <table>
@@ -362,7 +362,7 @@ Back to [Content](connectivity-e54cc8f.md#loioe54cc8fbbb571014beb5caaf6aa31280__
 **Related Information**  
 
 
-[Connectivity in the Cloud Foundry Environment](connectivity-in-the-cloud-foundry-environment-34010ac.md "Consuming SAP BTP Connectivity for your application in the Cloud Foundry environment: Overview.")
+[Connectivity for the Multi-Cloud Foundation](connectivity-for-the-multi-cloud-foundation-34010ac.md "Consuming SAP BTP Connectivity for your application in the multi-cloud foundation: Overview.")
 
 [Cloud Connector](cloud-connector-e6c7616.md "Learn more about the Cloud Connector: features, scenarios and setup.")
 

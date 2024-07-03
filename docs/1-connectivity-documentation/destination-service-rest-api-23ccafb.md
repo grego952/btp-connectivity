@@ -2,7 +2,7 @@
 
 # Destination Service REST API
 
-Destination service REST API specification for the SAP Cloud Foundry environment.
+Destination service REST API specification for SAP BTP.
 
 The Destination service provides a REST API that you can use to read and manage resources like destinations, certificates and destination fragments on all available levels. This API is documented in the [SAP Business Accelerator Hub](https://api.sap.com/package/scpconnectivity?section=Artifacts).
 

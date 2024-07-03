@@ -2,7 +2,7 @@
 
 # Access the Destinations Editor
 
-Access the Destinations Editor in the SAP BTP cockpit to create and manage destinationsin the Cloud Foundry environment.
+Access the Destinations Editor in the SAP BTP cockpit to create and manage destinations.
 
 You can edit destinations at two different levels:
 

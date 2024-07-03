@@ -2,7 +2,7 @@
 
 # Configure Principal Propagation via IAS Token
 
-Configure an Identity Authentication service \(IAS\) token for principal propagation \(user propagation\) from your Cloud Foundry application to an on-premise system.
+Configure an Identity Authentication service \(IAS\) token for principal propagation \(user propagation\) from your application to an on-premise system.
 
 
 

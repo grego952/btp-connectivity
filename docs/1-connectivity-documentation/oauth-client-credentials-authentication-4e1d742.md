@@ -2,7 +2,7 @@
 
 # OAuth Client Credentials Authentication
 
-Create and configure an *OAuth2ClientCredentials* destination to consume OAuth-protected resources from a Cloud Foundry application.
+Create and configure an *OAuth2ClientCredentials* destination to consume OAuth-protected resources from an application.
 
 SAP BTP supports applications to use the OAuth client credentials flow for consuming OAuth-protected resources.
 

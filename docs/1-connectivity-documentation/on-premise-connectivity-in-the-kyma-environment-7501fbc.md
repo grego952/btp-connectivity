@@ -38,6 +38,9 @@ The *connectivity-proxy* Kyma module installs the needed components to establish
 
 The connectivity proxy is a standard Kyma module. You can enable the module as described in [Add and Delete a Kyma Module](https://help.sap.com/docs/btp/sap-business-technology-platform/enable-and-disable-kyma-module#loio1b548e9ad4744b978b8b595288b0cb5c).
 
+> ### Note:  
+> The modules `api-gateway`, `btp-operator` and `istio` are required dependencies. They must be enabled to make the connectivity proxy work properly.
+
 ![](images/CS_Kyma_OP_-_CP_Module_Enable_1_539cf37.png)
 
 The Kubernetes resource that facilitates this installation in the background is a `ConnectivityProxy` resource. This is a custom resource, defined by the module. It holds the configuration for the connectivity proxy components.

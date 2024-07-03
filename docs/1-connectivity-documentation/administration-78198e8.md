@@ -2,7 +2,7 @@
 
 # Administration
 
-Manage destinations and authentication for applicationsin the Cloud Foundry environment.
+Manage destinations and authentication for applications.
 
 
 <table>
@@ -26,7 +26,7 @@ Description
 </td>
 <td valign="top">
 
-Manage HTTP destinations for Cloud Foundry applications in the SAP BTP cockpit.
+Manage HTTP destinations for applications in the SAP BTP cockpit.
 
 </td>
 </tr>

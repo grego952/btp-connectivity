@@ -2,12 +2,12 @@
 
 # What Is SAP BTP Connectivity?
 
-Use SAP BTP Connectivity for your application in the Cloud Foundry environment: available services, connectivity scenarios, user roles.
+Use SAP BTP Connectivity for your application in the multi-cloud foundation: available services, connectivity scenarios, user roles.
 
 SAP BTP Connectivity lets you connect your SAP BTP applications to other Internet resources, or to your on-premise systems running in isolated networks. It provides an extensive set of features to choose different connection types and authentication methods. Using its configuration options, you can tailor access exactly to your needs.
 
 > ### Note:  
-> You can use SAP BTP Connectivity for the Cloud Foundry environment and for the Neo environment. This documentation refers to SAP BTP, Cloud Foundry environment. If you are looking for information about the Neo environment, see [Connectivity for the Neo Environment](https://help.sap.com/viewer/b865ed651e414196b39f8922db2122c7/Cloud/en-US/5ceb84290d5644638f73d40fde3af5d0.html).
+> You can use SAP BTP Connectivity for the multi-cloud foundation and for the Neo environment. This documentation refers to SAP BTP, multi-cloud foundation. If you are looking for information about the Neo environment, see [Connectivity for the Neo Environment](https://help.sap.com/viewer/b865ed651e414196b39f8922db2122c7/Cloud/en-US/5ceb84290d5644638f73d40fde3af5d0.html).
 
 
 
@@ -25,11 +25,11 @@ Hover over the elements for a description. Click an element for more information
 
 ## Features
 
-SAP BTP Connectivity provides two services for the Cloud Foundry environment, the Connectivity service and the Destination service.
+SAP BTP Connectivity provides two services for the multi-cloud foundation, the Connectivity service and the Destination service.
 
 The Destination service and the Connectivity service together provide virtually the same functionality that is included in the Connectivity service of the Neo environment.
 
-In the Cloud Foundry environment however, this functionality is split into two separate services:
+In the multi-cloud foundation however, this functionality is split into two separate services:
 
 -   The **Connectivity** service provides a connectivity proxy that you can use to access on-premise resources.
 -   Using the **Destination** service, you can retrieve and store the technical information about the target resource \(destination\) that you need to connect your application to a remote service or system.
@@ -51,7 +51,7 @@ Back to [Content](what-is-sap-btp-connectivity-daca64d.md#loiodaca64dacc6148fcb5
 
 -   Use the **Destination** service:
     -   To retrieve technical information about destinations that are required to consume the Connectivity service \(optional\), *or*
-    -   To provide destination information for connecting your Cloud Foundry application to any other *Web application* \(remote service\). This scenario does not require the Connectivity service.
+    -   To provide destination information for connecting your cloud application to any other *Web application* \(remote service\). This scenario does not require the Connectivity service.
 
 
 Back to [Content](what-is-sap-btp-connectivity-daca64d.md#loiodaca64dacc6148fcb5c70ed86082ef91__content)
@@ -680,9 +680,9 @@ Back to [Content](what-is-sap-btp-connectivity-daca64d.md#loiodaca64dacc6148fcb5
 
 [What's New for Connectivity](what-s-new-for-connectivity-7882854.md "Find the latest features, enhancements and bug fixes for SAP BTP Connectivity .")
 
-[Administration](administration-78198e8.md "Manage destinations and authentication for applications in the Cloud Foundry environment.")
+[Administration](administration-78198e8.md "Manage destinations and authentication for applications.")
 
-[Developing Applications](developing-applications-2cd45a1.md "Consume the Connectivity service and the Destination service from an application in the Cloud Foundry environment.")
+[Developing Applications](developing-applications-2cd45a1.md "Consume the Connectivity service and the Destination service from an application.")
 
 [Security](security-7b60f4c.md "Find an overview of recommended security measures for SAP BTP Connectivity.")
 

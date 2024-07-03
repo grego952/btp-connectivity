@@ -2,7 +2,7 @@
 
 # Destination Examples
 
-Find configuration examples for HTTP and RFC destinations in the Cloud Foundry environment, using different authentication types.
+Find configuration examples for HTTP and RFC destinations in SAP BTP, using different authentication types.
 
 
 
@@ -96,7 +96,7 @@ Back to [Content](destination-examples-3a2d575.md#loio3a2d57580d474da6960a644462
 **Related Information**  
 
 
-[HTTP Destinations](http-destinations-42a0e6b.md "Find information about HTTP destinations for Internet and on-premise connections (Cloud Foundry environment).")
+[HTTP Destinations](http-destinations-42a0e6b.md "Find information about HTTP destinations for Internet and on-premise connections.")
 
 [RFC Destinations](rfc-destinations-238d027.md "")
 

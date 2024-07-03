@@ -205,6 +205,11 @@ Press *Add Subaccount* to define a subaccount. This will open a dialog or wizard
 
 2.  In the next step, you can choose between a *manual* configuration and a *file-based* configuration.
 
+    *File-based* configuration lets you use an authentication data file downloaded from your subaccount on SAP BTP to simplify and accelerate subaccount configuration in the Cloud Connector.
+
+    > ### Restriction:  
+    > Authentication data download from SAP BTP is available for subaccuonts in multi-cloud foundation, feature set B only.
+
     ![](images/SCC_InitialConfig_-_ManualFileBasedConfig_7edd7f1.png)
 
 3.  \(Skip if you have selected *file-based* configuration\) For *manual* configuration, the following dialog is shown:
@@ -268,7 +273,7 @@ Press *Add Subaccount* to define a subaccount. This will open a dialog or wizard
 
         For the **Neo** environment, see also [Add Members to Your Neo Subaccount](https://help.sap.com/viewer/ea72206b834e4ace9cd834feed6c0e09/Cloud/en-US/a253570f081e448d9f78fc2bfeedfdc3.html "Add users as members to a subaccount in the Neo environment and assign roles to them using the SAP BTP cockpit.") :arrow_upper_right:.
 
-        For the **Cloud Foundry** environment, see also [Add Org Members Using the Cockpit](https://help.sap.com/viewer/65de2977205c403bbc107264b8eccf4b/Cloud/en-US/a4eeaf179ee646b99558f27c0bae7b3e.html "Add users as org members and assign roles to grant the users access to information, such as user and quota information in a Cloud Foundry org.") :arrow_upper_right:.
+        For the **Cloud Foundry** environment, see also [Add Org Members](https://help.sap.com/viewer/65de2977205c403bbc107264b8eccf4b/Cloud/en-US/a4eeaf179ee646b99558f27c0bae7b3e.html "In the cockpit, add users as org members and assign roles to grant the users access to information, such as user and quota information in a Cloud Foundry org.") :arrow_upper_right:.
 
         > ### Tip:  
         > When using SAP Cloud Identity Services - Identity Authentication \(IAS\) as platform identity provider with two-factor authentication \(2FA / MFA\) for your subaccount, you can simply append the required token to the regular password. For example, if your password is "eX7?6rUm" and the one-time passcode is "123456", you must enter "eX7?6rUm123456" into the *<Password\>* field.
@@ -284,6 +289,9 @@ Press *Add Subaccount* to define a subaccount. This will open a dialog or wizard
 
 
 4.  \(Skip if you have selected *manual* configuration\) For the *file-based* approach using authentication data, the following dialog is shown:
+
+    > ### Restriction:  
+    > Authentication data download from SAP BTP is available for subaccuonts in multi-cloud foundation, feature set B only.
 
     ![](images/SCC_InitialConfig_-_FileBasedConfig_ab635bc.png)
 

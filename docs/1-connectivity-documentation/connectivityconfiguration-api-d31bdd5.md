@@ -2,7 +2,7 @@
 
 # ConnectivityConfiguration API
 
-Use the `ConnectivityConfiguration` API to retrieve destination configurations and certificate configurations in the Cloud Foundry environment.
+Use the `ConnectivityConfiguration` API to retrieve destination configurations and certificate configurations.
 
 
 

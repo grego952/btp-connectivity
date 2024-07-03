@@ -2,7 +2,7 @@
 
 # Scenario: Cloud to On-Premise
 
-Forward the identity of cloud users from the Cloud Foundry environment to on-premise systems using principal propagation.
+Forward the identity of cloud users from SAP BTP to on-premise systems using principal propagation.
 
 
 

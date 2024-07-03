@@ -124,5 +124,5 @@ You can change the validity settings by choosing the *Edit* button.
 **Related Information**  
 
 
-[Server Certificate Authentication](server-certificate-authentication-e75d7f1.md "Create and configure a Server Certificate destination for an application in the Cloud Foundry environment.")
+[Server Certificate Authentication](server-certificate-authentication-e75d7f1.md "Create and configure a Server Certificate destination for an application.")
 

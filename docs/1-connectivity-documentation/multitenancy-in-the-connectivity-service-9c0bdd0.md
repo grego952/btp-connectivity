@@ -2,7 +2,7 @@
 
 # Multitenancy in the Connectivity Service 
 
-Using multitenancy for Cloud Foundry applications that require a connection to a remote service or on-premise application.
+Using multitenancy for applications that require a connection to a remote service or on-premise application.
 
 
 

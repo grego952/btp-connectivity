@@ -2,7 +2,7 @@
 
 # Client Authentication Types for HTTP Destinations
 
-Find details about client authentication types for HTTP destinations in the Cloud Foundry environment.
+Find details about client authentication types for HTTP destinations.
 
 
 
@@ -226,5 +226,5 @@ Password for the key store file specified by `KeyStoreLocation`. This property i
 **Related Information**  
 
 
-[Server Certificate Authentication](server-certificate-authentication-e75d7f1.md "Create and configure a Server Certificate destination for an application in the Cloud Foundry environment.")
+[Server Certificate Authentication](server-certificate-authentication-e75d7f1.md "Create and configure a Server Certificate destination for an application.")
 

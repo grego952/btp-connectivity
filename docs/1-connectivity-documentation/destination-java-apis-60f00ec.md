@@ -2,7 +2,7 @@
 
 # Destination Java APIs
 
-Use Destination service Java APIs to optimize application development in the Cloud Foundry environment.
+Use Destination service Java APIs to optimize application development.
 
 When running your cloud application with *SAP Java Buildpack*, you can use the following Java APIs to optimize the application development:
 

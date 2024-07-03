@@ -111,5 +111,5 @@ Find the `config.json` structure below:
 **Related Information**  
 
 
-[HTTP Destinations](http-destinations-42a0e6b.md "Find information about HTTP destinations for Internet and on-premise connections (Cloud Foundry environment).")
+[HTTP Destinations](http-destinations-42a0e6b.md "Find information about HTTP destinations for Internet and on-premise connections.")
 

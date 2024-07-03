@@ -104,9 +104,9 @@ Back to [Procedure](authentication-to-the-on-premise-system-67b0b94.md#loio67b0b
 
 [Configure Principal Propagation via Corporate IdP Embedded Token](configure-principal-propagation-via-corporate-idp-embedded-token-dfecfb4.md "")
 
-[Configure Principal Propagation via User Exchange Token](configure-principal-propagation-via-user-exchange-token-39f538a.md "Configure a user exchange token for principal propagation (user propagation) from your Cloud Foundry application to an on-premise system.")
+[Configure Principal Propagation via User Exchange Token](configure-principal-propagation-via-user-exchange-token-39f538a.md "Configure a user exchange token for principal propagation (user propagation) from your application to an on-premise system.")
 
-[Configure Principal Propagation via IAS Token](configure-principal-propagation-via-ias-token-47a3cff.md "Configure an Identity Authentication service (IAS) token for principal propagation (user propagation) from your Cloud Foundry application to an on-premise system.")
+[Configure Principal Propagation via IAS Token](configure-principal-propagation-via-ias-token-47a3cff.md "Configure an Identity Authentication service (IAS) token for principal propagation (user propagation) from your application to an on-premise system.")
 
-[Configure Principal Propagation via OIDC Token](configure-principal-propagation-via-oidc-token-000232b.md "Configure an OpenID-Connect (OIDC) token for principal propagation (user propagation) from your Cloud Foundry application to an on-premise system.")
+[Configure Principal Propagation via OIDC Token](configure-principal-propagation-via-oidc-token-000232b.md "Configure an OpenID-Connect (OIDC) token for principal propagation (user propagation) from your application to an on-premise system.")
 

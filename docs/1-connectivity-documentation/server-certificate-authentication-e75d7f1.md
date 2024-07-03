@@ -2,7 +2,7 @@
 
 # Server Certificate Authentication
 
-Create and configure a *Server Certificate* destination for an application in the Cloud Foundry environment.
+Create and configure a *Server Certificate* destination for an application.
 
 
 
@@ -146,5 +146,5 @@ In case *<TrustAll\>* = `TRUE`, the *<HostnameVerifier\>* property is ignored so
 **Related Information**  
 
 
-[Client Authentication Types for HTTP Destinations](client-authentication-types-for-http-destinations-4e13a04.md "Find details about client authentication types for HTTP destinations in the Cloud Foundry environment.")
+[Client Authentication Types for HTTP Destinations](client-authentication-types-for-http-destinations-4e13a04.md "Find details about client authentication types for HTTP destinations.")
 

@@ -2,7 +2,7 @@
 
 # OAuth User Token Exchange Authentication
 
-Learn about the `OAuth2UserTokenExchange` authentication type for HTTP destinations in the Cloud Foundry environment: use cases, supported properties and ways to retrieve an access token in an automated way.
+Learn about the `OAuth2UserTokenExchange` authentication type for HTTP destinations: use cases, supported properties and ways to retrieve an access token in an automated way.
 
 
 

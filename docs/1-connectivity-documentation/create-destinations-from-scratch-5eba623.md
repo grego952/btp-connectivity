@@ -17,5 +17,5 @@ To [Create Destinations from a Template](create-destinations-from-a-template-ef5
 
 [Create Mail Destinations](create-mail-destinations-6442cb4.md "Create mail destinations in the Destinations editor (SAP BTP cockpit).")
 
-[Destination Examples](destination-examples-3a2d575.md "Find configuration examples for HTTP and RFC destinations in the Cloud Foundry environment, using different authentication types.")
+[Destination Examples](destination-examples-3a2d575.md "Find configuration examples for HTTP and RFC destinations in SAP BTP, using different authentication types.")
 

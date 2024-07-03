@@ -102,6 +102,11 @@ To retrieve the one-time generated passcode, you must use the correct login URL 
 > ### Note:  
 > To choose the right procedure, you must know on which cloud management tools feature set \(A or B\) your SAP BTP account is running. For more information on feature sets, see [Cloud Management Tools — Feature Set Overview](https://help.sap.com/viewer/65de2977205c403bbc107264b8eccf4b/Cloud/en-US/caf4e4e23aef4666ad8f125af393dfb2.html "Cloud management tools represent the group of technologies designed for managing SAP BTP.") :arrow_upper_right:.
 
+> ### Tip:  
+> As of Cloud Connector version 2.17, you can import subaccount authentication data to simplify the process when using custom IdPs. Instead of using the SSO passcode approach, we strongly recommend that you import an authentication data file when connecting subaccounts in multi-cloud foundation, feature set B.
+> 
+> For more information, see [Set up Connection Parameters and HTTPS Proxy](https://help.sap.com/docs/connectivity/sap-btp-connectivity-cf/cloud-connector-initial-configuration?version=Cloud#set-up-connection-parameters-and-https-proxy) \(steps 2 + 4: file-based subaccount configuration\).
+
 **Next Step**
 
 [Get the URL \[Feature Set A\]](use-a-custom-idp-for-subaccount-configuration-2022612.md#loio202261235a204db5ba0b35bbaa6d40ff__fsa)

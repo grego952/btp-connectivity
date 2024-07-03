@@ -2,7 +2,7 @@
 
 # Configure Principal Propagation via Corporate IdP Embedded Token
 
-Configure a corporate IdP embedded token for principal propagation \(user propagation\) from your Cloud Foundry application to an on-premise system.
+Configure a corporate IdP embedded token for principal propagation \(user propagation\) from your application to an on-premise system.
 
 
 

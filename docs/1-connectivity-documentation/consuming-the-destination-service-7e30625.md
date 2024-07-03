@@ -2,7 +2,7 @@
 
 # Consuming the Destination Service
 
-Retrieve and store externalized technical information about the destination to consume a target remote service from your Cloud Foundry application.
+Retrieve and store externalized technical information about the destination to consume a target remote service from your application.
 
 
 
@@ -89,7 +89,7 @@ Operator and/or Developer
 
 ![](images/CS_TASK_Admin_Dev_7c2c6d8.png)
 
-The Destination service lets you find the destination information that is required to access a remote service or system from your Cloud Foundry application.
+The Destination service lets you find the destination information that is required to access a remote service or system from your cloud application.
 
 -   For the connection to an *on-premise system*, you can optionally use this service, together with \(i.e. in addition to\) the Connectivity service, see [Consuming the Connectivity Service](consuming-the-connectivity-service-313b215.md).
 -   For the connection to any other *Web application* \(remote service\), you can use the Destination service without the Connectivity service.
@@ -399,15 +399,15 @@ Back to [Tasks](consuming-the-destination-service-7e30625.md#loio7e306250e08340f
 
 [User Propagation via SAML 2.0 Bearer Assertion Flow](user-propagation-via-saml-2-0-bearer-assertion-flow-3cb7b81.md "Learn about the process for automatic token retrieval, using the OAuth2SAMLBearerAssertion authentication type for HTTP destinations.")
 
-[Destination Service REST API](destination-service-rest-api-23ccafb.md "Destination service REST API specification for the SAP Cloud Foundry environment.")
+[Destination Service REST API](destination-service-rest-api-23ccafb.md "Destination service REST API specification for SAP BTP.")
 
 [Exchanging User JWTs via OAuth2UserTokenExchange Destinations](exchanging-user-jwts-via-oauth2usertokenexchange-destinations-39d4265.md "Automatic token retrieval using the OAuth2UserTokenExchange authentication type for HTTP destinations.")
 
-[Use Cases](use-cases-effd6be.md "Find instructions for typical RFC end-to-end scenarios that use the Connectivity service and/or the Destination service (Cloud Foundry environment).")
+[Use Cases](use-cases-effd6be.md "Find instructions for typical RFC end-to-end scenarios that use the Connectivity service and/or the Destination service.")
 
-[Multitenancy in the Destination Service](multitenancy-in-the-destination-service-4e07f25.md "Establilsh multitenancy in the Destination service using subscription-level destinations.")
+[Multitenancy in the Destination Service](multitenancy-in-the-destination-service-4e07f25.md "Establish multitenancy in the Destination service using subscription-level destinations.")
 
-[Destination Java APIs](destination-java-apis-60f00ec.md "Use Destination service Java APIs to optimize application development in the Cloud Foundry environment.")
+[Destination Java APIs](destination-java-apis-60f00ec.md "Use Destination service Java APIs to optimize application development.")
 
 [Extending Destinations with Fragments](extending-destinations-with-fragments-f56600a.md "Use the “Find Destination” API to extend your destination with a destination fragment.")
 

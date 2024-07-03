@@ -2,7 +2,7 @@
 
 # Configure Principal Propagation via OIDC Token
 
-Configure an OpenID-Connect \(OIDC\) token for principal propagation \(user propagation\) from your Cloud Foundry application to an on-premise system.
+Configure an OpenID-Connect \(OIDC\) token for principal propagation \(user propagation\) from your application to an on-premise system.
 
 
 

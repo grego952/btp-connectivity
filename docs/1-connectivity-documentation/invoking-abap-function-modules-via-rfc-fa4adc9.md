@@ -2,7 +2,7 @@
 
 # Invoking ABAP Function Modules via RFC
 
-Call a remote-enabled function module in an on-premise or cloud ABAP server from your Cloud Foundry application, using the RFC protocol.
+Call a remote-enabled function module in an on-premise or cloud ABAP server from your application, using the RFC protocol.
 
 Find the tasks and prerequisites that are required to consume an ABAP function module via RFC, using the Java Connector \(JCo\) API as a built-in feature of SAP BTP.
 

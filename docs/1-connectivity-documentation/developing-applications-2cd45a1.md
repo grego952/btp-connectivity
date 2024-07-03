@@ -2,7 +2,7 @@
 
 # Developing Applications
 
-Consumethe Connectivity service and the Destination service from an application in the Cloud Foundry environment.
+Consumethe Connectivity service and the Destination service from an application.
 
 
 <table>

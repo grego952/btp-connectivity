@@ -64,5 +64,5 @@ To configure the destination, you must use a virtual application server host nam
 **Related Information**  
 
 
-[Target System Configuration](target-system-configuration-ab6eac9.md "Learn about the JCo properties you can use to configure the target sytem information in an RFC destination (Cloud Foundry environment).")
+[Target System Configuration](target-system-configuration-ab6eac9.md "Learn about the JCo properties you can use to configure the target sytem information in an RFC destination.")
 

@@ -2,7 +2,7 @@
 
 # OAuth Technical User Propagation Authentication
 
-Learn about the *OAuth2TechnicalUserPropagation* authentication type for HTTP destinations in the Cloud Foundry environment: use cases, supported properties and examples.
+Learn about the *OAuth2TechnicalUserPropagation* authentication type for HTTP destinations: use cases, supported properties and examples.
 
 
 

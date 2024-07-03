@@ -2,7 +2,7 @@
 
 # Multitenancy for JCo Applications \(Advanced\)
 
-Learn about the required steps to make your Cloud Foundry JCo application tenant-aware.
+Learn about the required steps to make your JCo application tenant-aware.
 
 Using this procedure, you can enable the sample JCo application created in [Invoke ABAP Function Modules in On-Premise ABAP Systems](invoke-abap-function-modules-in-on-premise-abap-systems-bfcb54c.md) or [Invoke ABAP Function Modules in Cloud ABAP Systems](invoke-abap-function-modules-in-cloud-abap-systems-55c9d13.md), for multitenancy.
 

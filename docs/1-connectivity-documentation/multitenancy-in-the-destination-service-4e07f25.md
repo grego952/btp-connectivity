@@ -2,7 +2,7 @@
 
 # Multitenancy in the Destination Service
 
-Establilsh multitenancy in the Destination service using subscription-level destinations.
+Establish multitenancy in the Destination service using subscription-level destinations.
 
 
 
@@ -114,5 +114,5 @@ If you, as an application provider, want to create a destination that is used at
 **Related Information**  
 
 
-[Multitenancy in the Connectivity Service](multitenancy-in-the-connectivity-service-9c0bdd0.md "Using multitenancy for Cloud Foundry applications that require a connection to a remote service or on-premise application.")
+[Multitenancy in the Connectivity Service](multitenancy-in-the-connectivity-service-9c0bdd0.md "Using multitenancy for applications that require a connection to a remote service or on-premise application.")
 

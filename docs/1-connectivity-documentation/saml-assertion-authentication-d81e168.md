@@ -2,7 +2,7 @@
 
 # SAML Assertion Authentication
 
-Create and configure an *SAML Assertion* destination for an application in the Cloud Foundry environment.
+Create and configure an *SAML Assertion* destination for an application.
 
 
 
@@ -388,7 +388,7 @@ The response for "find destination" contains an `authTokens` object in the forma
 
 [Create HTTP Destinations](create-http-destinations-783fa1c.md "Create HTTP destinations in the Destinations editor (SAP BTP cockpit).")
 
-[Destination Examples](destination-examples-3a2d575.md "Find configuration examples for HTTP and RFC destinations in the Cloud Foundry environment, using different authentication types.")
+[Destination Examples](destination-examples-3a2d575.md "Find configuration examples for HTTP and RFC destinations in SAP BTP, using different authentication types.")
 
 [Exchanging User JWTs via OAuth2UserTokenExchange Destinations](exchanging-user-jwts-via-oauth2usertokenexchange-destinations-39d4265.md "Automatic token retrieval using the OAuth2UserTokenExchange authentication type for HTTP destinations.")
 

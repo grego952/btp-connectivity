@@ -2,7 +2,7 @@
 
 # Notifications and Alerts
 
-Subscribe to the SAP Alert Notification service to receive notifications and alerts for the Destination service on SAP BTP, Cloud Foundry environment.
+Subscribe to the SAP Alert Notification service to receive notifications and alerts for the Destination service on SAP BTP.
 
 You can subscribe for notifications and alerts for different Destination service events via SAP Alert Notification Service for SAP BTP.
 

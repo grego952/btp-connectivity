@@ -2,7 +2,7 @@
 
 # HTTP Destinations
 
-Find information about HTTP destinations for Internet and on-premise connections\(Cloud Foundry environment\).
+Find information about HTTP destinations for Internet and on-premise connections.
 
 
 

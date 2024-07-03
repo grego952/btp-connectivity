@@ -114,5 +114,5 @@ Find step-by-step instructions on how to configure technical user propagation to
 **Related Information**  
 
 
-[OAuth Technical User Propagation Authentication](oauth-technical-user-propagation-authentication-8634e21.md "Learn about the OAuth2TechnicalUserPropagation authentication type for HTTP destinations in the Cloud Foundry environment: use cases, supported properties and examples.")
+[OAuth Technical User Propagation Authentication](oauth-technical-user-propagation-authentication-8634e21.md "Learn about the OAuth2TechnicalUserPropagation authentication type for HTTP destinations: use cases, supported properties and examples.")
 

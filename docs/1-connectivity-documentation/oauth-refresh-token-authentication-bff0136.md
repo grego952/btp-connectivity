@@ -2,7 +2,7 @@
 
 # OAuth Refresh Token Authentication
 
-Create and configure an *OAuth refresh token* destination for an application in the Cloud Foundry environment.
+Create and configure an *OAuth refresh token* destination for an application.
 
 
 

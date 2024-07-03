@@ -2,7 +2,7 @@
 
 # Principal Propagation
 
-Enable single sign-on \(SSO\) by forwarding the identity of cloud users to a remote system or service \(Cloud Foundry environment\).
+Enable single sign-on \(SSO\) by forwarding the identity of cloud users to a remote system or service.
 
 The Connectivity and Destination services let you forward the identity of a cloud user to a remote system. This process is called principal propagation \(also known as *user propagation* or *user principal propagation*\). It uses a JSON Web token \(JWT\) as exchange format for the user information.
 

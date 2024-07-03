@@ -2,7 +2,7 @@
 
 # OAuth Authorization Code Authentication
 
-Create and configure an *OAuth Authorization Code* destination for an application in the Cloud Foundry environment.
+Create and configure an *OAuth Authorization Code* destination for an application.
 
 
 

@@ -2,7 +2,7 @@
 
 # Use Cases
 
-Find instructions for typical RFC end-to-end scenarios that use the Connectivity service and/or the Destination service \(Cloud Foundry environment\).
+Find instructions for typical RFC end-to-end scenarios that use the Connectivity service and/or the Destination service.
 
 
 <table>
@@ -14,7 +14,7 @@ Find instructions for typical RFC end-to-end scenarios that use the Connectivity
 </td>
 <td valign="top">
 
-Call a function module in an on-premise ABAP system via RFC, using a sample Web application \(Cloud Foundry environment\).
+Call a function module in an on-premise ABAP system via RFC, using a sample Web application.
 
 </td>
 </tr>
@@ -26,7 +26,7 @@ Call a function module in an on-premise ABAP system via RFC, using a sample Web 
 </td>
 <td valign="top">
 
-Call a function module in a cloud ABAP system via RFC, using a sample Web application \(Cloud Foundry environment\).
+Call a function module in a cloud ABAP system via RFC, using a sample Web application.
 
 </td>
 </tr>
@@ -38,7 +38,7 @@ Call a function module in a cloud ABAP system via RFC, using a sample Web applic
 </td>
 <td valign="top">
 
-Learn about the required steps to make your Cloud Foundry JCo application tenant-aware.
+Learn about the required steps to make your JCo application tenant-aware.
 
 </td>
 </tr>
@@ -50,7 +50,7 @@ Learn about the required steps to make your Cloud Foundry JCo application tenant
 </td>
 <td valign="top">
 
-Enable single sign-on \(SSO\) via RFC by forwarding the identity of cloud users from the Cloud Foundry environment to an on-premise system.
+Enable single sign-on \(SSO\) via RFC by forwarding the identity of cloud users to an on-premise system.
 
 </td>
 </tr>

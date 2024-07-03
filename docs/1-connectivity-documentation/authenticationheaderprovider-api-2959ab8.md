@@ -2,7 +2,7 @@
 
 # AuthenticationHeaderProvider API
 
-Use the `AuthenticationHeaderProvider` API for applications in the Cloud Foundry environment to retrieve prepared authentication headers that are ready to be used to towards a remote target system.
+Use the `AuthenticationHeaderProvider` API for applications to retrieve prepared authentication headers that are ready to be used to towards a remote target system.
 
 
 
@@ -147,5 +147,5 @@ For more information, see:
 **Related Information**  
 
 
-[Principal Propagation](principal-propagation-e2cbb48.md "Enable single sign-on (SSO) by forwarding the identity of cloud users to a remote system or service (Cloud Foundry environment).")
+[Principal Propagation](principal-propagation-e2cbb48.md "Enable single sign-on (SSO) by forwarding the identity of cloud users to a remote system or service.")
 

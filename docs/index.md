@@ -1,7 +1,7 @@
 # SAP BTP Connectivity
 
 -   [Connectivity](1-connectivity-documentation/connectivity-e54cc8f.md)
-    -   [Connectivity in the Cloud Foundry Environment](1-connectivity-documentation/connectivity-in-the-cloud-foundry-environment-34010ac.md)
+    -   [Connectivity for the Multi-Cloud Foundation](1-connectivity-documentation/connectivity-for-the-multi-cloud-foundation-34010ac.md)
         -   [What Is SAP BTP Connectivity?](1-connectivity-documentation/what-is-sap-btp-connectivity-daca64d.md)
         -   [What's New for Connectivity](1-connectivity-documentation/what-s-new-for-connectivity-7882854.md)
             -   [2021 Connectivity \(Archive\)](1-connectivity-documentation/2021-connectivity-archive-2f8b032.md)

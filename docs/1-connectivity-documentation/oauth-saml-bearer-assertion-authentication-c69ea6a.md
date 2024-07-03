@@ -2,7 +2,7 @@
 
 # OAuth SAML Bearer Assertion Authentication
 
-Create and configure an *OAuth SAML Bearer Assertion* destination for an application in the Cloud Foundry environment.
+Create and configure an *OAuth SAML Bearer Assertion* destination for an application.
 
 
 
@@ -600,7 +600,7 @@ The response for "find destination" contains an `authTokens` object in the forma
 
 [Create HTTP Destinations](create-http-destinations-783fa1c.md "Create HTTP destinations in the Destinations editor (SAP BTP cockpit).")
 
-[Destination Examples](destination-examples-3a2d575.md "Find configuration examples for HTTP and RFC destinations in the Cloud Foundry environment, using different authentication types.")
+[Destination Examples](destination-examples-3a2d575.md "Find configuration examples for HTTP and RFC destinations in SAP BTP, using different authentication types.")
 
 [User Propagation via SAML 2.0 Bearer Assertion Flow](user-propagation-via-saml-2-0-bearer-assertion-flow-3cb7b81.md "Learn about the process for automatic token retrieval, using the OAuth2SAMLBearerAssertion authentication type for HTTP destinations.")
 

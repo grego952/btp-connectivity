@@ -2,7 +2,7 @@
 
 # Scenario: Cloud to Cloud
 
-Forward the identity of cloud users from the Cloud Foundry environment to remote systems on the Internet, enabling single sign-on \(SSO\).
+Forward the identity of cloud users from SAP BTP to remote systems on the Internet, enabling single sign-on \(SSO\).
 
 
 

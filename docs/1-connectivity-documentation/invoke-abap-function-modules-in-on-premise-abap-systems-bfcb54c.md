@@ -2,9 +2,9 @@
 
 # Invoke ABAP Function Modules in On-Premise ABAP Systems
 
-Call a function module in an on-premise ABAP system via RFC, using a sample Web application \(Cloud Foundry environment\).
+Call a function module in an on-premise ABAP system via RFC, using a sample Web application.
 
-This scenario performs a remote function call to invoke an ABAP function module, by using the Connectivity service and the Destination service in the Cloud Foundry environment, as well as a Cloud Foundry application router.
+This scenario performs a remote function call to invoke an ABAP function module, by using the Connectivity service and the Destination service, as well as an application router.
 
 
 
@@ -282,5 +282,5 @@ Back to [Tasks](invoke-abap-function-modules-in-on-premise-abap-systems-bfcb54c.
 **Related Information**  
 
 
-[Multitenancy for JCo Applications \(Advanced\)](multitenancy-for-jco-applications-advanced-93c1e03.md "Learn about the required steps to make your Cloud Foundry JCo application tenant-aware.")
+[Multitenancy for JCo Applications \(Advanced\)](multitenancy-for-jco-applications-advanced-93c1e03.md "Learn about the required steps to make your JCo application tenant-aware.")
 

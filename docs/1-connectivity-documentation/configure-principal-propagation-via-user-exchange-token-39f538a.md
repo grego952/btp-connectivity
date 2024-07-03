@@ -2,7 +2,7 @@
 
 # Configure Principal Propagation via User Exchange Token
 
-Configure a user exchange token for principal propagation \(user propagation\) from your Cloud Foundry application to an on-premise system.
+Configure a user exchange token for principal propagation \(user propagation\) from your application to an on-premise system.
 
 
 
