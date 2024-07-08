@@ -711,6 +711,9 @@ You must have Internet connection at least to the following Connectivity service
 > For some solutions of the BTP portfolio, you must include additional hosts to set up an on-premise connectivity scenario with the Cloud Connector. This applies, for example, to: SAP Data Intelligence, SAP HANA Cloud, Business Appilcation Studio, and SAP Build Apps. Check the respective solution documentation for details.
 
 > ### Note:  
+> To configure the Cloud Connector for SAP Datasphere, see also [Configure Cloud Connector](https://help.sap.com/docs/SAP_DATASPHERE/9f804b8efa8043539289f42f372c4862/f289920243a34127b0c8b13012a1a4b5.html) \(SAP Datasphere documentation\).
+
+> ### Note:  
 > For general information on IP ranges per region, see [Regions](https://help.sap.com/viewer/3504ec5ef16548778610c7e89cc0eac3/Cloud/en-US/350356d1dc314d3199dca15bd2ab9b0e.html) \(Cloud Foundry and ABAP environment\) or [Regions and Hosts Available for the Neo Environment](https://help.sap.com/viewer/ea72206b834e4ace9cd834feed6c0e09/Cloud/en-US/d722f7cea9ec408b85db4c3dcba07b52.html). Find detailed information about the region status and planned network updates on [Platform Updates and Notifications](https://help.sap.com/docs/BTP/65de2977205c403bbc107264b8eccf4b/99070c7bfc0e4f41842bd7c648b7fca7.html).
 
 [Cloud Foundry Environment](prerequisites-e23f776.md#loioe23f776e4d594fdbaeeb1196d47bbcc0__cf)

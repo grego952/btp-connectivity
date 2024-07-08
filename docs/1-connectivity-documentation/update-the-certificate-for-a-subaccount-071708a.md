@@ -33,6 +33,10 @@ Proceed as follows to update your subaccount certificate:
     > To check the certificate's validity, click on the *<Subaccount Certificate\>* in section *Subaccount Overview*.
 
 2.  Press the *Certificate* button. Depending on the cloud environment, you can refresh using authentication data from a file or manually by providing user name and password, or only the latter. The respective dialog or wizard is shown.
+
+    > ### Tip:  
+    > You can download an authentication data file from the *Cloud Connectors* view in your subaccount. Choose *Connectivity* \> *Cloud Connectors* \> *Download Authentication Data* from your subaccount menu. This feature is available for subaccounts in multi-cloud foundation, feature set B only.
+
 3.  Enter *<User Name\>* and *<Password\>* \(or use the file with authentication data if the option is offered\) and choose *Refresh* \(or *Finish*\). The certificate assigned to your subaccount is refreshed.
 
     > ### Note:  
