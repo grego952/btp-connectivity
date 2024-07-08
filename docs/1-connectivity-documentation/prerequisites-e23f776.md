@@ -1859,6 +1859,49 @@ connectivitytunnel.cf.in30.hana.ondemand.com
 <tr>
 <td valign="top" rowspan="3">
 
+Israel \(Tel Aviv\) - Google Cloud
+
+\(`cf.il30.hana.ondemand.com`\)
+
+</td>
+<td valign="top" colspan="2">
+
+connectivitynotification.cf.il30.hana.ondemand.com
+
+</td>
+<td valign="top">
+
+`34.165.59.26`
+
+</td>
+</tr>
+<tr>
+<td valign="top" colspan="2">
+
+connectivitycertsigning.cf.il30.hana.ondemand.com
+
+</td>
+<td valign="top">
+
+`34.165.59.26`
+
+</td>
+</tr>
+<tr>
+<td valign="top" colspan="2">
+
+connectivitytunnel.cf.il30.hana.ondemand.com
+
+</td>
+<td valign="top">
+
+`34.165.59.26`
+
+</td>
+</tr>
+<tr>
+<td valign="top" rowspan="3">
+
 China \(Shanghai\) - Alibaba Cloud
 
 \(`cf.cn40.platform.sapcloud.cn`\)

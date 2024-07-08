@@ -32,10 +32,10 @@ Install a redundant Cloud Connector instance \(shadow instance\) that monitors t
     ![](images/SCC_HA_-_Enable_Optional_af20cd8.png)
 
 2.  You can now change the high availability \(HA\) port to a different one from where the Cloud Connector administration UI is accessible. This port is then used for the master/shadow communication only, that is, to check for failovers or push configuration. This is especially needed in case of a [Logon to the Cloud Connector via Client Certificate](logon-to-the-cloud-connector-via-client-certificate-daa547f.md), so that master/shadow communication is still possible without having a client certificate for logon.
-3.  Additionally, by providing a concrete shadow host you can ensure that a shadow instance can be connected from this host only.
+3.  Additionally, by providing a concrete shadow host you can ensure that a shadow instance can be connected from this host only. The host name will be shown as *Permitted Shadow Host* on the HA screen if you have configured one.
 
 > ### Caution:  
-> Pressing the *Reset* button resets all high availability settings \(besides the own port configuration\) to their initial state. As a result, high availability is disabled and the shadow host is cleared. Reset only works if no shadow is connected.
+> Pressing the *Reset* button resets all high availability settings \(besides the own port configuration\) to their initial state. As a result, high availability is disabled and the shadow host is cleared. Reset only works if no shadow is connected. Also, editing the settings for HA will only work if no shadow is connected.
 
 
 

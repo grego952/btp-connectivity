@@ -26,7 +26,7 @@ Manage the Cloud Connector's system mapping resources via API.
 
 [Create System Mapping Resource](system-mapping-resources-99df2b9.md#loio99df2b95fb5245c7921673ad8fc2a542__create_resource)
 
-[Edit System Mapping Resource](system-mapping-resources-99df2b9.md#loio99df2b95fb5245c7921673ad8fc2a542__edit_resource)
+[Replace System Mapping Resource](system-mapping-resources-99df2b9.md#loio99df2b95fb5245c7921673ad8fc2a542__edit_resource)
 
 [Delete System Mapping Resource](system-mapping-resources-99df2b9.md#loio99df2b95fb5245c7921673ad8fc2a542__delete_resource)
 
