@@ -22,10 +22,6 @@ Manage RFC-specific access control entities for the Cloud Connector via API.
 
 [Remove an Item from the List of Allowed Clients \(Master Only\)](access-control-entities-2b8ee62.md#loio2b8ee62d19db43649365f82f78b185a0__remove_allowed)
 
-[Remove Items from the List of Blocked Client/User Pairs for a Given User \(Master Only\)](access-control-entities-2b8ee62.md#loio2b8ee62d19db43649365f82f78b185a0__remove_user)
-
-[Remove Items from the List of Blocked Client/User Pairs for a Given Client \(Master Only\)](access-control-entities-2b8ee62.md#loio2b8ee62d19db43649365f82f78b185a0__remove_client)
-
 [Remove an Item from the List of Blocked Client/User Pairs \(Master Only\)](access-control-entities-2b8ee62.md#loio2b8ee62d19db43649365f82f78b185a0__remove_pair)
 
 
@@ -857,174 +853,6 @@ Back to [Top](access-control-entities-2b8ee62.md#loio2b8ee62d19db43649365f82f78b
 
 
 
-<a name="loio2b8ee62d19db43649365f82f78b185a0__remove_user"/>
-
-## Remove Items from the List of Blocked Client/User Pairs for a Given User \(Master Only\)
-
-
-<table>
-<tr>
-<td valign="top">
-
-URI
-
-</td>
-<td valign="top">
-
-`/api/v1/configuration/subaccounts/<regionHost>/<subaccount>/systemMappings/<virtualHost>:<virtualPort>/blockedClientUsers/user/<user>` 
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Method
-
-</td>
-<td valign="top">
-
-*DELETE* 
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Request
-
-</td>
-<td valign="top">
-
-
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Response
-
-</td>
-<td valign="top">
-
-204 on success
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Errors
-
-</td>
-<td valign="top">
-
-NOT\_FOUND
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Roles
-
-</td>
-<td valign="top">
-
-Administrator,Subaccount Administrator 
-
-</td>
-</tr>
-</table>
-
-Back to [Top](access-control-entities-2b8ee62.md#loio2b8ee62d19db43649365f82f78b185a0__top)
-
-
-
-<a name="loio2b8ee62d19db43649365f82f78b185a0__remove_client"/>
-
-## Remove Items from the List of Blocked Client/User Pairs for a Given Client \(Master Only\)
-
-
-<table>
-<tr>
-<td valign="top">
-
-URI
-
-</td>
-<td valign="top">
-
-`/api/v1/configuration/subaccounts/<regionHost>/<subaccount>/systemMappings/<virtualHost>:<virtualPort>/blockedClientUsers/client/<client>` 
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Method
-
-</td>
-<td valign="top">
-
-*DELETE* 
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Request
-
-</td>
-<td valign="top">
-
-
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Response
-
-</td>
-<td valign="top">
-
-204 on success
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Errors
-
-</td>
-<td valign="top">
-
-NOT\_FOUND
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Roles
-
-</td>
-<td valign="top">
-
-Administrator,Subaccount Administrator 
-
-</td>
-</tr>
-</table>
-
-Back to [Top](access-control-entities-2b8ee62.md#loio2b8ee62d19db43649365f82f78b185a0__top)
-
-
-
 <a name="loio2b8ee62d19db43649365f82f78b185a0__remove_pair"/>
 
 ## Remove an Item from the List of Blocked Client/User Pairs \(Master Only\)
@@ -1039,7 +867,7 @@ URI
 </td>
 <td valign="top">
 
-`/api/v1/configuration/subaccounts/<regionHost>/<subaccount>/systemMappings/<virtualHost>:<virtualPort>/blockedClientUsers/client/<client>:<user>` 
+`/api/v1/configuration/subaccounts/<regionHost>/<subaccount>/systemMappings/<virtualHost>:<virtualPort>/blockedClientUsers/<client>:<user>` 
 
 </td>
 </tr>
