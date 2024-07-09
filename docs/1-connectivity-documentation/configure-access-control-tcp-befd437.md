@@ -23,6 +23,9 @@ To allow your cloud applications to access a certain backend system on the intra
     > -   configure an application allowlist in the Cloud Connector, see [Set Up Trust](set-up-trust-a4ee70f.md).
     > -   take the recommended security measures for your SAP BTP \(sub\)account. See section [Security](https://help.sap.com/viewer/65de2977205c403bbc107264b8eccf4b/Cloud/en-US/e129aa20c78c4a9fb379b9803b02e5f6.html "Use the security features and functions of SAP BTP to support the security policies of your organization.") :arrow_upper_right: in the SAP BTP documentation.
 
+    > ### Note:  
+    > If you specify `TCP SSL`, and there is a "system certificate" imported in the Cloud Connector, the latter attempts to use this certificate for performing a client-certificate-based logon to the backend system.
+
     ![](images/SCC_CS_AccessControlTCP_-_SystemParameters_Protocol_c871300.png)
 
 5.  *Internal Host* and *Port or Port Range*: specify the host and port under which the target system can be reached within the intranet. It needs to be an existing network address that can be resolved on the intranet and has network visibility for the Cloud Connector. The Cloud Connector will try to forward the request to the network address specified by the internal host and port. That is why this address needs to be real.
