@@ -80,7 +80,7 @@ As of connectivity proxy release 2.1.1, support for principal propagation with I
 **Prerequisites**:
 
 -   Cloud Connector 2.13 \(or higher\) must be used.
--   The Cloud Connector must be connected to a subaccount, that is, configured with the IAS tenant issuing the tokens \(for more information, see [Establish Trust and Federation Between SAP Authorization and Trust Management Service and SAP Cloud Identity Services](https://help.sap.com/viewer/65de2977205c403bbc107264b8eccf4b/Cloud/en-US/161f8f0cfac64c4fa2d973bc5f08a894.html "Use your SAP Cloud Identity Services tenant as an identity provider or a proxy to your own identity provider hosting your business users. This method avoids the upload and download of SAML meta data by using Open ID Connect (OIDC) to establish trust.") :arrow_upper_right:\).
+-   The Cloud Connector must be connected to a subaccount, that is, configured with the IAS tenant issuing the tokens \(for more information, see [Establish Trust and Federation Between SAP Authorization and Trust Management Service and SAP Cloud Identity Services](https://help.sap.com/viewer/65de2977205c403bbc107264b8eccf4b/Cloud/en-US/161f8f0cfac64c4fa2d973bc5f08a894.html "Use your SAP Cloud Identity Services tenant as an identity provider or a proxy to your own identity provider hosting your business users. This method avoids the upload and download of SAML meta data by using OpenID Connect (OIDC) to establish trust.") :arrow_upper_right:\).
 
 Principal propagation is supported for both HTTP and RFC communication protocols and can be used in all [Operational Modes](operational-modes-148bbad.md) of the connectivity proxy:
 

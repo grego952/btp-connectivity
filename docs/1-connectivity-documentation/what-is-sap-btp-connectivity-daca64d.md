@@ -62,6 +62,9 @@ Back to [Content](what-is-sap-btp-connectivity-daca64d.md#loiodaca64dacc6148fcb5
 
 ## User Roles
 
+> ### Note:  
+> This section refers to SAP BTP, Cloud Foundry environment. For information on role assignment in the Kyma environment, see [Assign Roles in the Kyma Environment](https://help.sap.com/docs/btp/sap-business-technology-platform/assign-roles-in-kyma-environment).
+
 In this document, we refer to different types of user roles – *responsibility roles* and *technical roles*. Responsibility roles describe the required user groups and their general tasks in the end-to-end setup process. Configuring technical roles, you can control access to the dedicated cloud management tools by assigning specific permissions to users.
 
 [Responsibility Roles](what-is-sap-btp-connectivity-daca64d.md#loiodaca64dacc6148fcb5c70ed86082ef91__responsibility)

@@ -4,6 +4,9 @@
 
 To use the Connectivity service in your application, you need an instance of the service.
 
+> ### Note:  
+> This section refers to SAP BTP, Cloud Foundry environment. For information on service instances in the Kyma environment, see [Using SAP BTP Services in the Kyma Environment](https://help.sap.com/docs/btp/sap-business-technology-platform/using-sap-btp-services-in-kyma-environment).
+
 
 
 <a name="loioa2b88cf9d41e4061bfb06a23d9ba1c43__section_bzt_wqq_2nb"/>

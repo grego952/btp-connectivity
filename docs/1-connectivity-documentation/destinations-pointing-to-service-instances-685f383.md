@@ -28,7 +28,7 @@ Using the *Destinations Pointing to Service Instances* template, you only have t
 
 -   You have a service instance which you want to make accessible to applications you are subscribed to.
 
--   You have the Space Developer role in the space where this service instance resides.
+-   You have the Space Developer role in the space where this service instance resides \(only relevant for Cloud Foundry environment\).
 
 -   You have logged in to the cockpit and opened the *Destinations* editor on *subaccount* level. See [Access the Destinations Editor](access-the-destinations-editor-82ca377.md).
 

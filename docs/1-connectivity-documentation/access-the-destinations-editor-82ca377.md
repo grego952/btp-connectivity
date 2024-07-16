@@ -37,13 +37,9 @@ On service instance level, you can reuse this destination for a specific space a
 **Access on Service Instance Level**
 
 > ### Note:  
-> To perform these steps, you must have created a Destination service instance in your space, see [Create and Bind a Destination Service Instance](create-and-bind-a-destination-service-instance-9fdad3c.md). On service instance level, you can set destinations only for Destination service instances.
+> To perform these steps, you must have created a Destination service instance in a *Cloud Foundry* space, see [Create and Bind a Destination Service Instance](create-and-bind-a-destination-service-instance-9fdad3c.md). On service instance level, you can set destinations only for Destination service instances.
 
 1.  In the cockpit, choose your *Global Account* from the *Region Overview* and select a *Subaccount*.
-
-    > ### Note:  
-    > The Cloud Foundry Organization must be enabled.
-
 2.  From the *Spaces* section, select a space name.
 3.  From the left-side menu, choose *Services* \> *Service Instances*.
 4.  Choose the *Actions* icon for a Destination service instance and select *View Dashboard*.

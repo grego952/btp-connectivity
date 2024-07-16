@@ -15,7 +15,7 @@ Applications that require a connection to a remote service can use the Connectiv
 If the application needs to use the same endpoint, independently from the current application subscriber, the destination that contains the endpoint configuration is uploaded by the application provider. If the endpoint should be different for each application subscriber, the destination can be uploaded by each particular application subscriber.
 
 > ### Note:  
-> This connectivity type is fully applicable also for on-demand to on-premise connectivity.
+> This connectivity type is fully applicable also for *cloud-to-on-premise* connectivity.
 
 
 
