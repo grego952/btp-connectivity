@@ -127,6 +127,138 @@ Some typical settings to get the required data are listed below:
 -   *<TLS trace\>* is helpful to **analyze TLS handshake failures** from Cloud Connector to Cloud or from Cloud Connector to backend. It should be turned off again as soon as the issue has been reproduced and recorded in the traces.
 -   Setting the audit log on level `ALL` for *<Subaccount Audit Level\>* is the easiest way to **check if a request reached the the Cloud Connector and if it is being processed**.
 
+
+
+<a name="loioe7df7f15bb571014ae24bca245319880__section_fsw_x2k_dcc"/>
+
+## Scripts for Configuration \(Issues\)
+
+You can use the following scripts to perform configuration changes in case of issues, without accessing the Cloud Connector administration UI.
+
+
+<table>
+<tr>
+<th valign="top">
+
+Script Name
+
+</th>
+<th valign="top">
+
+Use
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+`changeAuditLogPath <newAuditlogPath>`
+
+</td>
+<td valign="top">
+
+Changes the location for the audit log files.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`changeLogAndTracePath <newLogAndTracePath>`
+
+</td>
+<td valign="top">
+
+Changes the location for the log and trace files.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`changePort <newPort>`
+
+</td>
+<td valign="top">
+
+Changes the port for the UI access.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`changeRole <master|shadow>`
+
+</td>
+<td valign="top">
+
+Changes the current high availability \(HA\) role.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`resetCiphers`
+
+</td>
+<td valign="top">
+
+Reset all ciphers used for HTTPS communication to the administration UI to the default.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`snc_create_pse`
+
+</td>
+<td valign="top">
+
+Setting up SNC with this guided wizard.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`snc_import_ca_response`
+
+</td>
+<td valign="top">
+
+If not done with `snc_create_pse`, import a CA response to the existing PSE.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`useBasicAuthentication`
+
+</td>
+<td valign="top">
+
+Use basic authentication and discard any stored certificate-based login settings.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`useFileUserStore`
+
+</td>
+<td valign="top">
+
+Use local user store and discard any stored LDAP configuration.
+
+</td>
+</tr>
+</table>
+
 **Related Information**  
 
 
