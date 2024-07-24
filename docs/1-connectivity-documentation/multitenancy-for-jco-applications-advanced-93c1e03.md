@@ -60,7 +60,7 @@ The application router needs to be tenant-aware with a `TENANT_HOST_PATTERN` to 
 >   routes:
 >   - route: approuter-jco-demo-p42424242.cfapps.eu10.hana.ondemand.com
 >   env:
->     TENANT_HOST_PATTERN: "^(.*).approuter-jco-demo-p42424242.cfapps.eu10.hana.ondemand.com"
+>     TENANT_HOST_PATTERN: "^(.*).cfapps.eu10.hana.ondemand.com"
 >     NODE_TLS_REJECT_UNAUTHORIZED: 0
 >     destinations: >
 >       [
