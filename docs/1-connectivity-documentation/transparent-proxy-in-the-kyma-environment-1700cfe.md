@@ -4,7 +4,7 @@
 
 Use the transparent proxy in the Kyma environment.
 
-This documentation serves as a reference for the transparent proxy enablement in the Kyma environment and the respective transparent proxy operator, integrated with [Kyma's Lifecycle Manager](https://github.com/kyma-project/lifecycle-manager).
+This documentation serves as a reference for adding the transparent proxy in the Kyma environment and the respective transparent proxy operator, integrated with [Kyma's Lifecycle Manager](https://github.com/kyma-project/lifecycle-manager).
 
 The transparent proxy operator continuously observes the state of the system and the desired state defined by the transparent proxy custom resource. It then makes necessary adjustments to the system \(like creating, updating, or deleting resources\) to achieve the desired state, and regularly monitors the health of the transparent proxy, ensuring it runs optimally according to the configurations defined in the custom resource.
 
@@ -14,9 +14,9 @@ The transparent proxy operator continuously observes the state of the system and
 
 ## Module Enablement
 
-For module enablement, refer to [Enable and Disable a Kyma module](https://help.sap.com/docs/btp/sap-business-technology-platform/enable-and-disable-kyma-module#loio1b548e9ad4744b978b8b595288b0cb5c).
+For module enablement, refer to [Add and Delete a Kyma module](https://help.sap.com/docs/btp/sap-business-technology-platform/enable-and-disable-kyma-module#loio1b548e9ad4744b978b8b595288b0cb5c).
 
-With the enablement of the transparent proxy module, a default transparent proxy custom resource is created in the **sap-transp-proxy-system** namespace.
+With adding the transparent proxy module, a default transparent proxy custom resource is created in the **sap-transp-proxy-system** namespace.
 
 > ### Caution:  
 > The **sap-transp-proxy-system** namespace is intended for the monitoring of the transparent proxy resources, do not use it for deploying workloads there.
